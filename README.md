@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://www.fmf.uni-lj.si/sl/"><img src="http://phd.fmf.uni-lj.si/img/logo.gif" width="300"></a>
+  <a href="https://www.fmf.uni-lj.si/en/"><img src="http://phd.fmf.uni-lj.si/img/logo.gif" width="300"></a>
   <br>
   Advanced Machine Learning
   <br>
@@ -41,12 +41,16 @@ and homework assignments.
 
 ## Exercises
 
+[(Back to top)](#table-of-contents)
+
 ### Class 1
 
 - bla bla bla
 
 
 ## Homeworks
+
+[(Back to top)](#table-of-contents)
 
 ### Homework 1
 
