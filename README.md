@@ -33,19 +33,41 @@ and homework assignments.
 
 ## Table of Contents
 
+- [General](#general)
+
 - [Exercise Classes](#exercise-classes)
   - [Class 1](#class-1)
   
 - [Homework Assignments](#homework-assignments)
   - [Assignment 1](#assignment-1)
 
+
+## General
+
+- Python: ![python](https://img.shields.io/badge/Python-3.10-informational)
+- Virtual environment: `requirements.txt`
+
+
 ## Exercise Classes
 
-[(Back to top)](#table-of-contents)
+Below, a broad overview of exercise classes is given. The exact instructions are not part of this repository (they are
+in Slovene anyway).
+
 
 ### Class 1
 
-- bla bla bla
+- Exercise A
+  1. Load data
+  2. Extract basic statistics
+  3. Handle `NaN` values
+  4. Visualise data
+  5. Encode categorical features
+     - `sklearn.preprocessing.OneHotEncoder`
+     - `sklearn.compose.make_column_transformer`
+- Exercise B
+- Exercise C
+
+[(Back to top)](#table-of-contents)
 
 
 ## Homework Assignments

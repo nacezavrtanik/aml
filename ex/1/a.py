@@ -9,7 +9,7 @@ mpl.use('TkAgg')  # To avoid TypeError when calling pd.DataFrame.hist in PyCharm
 # 1 Load data
 data = pd.read_csv('podatki.csv')
 
-# 2 Extract basic information
+# 2 Extract basic statistics
 rows, columns = data.shape
 data_types = data.dtypes
 stats = data.describe()
