@@ -27,19 +27,19 @@
 
 This is my personal repository for the course Advanced Machine Learning (Napredno strojno učenje) as taken at the
 Faculty of Mathematics and Physics, University of Ljubljana, in the 2<sup>nd</sup> semester of 2022/2023. This
-repository features code I wrote during the course of the course (of course :smirk:) such as code from exercise classes
+repository contains, of course, the code I wrote during the course of this course, such as code from exercise classes
 and homework assignments.
 
 
 ## Table of Contents
 
-- [Exercises](#exercises)
+- [Exercise Classes](#exercise-classes)
   - [Class 1](#class-1)
   
-- [Homeworks](#homeworks)
-  - [Homework 1](#homework-1)
+- [Homework Assignments](#homework-assignments)
+  - [Assignment 1](#assignment-1)
 
-## Exercises
+## Exercise Classes
 
 [(Back to top)](#table-of-contents)
 
@@ -48,10 +48,10 @@ and homework assignments.
 - bla bla bla
 
 
-## Homeworks
+## Homework Assignments
 
 [(Back to top)](#table-of-contents)
 
-### Homework 1
+### Assignment 1
 
 - bla bla bla
