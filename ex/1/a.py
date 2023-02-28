@@ -7,7 +7,7 @@ mpl.use('TkAgg')  # To avoid TypeError when calling pd.DataFrame.hist in PyCharm
 
 
 # 1 Load data
-data = pd.read_csv('podatki.csv')
+data = pd.read_csv('podatki.csv', index_col=0)
 
 # 2 Extract basic statistics
 rows, columns = data.shape
@@ -40,4 +40,4 @@ corr = data.corr(numeric_only=True)
 col_trans = make_column_transformer(
     (OneHotEncoder(), ['X4']),
     remainder='passthrough')
-col_trans.fit_transform(data)
+col_trans = col_trans.fit_transform(data)
