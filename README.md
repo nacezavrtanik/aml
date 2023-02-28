@@ -8,19 +8,19 @@
 
 <p align="center">
   <a href="https://www.fmf.uni-lj.si/sl/imenik/238/todorovski-ljupco/">
-    <img src="https://img.shields.io/badge/Professor-Ljup%C4%8Do%20Todorovski-brightgreen">
+    <img src="https://img.shields.io/badge/Professor-Ljup%C4%8Do%20Todorovski-red">
   </a>
   <a href="https://www.fmf.uni-lj.si/sl/imenik/1402/brence-jure/">
-    <img src="https://img.shields.io/badge/Assistant-Jure%20Brence-blue">
+    <img src="https://img.shields.io/badge/Assistant-Jure%20Brence-red">
   </a>
   <a href="https://www.fmf.uni-lj.si/sl/imenik/273/osojnik-aljaz/">
-    <img src="https://img.shields.io/badge/Assistant-Alja%C5%BE%20Osojnik-blue">
+    <img src="https://img.shields.io/badge/Assistant-Alja%C5%BE%20Osojnik-red">
   </a>
   <a href="https://www.fmf.uni-lj.si/sl/imenik/177/petkovic-matej/">
-    <img src="https://img.shields.io/badge/Assistant-Matej%20Petkovi%C4%87-blue">
+    <img src="https://img.shields.io/badge/Assistant-Matej%20Petkovi%C4%87-red">
   </a>
   <a href="https://github.com/nacezavrtanik">
-    <img src="https://img.shields.io/badge/RepositoryOwner-Nace%20Zavrtanik-orange">
+    <img src="https://img.shields.io/badge/RepositoryOwner-Nace%20Zavrtanik-lightgrey">
   </a>
 </p>
 
@@ -31,32 +31,30 @@ repository contains, of course, the code I wrote during the course of this cours
 and homework assignments.
 
 
+<p align="center">
+    <img src="https://img.shields.io/badge/python-3.10-9cf">
+    <img src="https://img.shields.io/badge/venv-requirements.txt-9cf">
+</p>
+
+
 ## Table of Contents
 
-- [General](#general)
-
 - [Exercise Classes](#exercise-classes)
-  - [Class 1](#class-1)
+  - [Class 1: Fundamentals of Machine Learning in Python](#class-1-fundamentals-of-machine-learning-in-python)
   
 - [Homework Assignments](#homework-assignments)
   - [Assignment 1](#assignment-1)
 
 
-## General
-
-- Python: ![python](https://img.shields.io/badge/Python-3.10-informational)
-- Virtual environment: `requirements.txt`
-
-
 ## Exercise Classes
 
-Below, a broad overview of exercise classes is given. The exact instructions are not part of this repository (they are
-in Slovene anyway).
+Below, a broad overview of exercise classes is given. The exact instructions are not part of this repository.
+Corresponding code can be found in appropriate subdirectories of `ex/`.
 
 
-### Class 1
+### Class 1: Fundamentals of Machine Learning in Python
 
-- Exercise A
+- Exercise A: ***Data Processing***
   1. Load data
   2. Extract basic statistics
   3. Handle `NaN` values
@@ -64,16 +62,24 @@ in Slovene anyway).
   5. Encode categorical features
      - `sklearn.preprocessing.OneHotEncoder`
      - `sklearn.compose.make_column_transformer`
-- Exercise B
-- Exercise C
+- Exercise B: ***Binary Classification***
+  1. Train model on entire dataset
+     - `sklearn.neighbors.KNeighborsClassifier`
+  2. Evaluate accuracy of model
+  3. Split dataset into train data and test data
+     - `sklearn.model_selection.train_test_split`
+  4. Feature scaling and hyperparameters
+     - `sklearn.preprocessing.StandardScaler`
+     - `sklearn.model_selection.validation_curve`
+- Exercise C: ***Linear Regression***
 
 [(Back to top)](#table-of-contents)
 
 
 ## Homework Assignments
 
-[(Back to top)](#table-of-contents)
-
 ### Assignment 1
 
 - bla bla bla
+
+[(Back to top)](#table-of-contents)
