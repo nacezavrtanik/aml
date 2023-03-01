@@ -77,6 +77,10 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
      - `sklearn.metrics.roc_curve`
      - `sklearn.metrics.roc_auc_score`
 - Exercise C: ***Linear Regression***
+  - `sklearn.linear_model.LinearRegression`
+  1. Regression metrics
+     - `sklearn.metrics.mean_squared_error`
+     - `sklearn.metrics.r2_score`
 
 [(Back to top)](#table-of-contents)
 
