@@ -71,6 +71,11 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   4. Feature scaling and hyperparameters
      - `sklearn.preprocessing.StandardScaler`
      - `sklearn.model_selection.validation_curve`
+  5. Alternative metrics
+     - `sklearn.metrics.confusion_matrix`
+     - `sklearn.metrics.precision_recall_curve`
+     - `sklearn.metrics.roc_curve`
+     - `sklearn.metrics.roc_auc_score`
 - Exercise C: ***Linear Regression***
 
 [(Back to top)](#table-of-contents)

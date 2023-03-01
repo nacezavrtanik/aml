@@ -8,6 +8,7 @@ def plot_validation_curve(train_scores,
                           title='Validation Curve',
                           xlabel='Hyperparameter',
                           linewidth=2):
+    """Plot validation curve from train and test scores obtained from sklearn.model_selection.validation_curve."""
 
     train_scores_mean = np.mean(train_scores, axis=1)
     train_scores_std = np.std(train_scores, axis=1)
