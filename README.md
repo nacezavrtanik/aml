@@ -81,6 +81,11 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   1. Regression metrics
      - `sklearn.metrics.mean_squared_error`
      - `sklearn.metrics.r2_score`
+  2. Cross validation and model comparison
+     - `sklearn.model_selection.cross_validate`
+     - `sklearn.svm.SVR`
+     - `sklearn.ensemble.RandomForrestRegressor`
+     - `sklearn.neighbors.KNeighborsRegressor`
 
 [(Back to top)](#table-of-contents)
 

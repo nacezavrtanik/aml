@@ -3,6 +3,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
+from helpers import compare_models_cross_validation
+
 
 # 1 Regression metrics
 
@@ -21,3 +23,6 @@ rmse = mean_squared_error(y_test, y_pred, squared=False)
 print('RMSE:', rmse)
 r2 = r2_score(y_test, y_pred)
 print('R2:', r2)
+
+# 2 Cross-validation and model comparison
+comparison = compare_models_cross_validation(X, y)
