@@ -1,3 +1,5 @@
+"""Class 1, Exercise A: Data Processing"""
+
 import pandas as pd
 import matplotlib as mpl
 from sklearn.preprocessing import OneHotEncoder

@@ -1,3 +1,5 @@
+"""Class 1, Exercise B: Binary Classification"""
+
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split, validation_curve
 from sklearn.preprocessing import StandardScaler

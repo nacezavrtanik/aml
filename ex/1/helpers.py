@@ -1,3 +1,13 @@
+"""Helper functions for Exercise Class 1: Fundamentals of Machine Learning in Python.
+
+Includes functions:
+    plot_validation_curve
+        (used in exercise B, task 4)
+    compare_models_cross_validation
+        (used in exercise C, task 2)
+
+"""
+
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -14,7 +24,27 @@ def plot_validation_curve(train_scores,
                           title='Validation Curve',
                           xlabel='Hyperparameter',
                           linewidth=2):
-    """Plot validation curve from train and test scores obtained from sklearn.model_selection.validation_curve."""
+    """Plot validation curve from train and test scores obtained from sklearn.model_selection.validation_curve.
+
+    Parameters
+    ----------
+    train_scores : ndarray
+        Output from sklearn.model_selection.validation_curve.
+    test_scores : ndarray
+        Output from sklearn.model_selection.validation_curve.
+    param_range : iterable
+        Hyperparameter values.
+    title : str, default 'Validation Curve'
+        Plot title, should contain model name.
+    xlabel : str, default 'Hyperparameter'
+        Label fo x-axis, should contain hyperparameter name.
+    linewidth: int, default 2
+        Width of plot lines.
+
+    Returns
+    -------
+    None
+    """
 
     train_scores_mean = np.mean(train_scores, axis=1)
     train_scores_std = np.std(train_scores, axis=1)
@@ -53,6 +83,24 @@ def plot_validation_curve(train_scores,
 
 
 def compare_models_cross_validation(X, y, model_names=None):
+    """Compare cross-validated NMAPE, NMSE, and R2 for different models.
+
+    Parameters
+    ----------
+    X : dataframe
+        Features.
+    y : series
+        Target variable.
+    model_names : list of str, optional
+        Names of models to be evaluated. Possible names:
+        'k_neighbors_regressor', 'linear_regression', 'random_forrest_regressor', 'SVR'
+        (defaults to all of these models)
+
+    Returns
+    -------
+    dataframe
+        Indexed by chosen models, columns are metrics NMAPE, NMSE, R2.
+    """
 
     models = {
         'k_neighbors_regressor': KNeighborsRegressor(),
