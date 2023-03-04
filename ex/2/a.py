@@ -7,3 +7,4 @@ datalist = list_datasets(number_instances='100..200',
                          output_format='dataframe')
 
 # 2 Load datasets
+datasets = get_datasets(datalist['did'])
