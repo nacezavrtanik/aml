@@ -93,6 +93,11 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 ### Class 2: Meta-learning
 
 - Exercise A: ***Obtaining Data from [OpenML](https://www.openml.org/)***
+  1. List dataset info
+     - `openml.datasets.list_datasets`
+  2. Loada datasets
+     - `openml.datasets.get_datasets`
+  3. Filter datasets
 
 [(Back to top)](#table-of-contents)
 
