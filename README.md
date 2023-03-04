@@ -41,6 +41,7 @@ and homework assignments.
 
 - [Exercise Classes](#exercise-classes)
   - [Class 1: Fundamentals of Machine Learning in Python](#class-1-fundamentals-of-machine-learning-in-python)
+  - [Class 2: Meta-learning](#class-2-meta-learning)
   
 - [Homework Assignments](#homework-assignments)
   - [Assignment 1](#assignment-1)
@@ -86,6 +87,12 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
      - `sklearn.svm.SVR`
      - `sklearn.ensemble.RandomForrestRegressor`
      - `sklearn.neighbors.KNeighborsRegressor`
+
+[(Back to top)](#table-of-contents)
+
+### Class 2: Meta-learning
+
+- Exercise A: ***Obtaining Data from [OpenML](https://www.openml.org/)***
 
 [(Back to top)](#table-of-contents)
 
