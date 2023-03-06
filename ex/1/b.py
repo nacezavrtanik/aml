@@ -23,7 +23,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, random
 knc.fit(X_train, y_train)
 print('Accuracy (not scaled):', knc.score(X_test, y_test))
 
-# 4 Feature scaling and hyperparameters
+# 4 Scale features, analyze hyperparameters
 
 # Standardise features
 scaler = StandardScaler()
@@ -42,7 +42,7 @@ train_scores, test_scores = validation_curve(
 #     train_scores, test_scores, _param_range, title='Validation Curve for KNeighborsClassifier', xlabel=_param_name)
 del _param_name, _param_range, train_scores, test_scores
 
-# 5 Alternative metrics
+# 5 Calculate alternative metrics
 
 # Train model with different hyperparameters
 _n_neighbors = 15

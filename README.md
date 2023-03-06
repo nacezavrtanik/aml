@@ -69,20 +69,20 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   2. Evaluate accuracy of model
   3. Split dataset into train data and test data
      - `sklearn.model_selection.train_test_split`
-  4. Feature scaling and hyperparameters
+  4. Scale features, analyze hyperparameters
      - `sklearn.preprocessing.StandardScaler`
      - `sklearn.model_selection.validation_curve`
-  5. Alternative metrics
+  5. Calculate alternative metrics
      - `sklearn.metrics.confusion_matrix`
      - `sklearn.metrics.precision_recall_curve`
      - `sklearn.metrics.roc_curve`
      - `sklearn.metrics.roc_auc_score`
 - Exercise C: ***Linear Regression***
   - `sklearn.linear_model.LinearRegression`
-  1. Regression metrics
+  1. Calculate regression metrics
      - `sklearn.metrics.mean_squared_error`
      - `sklearn.metrics.r2_score`
-  2. Cross validation and model comparison
+  2. Cross-validate and compare models
      - `sklearn.model_selection.cross_validate`
      - `sklearn.svm.SVR`
      - `sklearn.ensemble.RandomForrestRegressor`
@@ -101,6 +101,14 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
      - `pandas.api.types.is_numeric`
 - Exercise B: ***Preparing Target Variables***
   1. Compare model accuracies for datasets
+     - `sklearn.tree.DecisionTreeClassifier`
+     - `sklearn.naive_bayes.GaussianNB`
+- Exercise C: ***Preparing Features***
+  1. Extract meta-features from data
+     - `pymfe.mfe.MFE.fit`
+     - `pymfe.mfe.MFE.extract`
+  2. Extract meta-features from model
+     - `pymfe.mfe.MFE.extract_from_model`
 
 
 [(Back to top)](#table-of-contents)

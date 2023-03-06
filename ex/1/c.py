@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from helpers import compare_models_cross_validation
 
 
-# 1 Regression metrics
+# 1 Calculate regression metrics
 
 # Make predictions
 data = pd.read_csv('podatki_regresija.csv')
@@ -26,5 +26,5 @@ print('RMSE:', rmse)
 r2 = r2_score(y_test, y_pred)
 print('R2:', r2)
 
-# 2 Cross-validation and model comparison
+# 2 Cross-validate and compare models
 comparison = compare_models_cross_validation(X, y)
