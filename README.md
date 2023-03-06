@@ -95,9 +95,13 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 - Exercise A: ***Obtaining Data from [OpenML](https://www.openml.org/)***
   1. List dataset info
      - `openml.datasets.list_datasets`
-  2. Loada datasets
+  2. Load datasets
      - `openml.datasets.get_datasets`
   3. Filter datasets
+     - `pandas.api.types.is_numeric`
+- Exercise B: ***Preparing Target Variables***
+  1. Compare model accuracies for datasets
+
 
 [(Back to top)](#table-of-contents)
 
