@@ -104,11 +104,12 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
      - `sklearn.tree.DecisionTreeClassifier`
      - `sklearn.naive_bayes.GaussianNB`
 - Exercise C: ***Preparing Features***
-  1. Extract meta-features from data
+  1. Extract meta-features from dataset
      - `pymfe.mfe.MFE.fit`
      - `pymfe.mfe.MFE.extract`
-  2. Extract meta-features from model
+  2. Extract meta-features from fitted model
      - `pymfe.mfe.MFE.extract_from_model`
+  3. Extract meta-features for all datasets
 
 
 [(Back to top)](#table-of-contents)

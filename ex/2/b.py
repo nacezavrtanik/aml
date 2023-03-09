@@ -17,7 +17,7 @@ models = {'k_neighbors_classifier': KNeighborsClassifier(),
 scores = {}
 for ds_name, ds in datasets.items():
 
-    # Preprocessing
+    # Preprocess
     X_all, _, _, _ = ds.get_data()
     y_name = ds.default_target_attribute
     X, y = X_all.copy().drop(y_name, axis=1), X_all[y_name]
@@ -39,7 +39,7 @@ for ds_name, ds in datasets.items():
         scores[ds_name] = row
 del ds_name, ds, X_all, y_name, X, y, X_train, X_test, y_train, y_test, row, best, md_name, md, accuracy
 
-# Crate dataframe, export to .csv
-results = pd.DataFrame.from_dict(scores, orient='index').reset_index(names='dataset')
-results = results[['dataset', 'k_neighbors_classifier', 'decision_tree_classifier', 'gaussian_nb', 'best']]
-results.to_csv('b_model_accuracy_comparison_for_datasets.csv')
+# Create dataframe, export to .csv
+scores = pd.DataFrame.from_dict(scores, orient='index').reset_index(names='dataset')
+scores = scores[['dataset', 'k_neighbors_classifier', 'decision_tree_classifier', 'gaussian_nb', 'best']]
+scores.to_csv('b_model_accuracy_comparison_for_datasets.csv')
