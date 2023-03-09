@@ -42,6 +42,7 @@ and homework assignments.
 - [Exercise Classes](#exercise-classes)
   - [Class 1: Fundamentals of Machine Learning in Python](#class-1-fundamentals-of-machine-learning-in-python)
   - [Class 2: Meta-learning](#class-2-meta-learning)
+  - [Class 3: Meta-learning, and Hyperparameter Optimisation](#class-3-meta-learning-and-hyperparameter-optimisation)
   
 - [Homework Assignments](#homework-assignments)
   - [Assignment 1](#assignment-1)
@@ -103,7 +104,7 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   1. Compare model accuracies for datasets
      - `sklearn.tree.DecisionTreeClassifier`
      - `sklearn.naive_bayes.GaussianNB`
-- Exercise C: ***Preparing Features***
+- Exercise C: ***Preparing Meta-features***
   1. Extract meta-features from dataset
      - `pymfe.mfe.MFE.fit`
      - `pymfe.mfe.MFE.extract`
@@ -111,6 +112,13 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
      - `pymfe.mfe.MFE.extract_from_model`
   3. Extract meta-features for all datasets
 
+[(Back to top)](#table-of-contents)
+
+### Class 3: Meta-learning, and Hyperparameter Optimisation
+
+- Exercise A: ***Meta-classification, Meta-regression***
+  1. Preprocess data
+- Exercise B: ***Hyperparameter Optimisation***
 
 [(Back to top)](#table-of-contents)
 

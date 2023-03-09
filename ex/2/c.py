@@ -1,4 +1,4 @@
-"""Class 2, Exercise C: Preparing Features"""
+"""Class 2, Exercise C: Preparing Meta-features"""
 
 import pandas as pd
 from pymfe.mfe import MFE
