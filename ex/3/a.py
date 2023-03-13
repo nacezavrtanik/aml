@@ -4,7 +4,7 @@ import pandas as pd
 import os
 from sklearn.model_selection import train_test_split
 
-from aml import compare_models_cross_validation
+from aml import compare_models_cross_validation, features_by_importance
 
 
 # 1 Preprocess data
@@ -28,5 +28,8 @@ X_meta_train, X_meta_test, y_meta_train, y_meta_test = train_test_split(X_meta, 
 
 # 2 Cross-validate and compare meta-models
 comparison = compare_models_cross_validation(X_meta, y_meta, 'classification',
-                                             ['random_forrest_classifier',
+                                             ['random_forest_classifier',
                                               'dummy_classifier'])
+
+# 3 Compare features by importance
+important_features = features_by_importance(X_meta, y_meta, random_state=0, plot=False)

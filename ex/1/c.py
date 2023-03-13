@@ -30,5 +30,5 @@ print('R2:', r2)
 comparison = compare_models_cross_validation(X, y, 'regression',
                                              ['k_neighbors_regressor',
                                               'linear_regression',
-                                              'random_forrest_regressor',
+                                              'random_forest_regressor',
                                               'SVR'])

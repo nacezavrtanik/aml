@@ -2,9 +2,11 @@
 
 Includes functions:
     plot_validation_curve
-        (used in: ex1b1, ex3a2)
+        (used in: ex1b1)
     compare_models_cross_validation
-        (used in: ex1c2)
+        (used in: ex1c2, ex3a2)
+    features_by_importance
+        (used in: ex3a3)
 
 """
 
@@ -115,8 +117,8 @@ def compare_models_cross_validation(X, y, which, model_names):
         'k_neighbors_classifier': neighbors.KNeighborsClassifier(),
         'k_neighbors_regressor': neighbors.KNeighborsRegressor(),
         'linear_regression': linear_model.LinearRegression(),
-        'random_forrest_classifier': ensemble.RandomForestClassifier(),
-        'random_forrest_regressor': ensemble.RandomForestRegressor(),
+        'random_forest_classifier': ensemble.RandomForestClassifier(),
+        'random_forest_regressor': ensemble.RandomForestRegressor(),
         'SVR': svm.SVR()
     }
 
@@ -152,3 +154,60 @@ def compare_models_cross_validation(X, y, which, model_names):
             comparison = pd.DataFrame(rows, columns=[['model', 'accuracy', 'f1_micro', 'f1_macro']]).set_index('model')
 
     return comparison
+
+
+def features_by_importance(X, y, n=5, model='random_forest_classifier', random_state=None, plot=False):
+    """Return list of most important features.
+
+    Parameters
+    ----------
+    X : dataframe
+        Features.
+    y : series
+        Target variable.
+    n : int
+        Number of features to take.
+    model : {'decision_tree_classifier', 'random_forest_classifier'}, optional
+        Model to base importance on.
+        (defaults to 'random_forest_classifier')
+    random_state : int, optional
+        Random seed (set for repeatable function calls).
+        (defaults to None)
+    plot : bool, optional
+        If True, a bar plot of features by importance is displayed.
+        (defaults to False)
+
+    Returns
+    -------
+    list of str
+        The `n` most important features.
+    """
+
+    models = {'decision_tree_classifier': tree.DecisionTreeClassifier(random_state=random_state),
+              'random_forest_classifier': ensemble.RandomForestClassifier(random_state=random_state)
+              }
+
+    m = models.get(model)
+    m.fit(X, y)
+
+    # Borrowed code
+    features = X.columns
+    importances = m.feature_importances_
+    sorted_ids = np.argsort(-importances)
+    sorted_importances = importances[sorted_ids]
+    sorted_features = features[sorted_ids]
+
+    names = list(sorted_features[:n])
+
+    if plot:
+        # Borrowed code
+        xs = range(len(features))
+        plt.figure()
+        plt.bar(xs, sorted_importances)
+        plt.xticks(xs, sorted_features, rotation='vertical')
+        plt.ylabel('Importance')
+        plt.title('Features by Importance')
+        plt.tight_layout()
+        plt.show()
+
+    return names

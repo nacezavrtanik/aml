@@ -86,7 +86,7 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   2. Cross-validate and compare models
      - `sklearn.model_selection.cross_validate`
      - `sklearn.svm.SVR`
-     - `sklearn.ensemble.RandomForrestRegressor`
+     - `sklearn.ensemble.RandomForestRegressor`
      - `sklearn.neighbors.KNeighborsRegressor`
 
 [(Back to top)](#table-of-contents)
@@ -119,8 +119,11 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 - Exercise A: ***Meta-classification, Meta-regression***
   1. Preprocess data
   2. Cross-validate and compare meta-models
-     - `sklearn.ensemble.RandomForrestClassifier`
+     - `sklearn.ensemble.RandomForestClassifier`
      - `sklearn.dummy.DummyClassifier`
+  3. Compare features by importance
+     - `sklearn.ensemble.RandomForestClassifier.feature_importances_`
+     - `numpy.argsort`
 - Exercise B: ***Hyperparameter Optimisation***
 
 [(Back to top)](#table-of-contents)
