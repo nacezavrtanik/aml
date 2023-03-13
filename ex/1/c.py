@@ -27,4 +27,8 @@ r2 = r2_score(y_test, y_pred)
 print('R2:', r2)
 
 # 2 Cross-validate and compare models
-comparison = compare_models_cross_validation(X, y)
+comparison = compare_models_cross_validation(X, y, 'regression',
+                                             ['k_neighbors_regressor',
+                                              'linear_regression',
+                                              'random_forrest_regressor',
+                                              'SVR'])

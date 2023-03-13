@@ -1,20 +1,17 @@
-"""Helper functions for Exercise Class 1: Fundamentals of Machine Learning in Python.
+"""This module contains helper functions for code in the aml repository.
 
 Includes functions:
     plot_validation_curve
-        (used in exercise B, task 4)
+        (used in: ex1b1, ex3a2)
     compare_models_cross_validation
-        (used in exercise C, task 2)
+        (used in: ex1c2)
 
 """
 
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from sklearn.linear_model import LinearRegression
-from sklearn.svm import SVR
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.neighbors import KNeighborsRegressor
+from sklearn import dummy, ensemble, linear_model, naive_bayes, neighbors, svm, tree
 from sklearn.model_selection import cross_validate
 
 
@@ -82,8 +79,8 @@ def plot_validation_curve(train_scores,
     plt.show()
 
 
-def compare_models_cross_validation(X, y, model_names=None):
-    """Compare cross-validated NMAPE, NMSE, and R2 for different models.
+def compare_models_cross_validation(X, y, which, model_names):
+    """Compare cross-validated metrics for different models.
 
     Parameters
     ----------
@@ -91,10 +88,10 @@ def compare_models_cross_validation(X, y, model_names=None):
         Features.
     y : series
         Target variable.
-    model_names : list of str, optional
-        Names of models to be evaluated. Possible names:
-        'k_neighbors_regressor', 'linear_regression', 'random_forrest_regressor', 'SVR'
-        (defaults to all of these models)
+    which: {'regression', 'classification'}
+        Type of models to be evaluated.
+    model_names : list of str
+        Names of models to be evaluated. Possible names: keys of dictionary `models` below.
 
     Returns
     -------
@@ -102,15 +99,26 @@ def compare_models_cross_validation(X, y, model_names=None):
         Indexed by chosen models, columns are metrics NMAPE, NMSE, R2.
     """
 
-    models = {
-        'k_neighbors_regressor': KNeighborsRegressor(),
-        'linear_regression': LinearRegression(),
-        'random_forrest_regressor': RandomForestRegressor(),
-        'SVR': SVR()
-    }
+    # TODO `which` defaults to 'regression'
+    # TODO `model_names` defaults to all models
+    # TODO add option to pass hyperparameters
+    # TODO add parameter `metrics`, defaults to all metrics for that `which`
+    # TODO generalize repeated code
+    # TODO adjust docstring, adhere to PEP
 
-    if model_names is None:
-        model_names = models.keys()
+    models = {
+        'decision_tree_classifier': tree.DecisionTreeClassifier(),
+        'decision_tree_regressor': tree.DecisionTreeRegressor(),
+        'dummy_classifier': dummy.DummyClassifier(),
+        'dummy_regressor': dummy.DummyRegressor(),
+        'gaussian_nb': naive_bayes.GaussianNB(),
+        'k_neighbors_classifier': neighbors.KNeighborsClassifier(),
+        'k_neighbors_regressor': neighbors.KNeighborsRegressor(),
+        'linear_regression': linear_model.LinearRegression(),
+        'random_forrest_classifier': ensemble.RandomForestClassifier(),
+        'random_forrest_regressor': ensemble.RandomForestRegressor(),
+        'SVR': svm.SVR()
+    }
 
     rows = []
 
@@ -119,16 +127,28 @@ def compare_models_cross_validation(X, y, model_names=None):
         m = models[name]
         m.fit(X, y)
 
-        cv = cross_validate(m, X, y, scoring=('neg_mean_absolute_percentage_error',
-                                              'neg_mean_squared_error',
-                                              'r2'))
+        if which == 'regression':
+            cv = cross_validate(m, X, y, scoring=('neg_mean_absolute_percentage_error',
+                                                  'neg_mean_squared_error',
+                                                  'r2'))
 
-        nmape = np.mean(cv.get('test_neg_mean_absolute_percentage_error'))
-        nmse = np.mean(cv.get('test_neg_mean_squared_error'))
-        r2 = np.mean(cv.get('test_r2'))
+            nmape = np.mean(cv.get('test_neg_mean_absolute_percentage_error'))
+            nmse = np.mean(cv.get('test_neg_mean_squared_error'))
+            r2 = np.mean(cv.get('test_r2'))
 
-        rows.append((name, nmape, nmse, r2))
+            rows.append((name, nmape, nmse, r2))
 
-    comparison = pd.DataFrame(rows, columns=[['model', 'NMAPE', 'NMSE', 'R2']]).set_index('model')
+            comparison = pd.DataFrame(rows, columns=[['model', 'NMAPE', 'NMSE', 'R2']]).set_index('model')
+
+        elif which == 'classification':
+            cv = cross_validate(m, X, y, scoring=('accuracy', 'f1_micro', 'f1_macro'))
+
+            accuracy = np.mean(cv.get('test_accuracy'))
+            micro = np.mean(cv.get('test_f1_micro'))
+            macro = np.mean(cv.get('test_f1_macro'))
+
+            rows.append((name, accuracy, micro, macro))
+
+            comparison = pd.DataFrame(rows, columns=[['model', 'accuracy', 'f1_micro', 'f1_macro']]).set_index('model')
 
     return comparison
