@@ -7,7 +7,7 @@ from sklearn.metrics import confusion_matrix, precision_recall_curve, roc_curve,
 # from sklearn.metrics import ConfusionMatrixDisplay, PrecisionRecallDisplay, RocCurveDisplay
 
 from a import col_trans
-# from helpers import plot_validation_curve
+# from aml import plot_validation_curve
 
 
 # 1 Train model on entire dataset

@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
-from helpers import compare_models_cross_validation
+from aml import compare_models_cross_validation
 
 
 # 1 Calculate regression metrics
