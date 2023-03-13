@@ -118,6 +118,9 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 
 - Exercise A: ***Meta-classification, Meta-regression***
   1. Preprocess data
+  2. Cross-validate and compare meta-models
+     - `sklearn.ensemble.RandomForrestClassifier`
+     - `sklearn.dummy.DummyClassifier`
 - Exercise B: ***Hyperparameter Optimisation***
 
 [(Back to top)](#table-of-contents)
