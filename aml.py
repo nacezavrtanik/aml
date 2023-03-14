@@ -4,7 +4,7 @@ Includes functions:
     plot_validation_curve
         (used in: ex1b1)
     compare_models_cross_validation
-        (used in: ex1c2, ex3a2)
+        (used in: ex1c2, ex3a2, ex3a4)
     features_by_importance
         (used in: ex3a3)
 

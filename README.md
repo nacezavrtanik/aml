@@ -124,6 +124,7 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   3. Compare features by importance
      - `sklearn.ensemble.RandomForestClassifier.feature_importances_`
      - `numpy.argsort`
+  4. Use a regression meta-model to predict accuracy
 - Exercise B: ***Hyperparameter Optimisation***
 
 [(Back to top)](#table-of-contents)
