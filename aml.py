@@ -81,77 +81,80 @@ def plot_validation_curve(train_scores,
     plt.show()
 
 
-def compare_models_cross_validation(X, y, which, model_names):
+def compare_models_cross_validation(X, y, which='regression', model_names=None, scoring=None):
     """Compare cross-validated metrics for different models.
 
     Parameters
     ----------
-    X : dataframe
+    X : DataFrame
         Features.
-    y : series
+    y : Series
         Target variable.
-    which: {'regression', 'classification'}
+    which: {'regression', 'classification'}, optional
         Type of models to be evaluated.
-    model_names : list of str
-        Names of models to be evaluated. Possible names: keys of dictionary `models` below.
+        (defaults to 'regression')
+    model_names : list of str, optional
+        Names of models to be evaluated.
+        (defaults to all models of type `which`)
+    scoring : list of str, optional
+        Names of metrics to evaluate models in.
+        (defaults to all metrics for type `which`)
 
     Returns
     -------
-    dataframe
-        Indexed by chosen models, columns are metrics NMAPE, NMSE, R2.
+    DataFrame
+        Indexed by chosen models, columns are chosen metrics.
     """
 
-    # TODO `which` defaults to 'regression'
-    # TODO `model_names` defaults to all models
-    # TODO add option to pass hyperparameters
-    # TODO add parameter `metrics`, defaults to all metrics for that `which`
-    # TODO generalize repeated code
-    # TODO adjust docstring, adhere to PEP
-
     models = {
-        'decision_tree_classifier': tree.DecisionTreeClassifier(),
-        'decision_tree_regressor': tree.DecisionTreeRegressor(),
-        'dummy_classifier': dummy.DummyClassifier(),
-        'dummy_regressor': dummy.DummyRegressor(),
-        'gaussian_nb': naive_bayes.GaussianNB(),
-        'k_neighbors_classifier': neighbors.KNeighborsClassifier(),
-        'k_neighbors_regressor': neighbors.KNeighborsRegressor(),
-        'linear_regression': linear_model.LinearRegression(),
-        'random_forest_classifier': ensemble.RandomForestClassifier(),
-        'random_forest_regressor': ensemble.RandomForestRegressor(),
-        'SVR': svm.SVR()
+        'regression': {
+            'decision_tree_regressor': tree.DecisionTreeRegressor(),
+            'dummy_regressor': dummy.DummyRegressor(),
+            'k_neighbors_regressor': neighbors.KNeighborsRegressor(),
+            'linear_regression': linear_model.LinearRegression(),
+            'random_forest_regressor': ensemble.RandomForestRegressor(),
+            'SVR': svm.SVR()
+        },
+        'classification': {
+            'decision_tree_classifier': tree.DecisionTreeClassifier(),
+            'dummy_classifier': dummy.DummyClassifier(),
+            'gaussian_nb': naive_bayes.GaussianNB(),
+            'k_neighbors_classifier': neighbors.KNeighborsClassifier(),
+            'random_forest_classifier': ensemble.RandomForestClassifier(),
+        }
     }
 
+    metrics = {
+        'regression': ['neg_mean_absolute_percentage_error',
+                       'neg_mean_squared_error',
+                       'r2'],
+        'classification': ['accuracy',
+                           'f1_micro',
+                           'f1_macro']
+    }
+
+    if model_names is None:
+        model_names = models.get(which).keys()
+
+    if scoring is None:
+        scoring = metrics.get(which)
+
     rows = []
+    for mn in model_names:
 
-    for name in model_names:
-
-        m = models[name]
+        m = models.get(which).get(mn)
         m.fit(X, y)
 
-        if which == 'regression':
-            cv = cross_validate(m, X, y, scoring=('neg_mean_absolute_percentage_error',
-                                                  'neg_mean_squared_error',
-                                                  'r2'))
+        cv = cross_validate(m, X, y, scoring=tuple(scoring))
 
-            nmape = np.mean(cv.get('test_neg_mean_absolute_percentage_error'))
-            nmse = np.mean(cv.get('test_neg_mean_squared_error'))
-            r2 = np.mean(cv.get('test_r2'))
+        r = [mn]
+        for s in scoring:
+            r.append(np.mean(cv['test_' + s]))
 
-            rows.append((name, nmape, nmse, r2))
+        rows.append(r)
 
-            comparison = pd.DataFrame(rows, columns=[['model', 'NMAPE', 'NMSE', 'R2']]).set_index('model')
-
-        elif which == 'classification':
-            cv = cross_validate(m, X, y, scoring=('accuracy', 'f1_micro', 'f1_macro'))
-
-            accuracy = np.mean(cv.get('test_accuracy'))
-            micro = np.mean(cv.get('test_f1_micro'))
-            macro = np.mean(cv.get('test_f1_macro'))
-
-            rows.append((name, accuracy, micro, macro))
-
-            comparison = pd.DataFrame(rows, columns=[['model', 'accuracy', 'f1_micro', 'f1_macro']]).set_index('model')
+    columns = [['model'] + scoring]
+    comparison = pd.DataFrame(rows, columns=columns).set_index('model')
 
     return comparison
 
@@ -161,9 +164,9 @@ def features_by_importance(X, y, n=5, model='random_forest_classifier', random_s
 
     Parameters
     ----------
-    X : dataframe
+    X : DataFrame
         Features.
-    y : series
+    y : Series
         Target variable.
     n : int
         Number of features to take.

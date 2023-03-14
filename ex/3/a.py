@@ -27,9 +27,11 @@ y_meta = y_meta_all['best']  # keep categorical variable only
 X_meta_train, X_meta_test, y_meta_train, y_meta_test = train_test_split(X_meta, y_meta, train_size=0.8, random_state=0)
 
 # 2 Cross-validate and compare meta-models
-comparison_cls = compare_models_cross_validation(X_meta, y_meta, 'classification',
-                                                 ['random_forest_classifier',
-                                                  'dummy_classifier'])
+comparison_cls = compare_models_cross_validation(X_meta, y_meta,
+                                                 which='classification',
+                                                 model_names=[
+                                                     'random_forest_classifier',
+                                                     'dummy_classifier'])
 
 # 3 Compare features by importance
 important_features = features_by_importance(X_meta, y_meta, random_state=0, plot=False)
@@ -38,6 +40,7 @@ important_features = features_by_importance(X_meta, y_meta, random_state=0, plot
 comparison_reg = {}
 for model in ['k_neighbors_classifier', 'decision_tree_classifier', 'gaussian_nb']:
 
-    comparison_reg[model] = compare_models_cross_validation(X_meta, y_meta_all[model], 'regression',
-                                                            ['dummy_regressor',
-                                                             'random_forest_regressor'])
+    comparison_reg[model] = compare_models_cross_validation(X_meta, y_meta_all[model],
+                                                            model_names=[
+                                                                'dummy_regressor',
+                                                                'random_forest_regressor'])
