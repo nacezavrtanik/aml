@@ -8,3 +8,6 @@ venv/
 
 # Exercise instructions
 *.ipynb
+
+# Homework instructions
+NSU23_DN[1-5].pdf
