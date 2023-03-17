@@ -81,7 +81,7 @@ def plot_validation_curve(train_scores,
     plt.show()
 
 
-def compare_models_cross_validation(X, y, which='regression', model_names=None, scoring=None):
+def compare_models_cross_validation(X, y, which='regression', model_names=None, scoring=None, hyperparameters=None):
     """Compare cross-validated metrics for different models.
 
     Parameters
@@ -99,6 +99,8 @@ def compare_models_cross_validation(X, y, which='regression', model_names=None, 
     scoring : list of str, optional
         Names of metrics to evaluate models in.
         (defaults to all metrics for type `which`)
+    hyperparameters : dict of str, dict, optional
+        TODO description
 
     Returns
     -------
@@ -108,19 +110,19 @@ def compare_models_cross_validation(X, y, which='regression', model_names=None, 
 
     models = {
         'regression': {
-            'decision_tree_regressor': tree.DecisionTreeRegressor(),
-            'dummy_regressor': dummy.DummyRegressor(),
-            'k_neighbors_regressor': neighbors.KNeighborsRegressor(),
-            'linear_regression': linear_model.LinearRegression(),
-            'random_forest_regressor': ensemble.RandomForestRegressor(),
-            'SVR': svm.SVR()
+            'decision_tree_regressor': tree.DecisionTreeRegressor,
+            'dummy_regressor': dummy.DummyRegressor,
+            'k_neighbors_regressor': neighbors.KNeighborsRegressor,
+            'linear_regression': linear_model.LinearRegression,
+            'random_forest_regressor': ensemble.RandomForestRegressor,
+            'SVR': svm.SVR
         },
         'classification': {
-            'decision_tree_classifier': tree.DecisionTreeClassifier(),
-            'dummy_classifier': dummy.DummyClassifier(),
-            'gaussian_nb': naive_bayes.GaussianNB(),
-            'k_neighbors_classifier': neighbors.KNeighborsClassifier(),
-            'random_forest_classifier': ensemble.RandomForestClassifier(),
+            'decision_tree_classifier': tree.DecisionTreeClassifier,
+            'dummy_classifier': dummy.DummyClassifier,
+            'gaussian_nb': naive_bayes.GaussianNB,
+            'k_neighbors_classifier': neighbors.KNeighborsClassifier,
+            'random_forest_classifier': ensemble.RandomForestClassifier,
         }
     }
 
@@ -139,17 +141,23 @@ def compare_models_cross_validation(X, y, which='regression', model_names=None, 
     if scoring is None:
         scoring = metrics.get(which)
 
+    if hyperparameters is None:
+        hyperparameters = {}
+
     rows = []
     for mn in model_names:
 
-        m = models.get(which).get(mn)
+        if mn not in hyperparameters.keys():
+            hyperparameters[mn] = {}
+
+        m = models.get(which).get(mn)(**hyperparameters.get(mn))
         m.fit(X, y)
 
         cv = cross_validate(m, X, y, scoring=tuple(scoring))
 
         r = [mn]
         for s in scoring:
-            r.append(np.mean(cv['test_' + s]))
+            r.append(np.mean(cv[f'test_{s}']))
 
         rows.append(r)
 
