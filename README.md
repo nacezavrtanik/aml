@@ -45,7 +45,7 @@ and homework assignments.
   - [Class 3: Meta-learning, and Hyperparameter Optimisation](#class-3-meta-learning-and-hyperparameter-optimisation)
   
 - [Homework Assignments](#homework-assignments)
-  - [Assignment 1](#assignment-1)
+  - [Assignment 1: Method Selection, Hyperparameter Optimisation, Meta-learning](#assignment-1-method-selection-hyperparameter-optimisation-meta-learning)
 
 
 ## Exercise Classes
@@ -140,8 +140,9 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 
 ## Homework Assignments
 
-### Assignment 1
+### Assignment 1: Method Selection, Hyperparameter Optimisation, Meta-learning
 
-- bla bla bla
+- Problem 1: ***Method Selection and Hyperparameter Optimisation***
+    1. Manual approach
 
 [(Back to top)](#table-of-contents)

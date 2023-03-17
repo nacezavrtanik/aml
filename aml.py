@@ -33,12 +33,8 @@ def fancy_print(label, value):
     print(f'{label + " ":.<40}', value)
 
 
-def plot_validation_curve(train_scores,
-                          test_scores,
-                          param_range,
-                          title='Validation Curve',
-                          xlabel='Hyperparameter',
-                          linewidth=2):
+def plot_validation_curve(
+        train_scores, test_scores, param_range, title='Validation Curve', xlabel='Hyperparameter', linewidth=2):
     """Plot validation curve from train and test scores obtained from sklearn.model_selection.validation_curve.
 
     Parameters
@@ -182,7 +178,8 @@ def compare_models_cross_validation(X, y, which='regression', model_names=None, 
                        'r2'],
         'classification': ['accuracy',
                            'f1_micro',
-                           'f1_macro']
+                           'f1_macro',
+                           'roc_auc']
     }
 
     if model_names is None:
