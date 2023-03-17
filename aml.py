@@ -2,11 +2,8 @@
 
 Includes functions:
     plot_validation_curve
-        (used in: ex1b1)
     compare_models_cross_validation
-        (used in: ex1c2, ex3a2, ex3a4)
     features_by_importance
-        (used in: ex3a3)
 
 """
 
@@ -99,8 +96,10 @@ def compare_models_cross_validation(X, y, which='regression', model_names=None, 
     scoring : list of str, optional
         Names of metrics to evaluate models in.
         (defaults to all metrics for type `which`)
-    hyperparameters : dict of str, dict, optional
-        TODO description
+    hyperparameters : dict of str: dict, optional
+        Keys are model names, values are dictionaries. The keys of those inner dictionaries are hyperparameter names
+        for that model, while their values are the corresponding hyperparameter values.
+        (defaults to default hyperparameter values for each model)
 
     Returns
     -------

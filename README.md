@@ -126,6 +126,16 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
      - `numpy.argsort`
   4. Use a regression meta-model to predict accuracy
 - Exercise B: ***Hyperparameter Optimisation***
+  - `sklearn.*.model.get_params`
+  1. Vary hyperparameters in a decision tree model
+  2. Perform a grid search
+     - `sklearn.model_selection.GridSearchCV`
+     - `sklearn.model_selection.GridSearchCV.best_params_`
+     - `sklearn.model_selection.GridSearchCV.best_estimator_`
+  3. Visualise grid search results
+     - `grid_search.param_grid`
+     - `numpy.reshape`
+     - `plt.imshow`
 
 [(Back to top)](#table-of-contents)
 
