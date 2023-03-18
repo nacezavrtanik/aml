@@ -3,6 +3,7 @@
 Includes functions:
     fancy_print
     plot_validation_curve
+    plot_grid_search_results
     compare_models_cross_validation
     features_by_importance
 
@@ -97,6 +98,21 @@ def plot_validation_curve(train_scores,
 
 
 def plot_grid_search_results(grid_search, hyp_par_1, hyp_par_2):
+    """Plot heatmap of prediction scores over a 2D hyperparameter grid.
+
+    Parameters
+    ----------
+    grid_search : sklearn.model_selection.GridSearchCV
+        GridSearchCV instance which was used to perform the grid search.
+    hyp_par_1 : str
+        Name of hyperparameter to be shown on the y-axis.
+    hyp_par_2 : str
+        Name of hyperparameter to be shown on the x-axis.
+
+    Returns
+    -------
+    None
+    """
 
     hp1 = grid_search.param_grid[hyp_par_1]
     hp2 = grid_search.param_grid[hyp_par_2]
