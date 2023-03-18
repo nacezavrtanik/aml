@@ -134,8 +134,6 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
      - `sklearn.model_selection.GridSearchCV.best_estimator_`
   3. Visualise grid search results
      - `grid_search.param_grid`
-     - `numpy.reshape`
-     - `plt.imshow`
 
 [(Back to top)](#table-of-contents)
 

@@ -5,7 +5,7 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
 
-from aml import compare_models_cross_validation, fancy_print
+from aml import compare_models_cross_validation, fancy_print, plot_grid_search_results
 
 
 # 1 Vary hyperparameters in a decision tree model
@@ -37,8 +37,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, random
 dtr = DecisionTreeRegressor()
 dtr.fit(X_train, y_train)
 
-hyperparams = {'max_depth': range(2, 50),
-               'min_samples_split': range(2, 400)}
+hyperparams = {'max_depth': [2 + 3*i for i in range(17)],
+               'min_samples_split': [5 + 20*j for j in range(20)]}
 
 gs = GridSearchCV(dtr, param_grid=hyperparams, scoring='r2')
 gs.fit(X_train, y_train)
@@ -53,3 +53,4 @@ fancy_print('r2', r2)
 fancy_print('r2_best', r2_best)
 
 # 3 Visualise grid search results
+plot_grid_search_results(gs, 'max_depth', 'min_samples_split')

@@ -96,6 +96,23 @@ def plot_validation_curve(train_scores,
     plt.show()
 
 
+def plot_grid_search_results(grid_search, hyp_par_1, hyp_par_2):
+
+    hp1 = grid_search.param_grid[hyp_par_1]
+    hp2 = grid_search.param_grid[hyp_par_2]
+    score = grid_search.cv_results_['mean_test_score'].reshape(len(hp1), len(hp2))
+
+    plt.figure(figsize=(6, 4), dpi=150)
+    plt.title('Validation accuracy')
+    plt.imshow(score)
+    plt.yticks(np.arange(len(hp1)), hp1)
+    plt.xticks(np.arange(len(hp2)), hp2, rotation=45)
+    plt.ylabel(hyp_par_1)
+    plt.xlabel(hyp_par_2)
+    plt.colorbar()
+    plt.show()
+
+
 def compare_models_cross_validation(X, y, which='regression', model_names=None, scoring=None, hyperparameters=None):
     """Compare cross-validated metrics for different models.
 
