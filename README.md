@@ -53,7 +53,6 @@ and homework assignments.
 Below, a broad overview of exercise classes is given. The exact instructions are not part of this repository.
 Corresponding code can be found in appropriate subdirectories of `ex/`.
 
-
 ### Class 1: Fundamentals of Machine Learning in Python
 
 - Exercise A: ***Data Processing***
@@ -137,8 +136,16 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 
 [(Back to top)](#table-of-contents)
 
+### Class 4: Hyperparameter Optimisation with [hyperopt](https://github.com/hyperopt)
+
+- Exercise A: ***Optimisation with hyperopt***
+  1. Minimise function of one variable
+
 
 ## Homework Assignments
+
+Below, a broad overview of homework assignments is given. The exact instructions are not part of this repository.
+Corresponding code can be found in appropriate subdirectories of `hw/`.
 
 ### Assignment 1: Method Selection, Hyperparameter Optimisation, Meta-learning
 
