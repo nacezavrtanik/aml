@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
-from aml import compare_models_cross_validation
+from aml import compare_models_cross_validation, fancy_print
 
 
 # 1 Calculate regression metrics
@@ -20,11 +20,11 @@ y_pred = lr.predict(X_test)
 
 # Calculate metrics
 mse = mean_squared_error(y_test, y_pred)
-print('MSE:', mse)
+fancy_print('MSE', mse)
 rmse = mean_squared_error(y_test, y_pred, squared=False)
-print('RMSE:', rmse)
+fancy_print('RMSE', rmse)
 r2 = r2_score(y_test, y_pred)
-print('R2:', r2)
+fancy_print('R2', r2)
 
 # 2 Cross-validate and compare models
 comparison = compare_models_cross_validation(X, y,

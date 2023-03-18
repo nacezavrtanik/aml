@@ -1,6 +1,7 @@
 """This module contains helper functions for code in the aml repository.
 
 Includes functions:
+    fancy_print
     plot_validation_curve
     compare_models_cross_validation
     features_by_importance
@@ -12,6 +13,23 @@ import pandas as pd
 import numpy as np
 from sklearn import dummy, ensemble, linear_model, naive_bayes, neighbors, svm, tree
 from sklearn.model_selection import cross_validate
+
+
+def fancy_print(label, value):
+    """Print labeled values in a crisp, sexy fashion.
+
+    Parameters
+    ----------
+    label : str
+        Label of value to print.
+    value : printable
+        Value to print.
+
+    Returns
+    -------
+    None
+    """
+    print(f'{label + " ":.<40}', value)
 
 
 def plot_validation_curve(train_scores,

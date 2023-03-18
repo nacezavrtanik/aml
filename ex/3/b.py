@@ -1,8 +1,11 @@
 """Class 3, Exercise B: Hyperparameter Optimisation"""
 
 import pandas as pd
+from sklearn.model_selection import GridSearchCV, train_test_split
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import r2_score
 
-from aml import compare_models_cross_validation
+from aml import compare_models_cross_validation, fancy_print
 
 
 # 1 Vary hyperparameters in a decision tree model
@@ -26,9 +29,27 @@ for h in hyperparams:
     r = (inner.get('max_depth'), inner.get('min_samples_split'), s)
     rows.append(r)
 
-r2 = pd.DataFrame(rows, columns=['max_depth', 'min_samples_split', 'r2']).sort_values(by='r2')
+comparison = pd.DataFrame(rows, columns=['max_depth', 'min_samples_split', 'r2']).sort_values(by='r2', ascending=False)
 del hyperparams, rows, h, scores, s, inner, r
 
 # 2 Perform a grid search
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, random_state=0)
+dtr = DecisionTreeRegressor()
+dtr.fit(X_train, y_train)
+
+hyperparams = {'max_depth': range(2, 50),
+               'min_samples_split': range(2, 400)}
+
+gs = GridSearchCV(dtr, param_grid=hyperparams, scoring='r2')
+gs.fit(X_train, y_train)
+
+best_hyperparams = gs.best_params_
+dtr_best = gs.best_estimator_
+
+y_pred, y_pred_best = dtr.predict(X_test), dtr_best.predict(X_test)
+r2, r2_best = r2_score(y_test, y_pred), r2_score(y_test, y_pred_best)
+
+fancy_print('r2', r2)
+fancy_print('r2_best', r2_best)
 
 # 3 Visualise grid search results

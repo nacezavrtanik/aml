@@ -7,7 +7,7 @@ from sklearn.metrics import confusion_matrix, precision_recall_curve, roc_curve,
 # from sklearn.metrics import ConfusionMatrixDisplay, PrecisionRecallDisplay, RocCurveDisplay
 
 from a import col_trans
-# from aml import plot_validation_curve
+from aml import plot_validation_curve, fancy_print
 
 
 # 1 Train model on entire dataset
@@ -16,12 +16,12 @@ X, y = col_trans[:, 0:-1], col_trans[:, -1]
 knc.fit(X, y)
 
 # 2 Evaluate accuracy of model
-print('Accuracy (entire dataset, not scaled):', knc.score(X, y))
+fancy_print('Accuracy (entire dataset, not scaled)', knc.score(X, y))
 
 # 3 Split dataset into train data and test data
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, random_state=0)
 knc.fit(X_train, y_train)
-print('Accuracy (not scaled):', knc.score(X_test, y_test))
+fancy_print('Accuracy (not scaled)', knc.score(X_test, y_test))
 
 # 4 Scale features, analyze hyperparameters
 
@@ -31,7 +31,7 @@ scaler.fit(X_train)
 X_train_scaled = scaler.transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 knc.fit(X_train_scaled, y_train)
-print('Accuracy:', knc.score(X_test_scaled, y_test))
+fancy_print('Accuracy', knc.score(X_test_scaled, y_test))
 
 # Visualise effect of hyperparameter n_neighbors
 _param_name = 'n_neighbors'
@@ -50,7 +50,7 @@ knc = KNeighborsClassifier(n_neighbors=_n_neighbors)
 knc.fit(X_train_scaled, y_train)
 y_pred = knc.predict(X_test_scaled)
 y_score = knc.predict_proba(X_test_scaled)[:, 1]
-print(f'Accuracy (n_neighbors={_n_neighbors}):', knc.score(X_test_scaled, y_test))
+fancy_print(f'Accuracy (n_neighbors={_n_neighbors})', knc.score(X_test_scaled, y_test))
 del _n_neighbors
 
 # Confusion matrix
@@ -69,4 +69,4 @@ del fpr, tpr
 
 # ROC AUC
 auc_score = roc_auc_score(y_test, y_score)
-print('AUC ROC:', auc_score)
+fancy_print('AUC ROC', auc_score)
