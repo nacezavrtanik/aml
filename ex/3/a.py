@@ -14,9 +14,9 @@ abs_path = os.path.abspath(__file__)
 file_dir = os.path.dirname(abs_path)
 parent_dir = os.path.dirname(file_dir)
 
-X_meta_all = pd.read_csv(parent_dir + '\\2\\c_meta_features.csv', index_col=0).set_index('dataset')
+X_meta_all = pd.read_csv(os.path.join(parent_dir, '2', 'c_meta_features.csv'), index_col=0).set_index('dataset')
 y_meta_all = pd.read_csv(
-    parent_dir + '\\2\\b_model_accuracy_comparison_for_datasets.csv', index_col=0).set_index('dataset')
+    os.path.join(parent_dir, '2', 'b_model_accuracy_comparison_for_datasets.csv'), index_col=0).set_index('dataset')
 del abs_path, file_dir, parent_dir
 
 # Clean data
