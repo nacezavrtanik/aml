@@ -7,8 +7,7 @@ __pycache__/
 venv/
 
 # Exercise instructions
-# TODO specify
-*.ipynb
+vaje-*.ipynb
 
 # Homework instructions
 NSU23_DN[1-5].pdf
