@@ -144,5 +144,7 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 
 - Problem 1: ***Method Selection and Hyperparameter Optimisation***
     1. Manual approach
+- Problem 2: ***Meta-learning***
+    1. Method selection with meta-learning
 
 [(Back to top)](#table-of-contents)

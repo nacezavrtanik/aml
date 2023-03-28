@@ -28,9 +28,9 @@ comparison_models = compare_models_cross_validation(X, y, which=TYPE, scoring=[M
 
 # 1.2 Select hyperparameters
 
-N_ESTIMATORS = range(2, 51, 6)
-MAX_DEPTH = range(2, 51, 6)
-MIN_SAMPLES_SPLIT = range(5, 500, 50)
+N_ESTIMATORS = range(4, 151, 24)  # default is 100 (is included)
+MAX_DEPTH = list(range(2, 51, 6)) + [None]  # default is None
+MIN_SAMPLES_SPLIT = range(2, 500, 50)  # default is 2
 
 
 def calculate_roc_auc_for_random_forest(hyperparameters, print_title=None):
@@ -74,45 +74,53 @@ hyperparams = [{'random_forest_classifier': {'n_estimators': i,
                for j in MAX_DEPTH
                for k in MIN_SAMPLES_SPLIT]
 
-rows = []
-for h in hyperparams:
+if __name__ == '__main__':
+    print(' Starting manual hyperparameter optimisation ...')
+    rows = []
+    for h in hyperparams:
 
-    scores = compare_models_cross_validation(X_train, y_train,
-                                             which=TYPE,
-                                             model_names=['random_forest_classifier'],
-                                             hyperparameters=h,
-                                             scoring=[METRIC])
-    s = scores.iloc[0, 0]
-    inner = h.get('random_forest_classifier')
-    r = (inner.get('n_estimators'), inner.get('max_depth'), inner.get('min_samples_split'), s)
-    rows.append(r)
+        scores = compare_models_cross_validation(X_train, y_train,
+                                                 which=TYPE,
+                                                 model_names=['random_forest_classifier'],
+                                                 hyperparameters=h,
+                                                 scoring=[METRIC])
+        s = scores.iloc[0, 0]
+        inner = h.get('random_forest_classifier')
+        r = (inner.get('n_estimators'), inner.get('max_depth'), inner.get('min_samples_split'), s)
+        rows.append(r)
 
-comparison_hyperparams = pd.DataFrame(rows, columns=['n_estimators', 'max_depth', 'min_samples_split', METRIC]
-                                      ).sort_values(by=METRIC, ascending=False)
+    comparison_hyperparams = pd.DataFrame(rows, columns=['n_estimators', 'max_depth', 'min_samples_split', METRIC]
+                                          ).sort_values(by=METRIC, ascending=False)
 
-best_hyperparams_manual = {'n_estimators': 50, 'max_depth': 32, 'min_samples_split': 5}  # from `comparison_hyperparams`
-roc_score_manual = calculate_roc_auc_for_random_forest(best_hyperparams_manual,
-                                                       print_title='HYPERPARAMETER OPTIMISATION -- Manual')
+    best_hyperparams_manual = {'n_estimators': 50,
+                               'max_depth': 32,
+                               'min_samples_split': 5}  # from `comparison_hyperparams`
+    roc_score_manual = calculate_roc_auc_for_random_forest(
+        best_hyperparams_manual, print_title='HYPERPARAMETER OPTIMISATION -- Manual')
 
-del hyperparams, rows, h, scores, s, inner, r
+    del rows, h, scores, s, inner, r
+del hyperparams
 
 
 # 1.2.2 With GridSearchCV
-
-rfc = RandomForestClassifier()
-rfc.fit(X_train, y_train)
 
 hyperparams = {'n_estimators': list(N_ESTIMATORS),
                'max_depth': list(MAX_DEPTH),
                'min_samples_split': list(MIN_SAMPLES_SPLIT)}
 
-gs = GridSearchCV(rfc, param_grid=hyperparams, scoring=METRIC)
-gs.fit(X_train, y_train)
+if __name__ == '__main__':
+    print(' Starting grid search ...')
+    rfc = RandomForestClassifier()
+    rfc.fit(X_train, y_train)
 
-best_hyperparams_GridSearchCV = gs.best_params_
-roc_score_GridSearchCV = calculate_roc_auc_for_random_forest(best_hyperparams_GridSearchCV,
-                                                             print_title='HYPERPARAMETER OPTIMISATION -- GridSeachCV')
+    gs = GridSearchCV(rfc, param_grid=hyperparams, scoring=METRIC)
+    gs.fit(X_train, y_train)
 
-del rfc, hyperparams, gs
+    best_hyperparams_GridSearchCV = gs.best_params_
+    roc_score_GridSearchCV = calculate_roc_auc_for_random_forest(
+        best_hyperparams_GridSearchCV, print_title='HYPERPARAMETER OPTIMISATION -- GridSeachCV')
+
+    del rfc, gs
+del hyperparams
 
 del N_ESTIMATORS, MAX_DEPTH, MIN_SAMPLES_SPLIT
