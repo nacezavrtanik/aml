@@ -130,9 +130,9 @@ def compare_models_cross_validation(X, y, which='regression', model_names=None, 
 
     Parameters
     ----------
-    X : DataFrame
+    X : pandas.DataFrame
         Features.
-    y : Series
+    y : pandas.Series
         Target variable.
     which: {'regression', 'classification'}, optional
         Type of models to be evaluated.
@@ -143,14 +143,14 @@ def compare_models_cross_validation(X, y, which='regression', model_names=None, 
     scoring : list of str, optional
         Names of metrics to evaluate models in.
         (defaults to all metrics for type `which`)
-    hyperparameters : dict of str: dict, optional
+    hyperparameters : dict, optional
         Keys are model names, values are dictionaries. The keys of those inner dictionaries are hyperparameter names
         for that model, while their values are the corresponding hyperparameter values.
         (defaults to default hyperparameter values for each model)
 
     Returns
     -------
-    DataFrame
+    pandas.DataFrame
         Indexed by chosen models, columns are chosen metrics.
     """
 
@@ -219,9 +219,9 @@ def features_by_importance(X, y, n=5, model='random_forest_classifier', random_s
 
     Parameters
     ----------
-    X : DataFrame
+    X : pandas.DataFrame
         Features.
-    y : Series
+    y : pandas.Series
         Target variable.
     n : int
         Number of features to take.
