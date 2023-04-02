@@ -4,8 +4,6 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import roc_auc_score
 from hyperopt import Trials, fmin, tpe, space_eval, hp
 
@@ -133,46 +131,59 @@ del hyperparams
 
 
 # 2.1 Select model, define hyperparameter space
+
 hyperparams = {
-    "algo": hp.choice('algo', [
+    "algorithm": hp.choice('algorithm', [
         {
             'name': 'random_forest_classifier',
             'n_estimators': hp.choice('n_estimators', N_ESTIMATORS),
-            'max_depth_forest': hp.choice('max_depth_forest', MAX_DEPTH),
+            'max_depth': hp.choice('max_depth_forest', MAX_DEPTH),
             'min_samples_split': hp.choice('min_samples_split', MIN_SAMPLES_SPLIT)
         },
         {
-            'name': 'k_neighbors_classifier',
-            'n_neighbors': hp.choice("n_neighbors", [1, 2, 3, 4, 5, 10, 15, 50, 100])
+            'name': 'decision_tree_classifier',
+            'max_depth': hp.choice('max_depth_tree', MAX_DEPTH)
         },
         {
-            'name': 'decision_tree_classifier',
-            'max_depth_tree': hp.choice('max_depth_tree', MAX_DEPTH)
+            'name': 'k_neighbors_classifier',
+            'n_neighbors': hp.choice('n_neighbors', [1, 2, 3, 4, 5, 10, 15, 50, 100])
+        },
+        {
+            'name': 'gaussian_nb',
+            'var_smoothing': hp.loguniform('var_smoothing', 0, 1)
         },
     ])
 }
 
 
-def criterion_function(parameters):
-    """Function to minimize with hyperopt."""
+# 2.2 Use cross-validation during optimisation
 
-    algorithm = parameters.get('algo')
+def criterion_function(hyperparameters):
+    """Function to be minimised with hyperopt."""
+
+    algorithm = hyperparameters.get('algorithm')
     algorithm_name = algorithm.get('name')
 
     if algorithm_name == 'random_forest_classifier':
-        model = RandomForestClassifier(n_estimators=algorithm.get('n_estimators'),
-                                       max_depth=algorithm.get('max_depth_forest'),
-                                       min_samples_split=algorithm.get('min_samples_split'))
+        hyperparams_temp = {'n_estimators': algorithm.get('n_estimators'),
+                            'max_depth': algorithm.get('max_depth_forest'),
+                            'min_samples_split': algorithm.get('min_samples_split')}
     elif algorithm_name == 'decision_tree_classifier':
-        model = DecisionTreeClassifier(max_depth=algorithm.get('max_depth_tree'))
+        hyperparams_temp = {'max_depth': algorithm.get('max_depth_tree')}
     elif algorithm_name == 'k_neighbors_classifier':
-        model = KNeighborsClassifier(n_neighbors=algorithm.get('n_neighbors'))
+        hyperparams_temp = {'n_neighbors': algorithm.get('n_neighbors')}
+    elif algorithm_name == 'gaussian_nb':
+        hyperparams_temp = {'var_smoothing': algorithm.get('var_smoothing')}
     else:
-        raise ValueError('Illegitimate value for parameter \'algorithm_name\'!')
+        raise ValueError('Illegitimate value for \'algorithm_name\'!')
 
-    model.fit(X_train, y_train)
-    y_score = model.predict_proba(X_test)[:, 1]
-    roc_score = roc_auc_score(y_test, y_score)
+    roc_score = compare_models_cross_validation(X_train,
+                                                y_train,
+                                                which=TYPE,
+                                                model_names=[algorithm_name],
+                                                scoring=[METRIC],
+                                                hyperparameters=hyperparams_temp)
+    roc_score = roc_score.iloc[0, 0]
 
     return 1 - roc_score
 
@@ -184,13 +195,13 @@ if input('Start automated hyperparameter optimisation? (y/n) ').lower() == 'y':
     best = fmin(fn=criterion_function,
                 space=hyperparams,
                 algo=tpe.suggest,
-                max_evals=100,
+                max_evals=1000,
                 trials=trials)
 
-    best_hyperparams_hyperopt = space_eval(hyperparams, best)
-    roc_score_hyperopt = 1 - criterion_function(best_hyperparams_hyperopt)
-    print('HYPERPARAMETER OPTIMISATION -- hyperopt')
-    fancy_print(METRIC, roc_score_hyperopt)
+    best_hyperparams_hyperopt = space_eval(hyperparams, best).get('algorithm')
+    del best_hyperparams_hyperopt['name']
+    roc_score_hyperopt = calculate_roc_auc_for_random_forest(
+        best_hyperparams_hyperopt, print_title='HYPERPARAMETER OPTIMISATION -- hyperopt')
 
     del trials, best
 del hyperparams
