@@ -6,6 +6,7 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
 from hyperopt import Trials, fmin, tpe, space_eval, hp
+from plotly import express as px
 
 from aml import compare_models_cross_validation, fancy_print
 
@@ -26,6 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8)
 # 1.1 Select model
 
 comparison_models = compare_models_cross_validation(X, y, which=TYPE, scoring=[METRIC])
+
 
 # 1.2 Select hyperparameters
 
@@ -130,26 +132,34 @@ del hyperparams
 # 2 Automated approach
 
 
-# 2.1 Select model, define hyperparameter space
+# 2.1 Select models
+
+RANDOM_FOREST_CLASSIFIER = 'random_forest_classifier'
+DECISION_TREE_CLASSIFIER = 'decision_tree_classifier'
+K_NEIGHBORS_CLASSIFIER = 'k_neighbors_classifier'
+GAUSSIAN_NB = 'gaussian_nb'
+
+
+# 2.2 Define hyperparameter space
 
 hyperparams = {
     "algorithm": hp.choice('algorithm', [
         {
-            'name': 'random_forest_classifier',
+            'name': RANDOM_FOREST_CLASSIFIER,
             'n_estimators': hp.choice('n_estimators', N_ESTIMATORS),
             'max_depth': hp.choice('max_depth_forest', MAX_DEPTH),
             'min_samples_split': hp.choice('min_samples_split', MIN_SAMPLES_SPLIT)
         },
         {
-            'name': 'decision_tree_classifier',
+            'name': DECISION_TREE_CLASSIFIER,
             'max_depth': hp.choice('max_depth_tree', MAX_DEPTH)
         },
         {
-            'name': 'k_neighbors_classifier',
+            'name': K_NEIGHBORS_CLASSIFIER,
             'n_neighbors': hp.choice('n_neighbors', [1, 2, 3, 4, 5, 10, 15, 50, 100])
         },
         {
-            'name': 'gaussian_nb',
+            'name': GAUSSIAN_NB,
             'var_smoothing': hp.loguniform('var_smoothing', 0, 1)
         },
     ])
@@ -158,22 +168,26 @@ hyperparams = {
 
 # 2.2 Use cross-validation during optimisation
 
-def criterion_function(hyperparameters):
+def objective(hyperparameters):
     """Function to be minimised with hyperopt."""
 
     algorithm = hyperparameters.get('algorithm')
     algorithm_name = algorithm.get('name')
 
-    if algorithm_name == 'random_forest_classifier':
+    if algorithm_name == RANDOM_FOREST_CLASSIFIER:
         hyperparams_temp = {'n_estimators': algorithm.get('n_estimators'),
                             'max_depth': algorithm.get('max_depth_forest'),
                             'min_samples_split': algorithm.get('min_samples_split')}
-    elif algorithm_name == 'decision_tree_classifier':
+
+    elif algorithm_name == DECISION_TREE_CLASSIFIER:
         hyperparams_temp = {'max_depth': algorithm.get('max_depth_tree')}
-    elif algorithm_name == 'k_neighbors_classifier':
+
+    elif algorithm_name == K_NEIGHBORS_CLASSIFIER:
         hyperparams_temp = {'n_neighbors': algorithm.get('n_neighbors')}
-    elif algorithm_name == 'gaussian_nb':
+
+    elif algorithm_name == GAUSSIAN_NB:
         hyperparams_temp = {'var_smoothing': algorithm.get('var_smoothing')}
+
     else:
         raise ValueError('Illegitimate value for \'algorithm_name\'!')
 
@@ -192,7 +206,7 @@ if input('Start automated hyperparameter optimisation? (y/n) ').lower() == 'y':
 
     print('Starting automated hyperparameter optimisation ...')
     trials = Trials()
-    best = fmin(fn=criterion_function,
+    best = fmin(fn=objective,
                 space=hyperparams,
                 algo=tpe.suggest,
                 max_evals=1000,
@@ -203,7 +217,54 @@ if input('Start automated hyperparameter optimisation? (y/n) ').lower() == 'y':
     roc_score_hyperopt = calculate_roc_auc_for_random_forest(
         best_hyperparams_hyperopt, print_title='HYPERPARAMETER OPTIMISATION -- hyperopt')
 
-    del trials, best
+    def _unpack(x):
+        """Helper: fill missing values in dataframe with `numpy.nan`."""
+        if x:
+            return x[0]
+        return np.nan
+
+    trials_df = pd.DataFrame([pd.Series(t["misc"]["vals"]).apply(_unpack) for t in trials])
+    trials_df["loss"] = [t["result"]["loss"] for t in trials]
+    trials_df["trial_number"] = trials_df.index
+
+    def _algorithm_name_from_int(n):
+        """Helper: replace integers with appropriate strings."""
+        if n == 0:
+            return RANDOM_FOREST_CLASSIFIER
+        elif n == 1:
+            return DECISION_TREE_CLASSIFIER
+        elif n == 2:
+            return K_NEIGHBORS_CLASSIFIER
+        elif n == 3:
+            return GAUSSIAN_NB
+        else:
+            raise ValueError('Illegitimate value for \'n\'!')
+
+    trials_df['algorithm'] = trials_df['algorithm'].apply(lambda x: _algorithm_name_from_int(x))
+
+    def add_hover_data(figure, df, algorithm_name):
+        """Display hyperparameters on hover."""
+
+        df_for_algorithm = df[df['algorithm'] == algorithm_name].dropna(axis=1)
+        columns = df_for_algorithm.columns
+
+        customdata = df.loc[df_for_algorithm.index, columns]
+        hovertemplate = '<br>'.join([f'{column}: %{{customdata[{i}]}}' for i, column in enumerate(columns)])
+        selector = {'name': algorithm_name}
+
+        fig.update_traces(customdata=customdata, hovertemplate=hovertemplate, selector=selector)
+
+        return figure
+
+    fig = px.scatter(trials_df, x="trial_number", y="loss", color='algorithm')
+    for alg in [RANDOM_FOREST_CLASSIFIER, DECISION_TREE_CLASSIFIER, K_NEIGHBORS_CLASSIFIER, GAUSSIAN_NB]:
+        fig = add_hover_data(fig, trials_df, alg)
+
+    if input('Display optimisation results on a plot? (y/n) ').lower() == 'y':
+        fig.show()
+
+    del alg, trials, best
 del hyperparams
 
+del RANDOM_FOREST_CLASSIFIER, DECISION_TREE_CLASSIFIER, K_NEIGHBORS_CLASSIFIER, GAUSSIAN_NB
 del N_ESTIMATORS, MAX_DEPTH, MIN_SAMPLES_SPLIT
