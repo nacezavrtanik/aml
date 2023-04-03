@@ -1,10 +1,7 @@
-\documentclass[12pt, a4paper]{article}
+\documentclass[10pt, a4paper]{article}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{enumitem}
-\usepackage{amsmath}
-\usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{animate}
 \usepackage{tikz}
@@ -24,27 +21,29 @@
 \maketitle
 
 
-\noindent NOTE: While tackling the homework assignment, I have relied on a function I wrote when solving exercise classes:
-\verb|compare_models_cross_validation|. For more information on \verb|compare_models_cross_validation| refer
-to its documentation in the code.
-
 %%%%%%%%%%%%%%%%%%%%%%%%% NALOGA 1 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Method Selection and Hyperparameter Optimisation}
 
+\noindent While tackling this problem, I relied on a function I wrote when solving exercise classes:
+\verb|compare_models_cross_validation|. For more information on \verb|compare_models_cross_validation| refer
+to its documentation in the code.
 
 \subsection{Manual approach}
 I used \verb|compare_models_cross_validation| to gauge the effectiveness of the following models on the given dataset:
 \begin{itemize}
-\item \verb|sklearn.ensemle.RandomForestClassifier|,
+\item \verb|sklearn.ensemble.RandomForestClassifier|,
 \item \verb|sklearn.tree.DecisionTreeClassifier|,
 \item \verb|sklearn.naive_bayes.GaussianNB|,
 \item \verb|sklearn.neighbors.KNeighborsClassifier|.
 \end{itemize}
-\begin{center}
-\includegraphics[scale=0.8]{comparison_models.png}
-\end{center}
-As \verb|sklearn.ensemle.RandomForestClassifier| had the highest ROC AUC score, I chose to further tune the hyperparameters
-for that particular model.
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{comparison_models.png}
+\caption{Comparison of ROC AUC scores using $5$-fold cross-validation.}
+\label{fig1}
+\end{figure}
+As seen in Figure \ref{fig1}, \verb|sklearn.ensemble.RandomForestClassifier| had the highest ROC AUC score, so I chose to
+further tune the hyperparameters for that particular model.
 
 I performed the manual hyperparameter optimisation in two different ways, the first relying mostly on my own
 implementation, and the second using the functionality of \verb|sklearn.model_selection.GridSearchCV|. Both
@@ -71,7 +70,7 @@ roc_auc ................................ 0.9417999492256918
 \subsection{Automated approach}
 For the automated hyperparameter optimisation with \verb|hyperopt|, I chose the same models as above, picked the hyperparameter
 space based on the same criteria as above, and chose the random forest model to tune more hyperparameters for, as it had the highest
-ROC AUC score in the case above. (For the particular choice of the hyperparameter set refer to the code.) It is perhaps worth mentioning
+ROC AUC score in the case above. (For the particular choice of the hyperparameter space refer to the code.) It is perhaps worth mentioning
 that the hyperparameter \verb|var_smoothing| for the Bayesian model is the only continuous hyperparameter and is hence specified
 using the \verb|hyperopt.hp.loguniform| method rather than the method for discrete values, \verb|hyperopt.hp.choice|. Again, the
 random forest classifier performed best.
@@ -84,19 +83,22 @@ n_estimators ........................... 4
 roc_auc ................................ 0.8613861386138613
 \end{verbatim}
 
-\begin{center}
+\begin{figure}[h]
+\centering
 \animategraphics[autoplay, loop, width=14cm, controls=all]{1}{frame}{1}{12}
-\end{center}
+\caption{Graph of loss function values by trial.}
+\label{fig2}
+\end{figure}
 
-The graph above displays the trials from the automated optimisation process with regard to the loss function. Lower loss
+Figure \ref{fig2} displays the trials from the automated optimisation process with regard to the loss function. Lower loss
 values indicate a higher ROC AUC score and hence a better performance. Models are differentiated by the color of the dots, while
 hyperparameter values for particular trials appear on hover. A strict hierarchy of models is immediately visible, and it is in line with
-the preliminary results by \verb|compare_models_cross_validation| above. It is clear that model selection is of far greater importance
+the preliminary results by \verb|compare_models_cross_validation| in Figure \ref{fig1} above. It is clear that model selection is of far greater importance
 for the quality of the predictions than the choice of hyperparameter values.
 
-Notably, out of the three optimisation approaches, the automated approach gave the worst results. I have been unable to make the
-optimisation with \verb|hyperopt| repeatable by fixing a random seed, so I ran the optimisation method several times. The ROC AUC
-score presented above is one of the worst this approach has produced, some other being:
+Notably, out of the three optimisation approaches, the automated approach gave the worst results. As I have been unable to make the
+optimisation with \verb|hyperopt| repeatable by fixing a random seed, I ran the optimisation method several times. The ROC AUC
+score presented above is one of the worst this approach has produced, so I shall attribute it to randomness. Some other scores were:
 \begin{verbatim}
 HYPERPARAMETER OPTIMISATION -- hyperopt
 roc_auc ................................ 0.9087331810104088
@@ -106,21 +108,31 @@ roc_auc ................................ 0.925996445798426
 %%%%%%%%%%%%%%%%%%%%%%%%% NALOGA 2 %%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Meta-learning}
 
+In order to find three datasets closest to our own, I selected datasets with a \textbf{number of instances} and a \textbf{number of features} 
+within a certain range of our own dataset's. I then picked datasets with only a \textbf{single categorical variable}, which in all cases
+turned out to be the target variable already. Furthermore, I defined a metric based on a weighted ratio between the
+\textbf{number of non-empty instances} and the number of features, ascribing more weight to the number of features, and used the nearest
+neighbours algorithm with regard to this metric. The three datasets closest to our own were:
 
+\begin{enumerate}
+\item 43895 ibm-employee-performance
+\item 453 PieChart3
+\item 1444 PizzaCutter3
+\end{enumerate}
 
+There were no tasks available for the first dataset. For the second and third dataset, the best model turned out to be
+\verb|weka.RandomForest|, which is a Java implementation of the random forest algorithm. As none of these had specified
+hyperparameter values, I chose the default \-hyperpara\-meter configuration for the \verb|sklearn.ensemble.RandomForestClassifier|.
 
+\begin{verbatim}
+NO HYPERPARAMETERS -- None specified for OpenML run
+roc_auc ................................ 0.9468773800456969
+\end{verbatim}
 
-
-
-
-
-
-
-
-
-
-
-
+Comparing the results of all approaches, one can conclude that the \-manual hyperparameter optimisation gave the best results,
+slightly outperforming the default hyperparameter configuration. While meta-learning did not prove to be particularly useful in
+terms of hyperparameter tuning, it nonetheless confirmed our choice of model. Had a different model performed better on datasets
+similar to our own, it would have been worthwhile to, at the very least, give that model try.
 
 
 
