@@ -1,0 +1,136 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{animate}
+\usepackage{tikz}
+\usetikzlibrary{lindenmayersystems}
+
+\pgfdeclarelindenmayersystem{A}{%
+ \symbol{F}{\pgflsystemstep=0.6\pgflsystemstep\pgflsystemdrawforward}
+ \rule{A->F[+A][-A]}
+}
+
+\title{AML -- Homework Assignment 1}
+\author{Nace Zavrtanik}
+
+
+\begin{document}
+
+\maketitle
+
+
+\noindent NOTE: While tackling the homework assignment, I have relied on a function I wrote when solving exercise classes:
+\verb|compare_models_cross_validation|. For more information on \verb|compare_models_cross_validation| refer
+to its documentation in the code.
+
+%%%%%%%%%%%%%%%%%%%%%%%%% NALOGA 1 %%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Method Selection and Hyperparameter Optimisation}
+
+
+\subsection{Manual approach}
+I used \verb|compare_models_cross_validation| to gauge the effectiveness of the following models on the given dataset:
+\begin{itemize}
+\item \verb|sklearn.ensemle.RandomForestClassifier|,
+\item \verb|sklearn.tree.DecisionTreeClassifier|,
+\item \verb|sklearn.naive_bayes.GaussianNB|,
+\item \verb|sklearn.neighbors.KNeighborsClassifier|.
+\end{itemize}
+\begin{center}
+\includegraphics[scale=0.8]{comparison_models.png}
+\end{center}
+As \verb|sklearn.ensemle.RandomForestClassifier| had the highest ROC AUC score, I chose to further tune the hyperparameters
+for that particular model.
+
+I performed the manual hyperparameter optimisation in two different ways, the first relying mostly on my own
+implementation, and the second using the functionality of \verb|sklearn.model_selection.GridSearchCV|. Both
+optimisation methods were used on the same predefined hyperparameter grid, containing:
+\begin{itemize}
+\item hyperparameter values of different magnitudes,
+\item default hyperparameters values.
+\end{itemize}
+
+\begin{verbatim}
+HYPERPARAMETER OPTIMISATION -- Manual
+n_estimators ........................... 50
+max_depth .............................. 32
+min_samples_split ...................... 5
+roc_auc ................................ 0.9471312515866971
+
+HYPERPARAMETER OPTIMISATION -- GridSeachCV
+max_depth .............................. 14
+min_samples_split ...................... 2
+n_estimators ........................... 124
+roc_auc ................................ 0.9417999492256918
+\end{verbatim}
+
+\subsection{Automated approach}
+For the automated hyperparameter optimisation with \verb|hyperopt|, I chose the same models as above, picked the hyperparameter
+space based on the same criteria as above, and chose the random forest model to tune more hyperparameters for, as it had the highest
+ROC AUC score in the case above. (For the particular choice of the hyperparameter set refer to the code.) It is perhaps worth mentioning
+that the hyperparameter \verb|var_smoothing| for the Bayesian model is the only continuous hyperparameter and is hence specified
+using the \verb|hyperopt.hp.loguniform| method rather than the method for discrete values, \verb|hyperopt.hp.choice|. Again, the
+random forest classifier performed best.
+
+\begin{verbatim}
+HYPERPARAMETER OPTIMISATION -- hyperopt
+max_depth .............................. 32
+min_samples_split ...................... 402
+n_estimators ........................... 4
+roc_auc ................................ 0.8613861386138613
+\end{verbatim}
+
+\begin{center}
+\animategraphics[autoplay, loop, width=14cm, controls=all]{1}{frame}{1}{12}
+\end{center}
+
+The graph above displays the trials from the automated optimisation process with regard to the loss function. Lower loss
+values indicate a higher ROC AUC score and hence a better performance. Models are differentiated by the color of the dots, while
+hyperparameter values for particular trials appear on hover. A strict hierarchy of models is immediately visible, and it is in line with
+the preliminary results by \verb|compare_models_cross_validation| above. It is clear that model selection is of far greater importance
+for the quality of the predictions than the choice of hyperparameter values.
+
+Notably, out of the three optimisation approaches, the automated approach gave the worst results. I have been unable to make the
+optimisation with \verb|hyperopt| repeatable by fixing a random seed, so I ran the optimisation method several times. The ROC AUC
+score presented above is one of the worst this approach has produced, some other being:
+\begin{verbatim}
+HYPERPARAMETER OPTIMISATION -- hyperopt
+roc_auc ................................ 0.9087331810104088
+roc_auc ................................ 0.925996445798426
+\end{verbatim}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% NALOGA 2 %%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Meta-learning}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
