@@ -11,3 +11,11 @@ vaje-*.ipynb
 
 # Homework instructions
 NSU23_DN[1-5].pdf
+
+# Homework reports (LaTeX related files, images)
+hw[1-5].aux
+hw[1-5].log
+hw[1-5].out
+hw[1-5].pdf
+hw[1-5].synctex.gz
+*.png
