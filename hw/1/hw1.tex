@@ -98,7 +98,7 @@ for the quality of the predictions than the choice of hyperparameter values.
 
 Notably, out of the three optimisation approaches, the automated approach gave the worst results. As I have been unable to make the
 optimisation with \verb|hyperopt| repeatable by fixing a random seed, I ran the optimisation method several times. The ROC AUC
-score presented above is one of the worst this approach has produced, so I shall attribute it to randomness. Some other scores were:
+score presented above is one of the worst this approach has produced, so I shall attribute this discrepancy to randomness. Some other scores were:
 \begin{verbatim}
 HYPERPARAMETER OPTIMISATION -- hyperopt
 roc_auc ................................ 0.9087331810104088
@@ -132,17 +132,6 @@ roc_auc ................................ 0.9468773800456969
 Comparing the results of all approaches, one can conclude that the \-manual hyperparameter optimisation gave the best results,
 slightly outperforming the default hyperparameter configuration. While meta-learning did not prove to be particularly useful in
 terms of hyperparameter tuning, it nonetheless confirmed our choice of model. Had a different model performed better on datasets
-similar to our own, it would have been worthwhile to, at the very least, give that model try.
-
-
-
-
-
-
-
-
-
-
-
+similar to our own, it would have been worthwhile to, at the very least, give that model a try.
 
 \end{document}
