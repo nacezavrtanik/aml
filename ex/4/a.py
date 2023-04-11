@@ -104,3 +104,35 @@ best_3 = fmin(fn=objective_3,
 best_3 = space_eval(space_3, best_3)
 fancy_print('Best algorithm', best_3.get('algorithm_name'))
 fancy_print('Best score', 1 - objective_3(best_3))
+
+# 4 Define hyperparameter space
+space_4 = {
+    'algorithm': hp.choice('algorithm', [
+        {
+            'name': 'decision_tree_classifier',
+            'max_depth': hp.choice('max_depth', [2, 4, 8, 16, 32]),
+            'n_estimators': hp.choice('n_estimators', [2, 5, 10, 20, 50, 100, 150, 200, 500])
+        },
+        {
+            'name': 'k_neighbors_classifier',
+            'n_neighbors': hp.choice('n_neighbors', [1, 2, 5, 10, 20, 50])
+        },
+        {
+            'name': 'svm',
+            'C': hp.lognormal('C', 0, 1),
+            'kernel': hp.choice('kernel', [
+                {
+                    'type': 'linear'
+                },
+                {
+                    'type': 'rbf',
+                    'gamma': hp.lognormal('gamma', 0, 1)
+                },
+                {
+                    'type': 'poly',
+                    'degree': hp.choice('degree', [1, 2, 3, 5, 10, 20])
+                }
+            ]),
+        },
+    ])
+}
