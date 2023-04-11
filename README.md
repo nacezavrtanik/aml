@@ -139,7 +139,8 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 ### Class 4: Hyperparameter Optimisation with [hyperopt](https://github.com/hyperopt)
 
 - Exercise A: ***Optimisation with hyperopt***
-  1. Minimise function of one variable
+  1. Minimise function of one variable, uniform distribution
+  2. Minimise function of two variables, normal distribution
 
 
 ## Homework Assignments
