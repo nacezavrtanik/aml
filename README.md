@@ -141,6 +141,7 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 - Exercise A: ***Optimisation with hyperopt***
   1. Minimise function of one variable, uniform distribution
   2. Minimise function of two variables, normal distribution
+  3. Find best algorithm
 
 
 ## Homework Assignments
