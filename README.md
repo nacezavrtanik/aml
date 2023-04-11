@@ -149,6 +149,7 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   3. Find best algorithm
      - `hyperopt.hp.choice`
   4. Define hyperparameter space
+  5. Compare algorithm performance with default and optimised hyperparameters
 
 
 ## Homework Assignments
