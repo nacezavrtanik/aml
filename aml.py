@@ -16,21 +16,77 @@ from sklearn import dummy, ensemble, linear_model, naive_bayes, neighbors, svm, 
 from sklearn.model_selection import cross_validate
 
 
-def fancy_print(label, value):
-    """Print labeled values in a crisp, sexy fashion.
+def fancy_print(*args, parse_dict=True):
+    """Print stuff in a crisp, sexy fashion.
 
     Parameters
     ----------
-    label : str
-        Label of value to print.
-    value : printable
-        Value to print.
+    *args
+        One or two positional arguments to be printed, fancily.
+
+        If a single positional argument is passed, it will be printed as a
+        title (i.e. underlined), unless it is a dictionary and `parse_dict`
+        is set to True, in which case separate lines of key-value pairs will
+        be printed.
+
+        If two positional arguments are passed, they will be printed in the
+        same line, separated by dots.
+
+    parse_dict : bool, default True
+        If True, and only a single positional argument is passed, and it is a
+        dictionary, key-value pairs will be printed on separate lines, fancily.
 
     Returns
     -------
     None
+
+    Raises
+    ------
+    TypeError
+        If a positional argument has no `__str__` method.
+    TypeError
+        If the number of passed positional arguments is not 1 or 2.
+
+    Examples
+    --------
+    >>> fancy_print('Very nice title')
+
+    Very nice title
+    ---------------
+
+    >>> fancy_print('Number', 13)
+    Number ................................. 13
+
+    >>> my_dict = {123: 'Potato',
+    ...            'pi': 3.14,
+    ...            'jobs': {'Alice': 'Farmer', 'Bob': 'Fishmonger'}}
+    >>> fancy_print(my_dict, parse_dict=True)
+    123 .................................... Potato
+    pi ..................................... 3.14
+    jobs ................................... {'Alice': 'Farmer', 'Bob': 'Fishmonger'}
     """
-    print(f'{label + " ":.<40}', value)
+
+    for argument in args:
+        if '__str__' not in dir(argument):
+            raise TypeError(f"no method '__str__' for instance '{argument}'")
+
+    if len(args) == 1:
+
+        argument, = args
+        if isinstance(argument, dict) and parse_dict:
+            for key, value in argument.items():
+                fancy_print(key, value)
+        else:
+            title_length = len(str(argument))
+            print(f"\n{argument}\n{title_length * '-'}")
+
+    elif len(args) == 2:
+
+        argument_1, argument_2 = args
+        print(f"{str(argument_1) + ' ':.<40}", argument_2)
+
+    else:
+        raise TypeError(f'expected 1 or 2 positional arguments, got {len(args)} instead')
 
 
 def plot_validation_curve(

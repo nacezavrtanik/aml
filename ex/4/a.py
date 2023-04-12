@@ -13,7 +13,7 @@ from aml import fancy_print
 MAX_EVALS = 100
 
 # 1 Minimise function of one variable, uniform distribution
-print('\nTASK 1\n------')
+fancy_print('TASK 1')
 space_1 = {'x': hp.uniform('x', 4, 8)}
 
 
@@ -35,7 +35,7 @@ fancy_print('Best x', best_1.get('x'))
 fancy_print('Best value', objective_1(best_1))
 
 # 2 Minimise function of two variables, normal distribution
-print('\nTASK 2\n------')
+fancy_print('TASK 2')
 
 space_2 = {'x1': hp.normal('x1', -2, 2),
            'x2': hp.normal('x2', -1, 3)}
@@ -62,7 +62,7 @@ fancy_print('Best value', objective_2(best_2))
 
 
 # 3 Find best algorithm
-print('\nTASK 3\n------')
+fancy_print('TASK 3')
 
 K_NEIGHBORS_CLASSIFIER = 'k_neighbors_classifier'
 DECISION_TREE_CLASSIFIER = 'decision_tree_classifier'
@@ -150,7 +150,7 @@ space_4 = {
 }
 
 # 5 Compare algorithm performance with default and optimised hyperparameters
-print('\nTASK 5\n------')
+fancy_print('TASK 5')
 
 
 def set_target_variable(xs, _type):
@@ -313,8 +313,7 @@ for t in [1, 2, 3]:
         score = algorithm.score(X_test_5, y_test_5)
         return 1 - score
 
-    print(f'\nDEFAULT HYPERPARAMETERS -- Data type {t}\n--------------------------------------')
-
+    fancy_print(f'DEFAULT HYPERPARAMETERS -- Data type {t}')
     trials_5 = Trials()
     best_5 = fmin(fn=objective_5,
                   space=space_5,
@@ -326,8 +325,7 @@ for t in [1, 2, 3]:
     fancy_print('Best algorithm', best_5.get('algorithm_name'))
     fancy_print('Score', 1 - objective_5(best_5))
 
-    print(f'\nOPTIMISED HYPERPARAMETERS -- Data type {t}\n----------------------------------------')
-
+    fancy_print(f'OPTIMISED HYPERPARAMETERS -- Data type {t}')
     trials_5_optimised = Trials()
     best_5_optimised = fmin(fn=objective_5_optimised,
                             space=space_5_optimised,
@@ -336,12 +334,9 @@ for t in [1, 2, 3]:
                             trials=trials_5_optimised)
 
     best_5_optimised = space_eval(space_5_optimised, best_5_optimised)
-    fancy_print('Best algorithm', best_5_optimised.get('algorithm').get('name'))
-    for k, v in best_5_optimised.get('algorithm').items():
-        if k != 'name':
-            fancy_print(k, v)
+    fancy_print(best_5_optimised.get('algorithm'))
     fancy_print('Score', 1 - objective_5_optimised(best_5_optimised))
-    del k, v, t, X_train_5, X_test_5, y_train_5, y_test_5
+    del t, X_train_5, X_test_5, y_train_5, y_test_5
 
 del KNeighborsClassifier, DecisionTreeClassifier, SVC
 del K_NEIGHBORS_CLASSIFIER, DECISION_TREE_CLASSIFIER, SUPPORT_VECTOR_CLASSIFIER
