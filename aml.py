@@ -9,9 +9,10 @@ Includes functions:
 
 """
 
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+from plotly import express as px
 from sklearn import dummy, ensemble, linear_model, naive_bayes, neighbors, svm, tree
 from sklearn.model_selection import cross_validate
 
@@ -179,6 +180,74 @@ def plot_grid_search_results(grid_search, hyp_par_1, hyp_par_2):
     plt.xlabel(hyp_par_2)
     plt.colorbar()
     plt.show()
+
+
+def _fill_missing_values(x):
+    """Apply on series: fill missing values with `numpy.nan`.
+
+    Helper function for `plot_algorithm_and_hyperparameter_comparison`.
+    """
+    if x:
+        return x[0]
+    return np.nan
+
+
+def _algorithm_name_from_int(n, algorithm_names):
+    """Apply on dataframe: replace integers with appropriate name strings.
+
+    Helper function for `plot_algorithm_and_hyperparameter_comparison`.
+    """
+    for i, algorithm_name in enumerate(algorithm_names):
+        if n == i:
+            return algorithm_name
+
+
+def _add_hover_data(fig, df, algorithm_name):
+    """On hover, display hyperparameters for specified algorithm.
+
+    Helper function for `plot_algorithm_and_hyperparameter_comparison`.
+    """
+
+    df_for_algorithm = df[df['algorithm'] == algorithm_name].dropna(axis=1)
+    columns = df_for_algorithm.columns
+
+    customdata = df.loc[df_for_algorithm.index, columns]
+    hovertemplate = '<br>'.join([f'{column}: %{{customdata[{i}]}}' for i, column in enumerate(columns)])
+    selector = {'name': algorithm_name}
+
+    fig.update_traces(customdata=customdata, hovertemplate=hovertemplate, selector=selector)
+    return fig
+
+
+def plot_algorithm_and_hyperparameter_comparison(trials, algorithm_names, label='algorithm'):
+    """Plot results of optimisation with the `hyperopt` library.
+
+    Parameters
+    ----------
+    trials : hyperopt.Trials
+        After concluded optimisation, already containing trial data.
+    algorithm_names : list of str
+        Names of algorithms. These are required to be the same names used in
+        the `space` kwarg of `hyperopt.fmin`, listed in the same order.
+    label : str, default 'algorithm'
+        Name of the key used in the `space` dictionary to represent the
+        compared algorithms.
+
+    Returns
+    -------
+    None
+    """
+
+    trials_df = pd.DataFrame([pd.Series(t['misc']['vals']).apply(_fill_missing_values) for t in trials])
+    trials_df['loss'] = [t['result']['loss'] for t in trials]
+    trials_df['trial_number'] = trials_df.index
+    trials_df[label] = trials_df[label].apply(lambda x: _algorithm_name_from_int(x, algorithm_names))
+
+    fig = px.scatter(trials_df, x='trial_number', y='loss', color=label)
+    for algorithm_name in algorithm_names:
+        fig = _add_hover_data(fig, trials_df, algorithm_name)
+
+    fig.show()
 
 
 def compare_models_cross_validation(X, y, which='regression', model_names=None, scoring=None, hyperparameters=None):
