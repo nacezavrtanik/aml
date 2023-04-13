@@ -6,9 +6,8 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
 from hyperopt import Trials, fmin, tpe, space_eval, hp
-from plotly import express as px
 
-from aml import compare_models_cross_validation, fancy_print
+from aml import compare_models_cross_validation, plot_algorithm_and_hyperparameter_comparison, fancy_print
 
 
 np.random.seed(0)
@@ -59,9 +58,8 @@ def calculate_roc_auc_for_random_forest(hyperparameters, print_title=None):
     roc_score = roc_auc_score(y_test, y_score)
 
     if print_title:
-        print(print_title)
-        for k, v in hyperparameters.items():
-            fancy_print(k, v)
+        fancy_print(print_title)
+        fancy_print(hyperparameters)
         fancy_print(METRIC, roc_score)
         print('')
 
@@ -217,53 +215,12 @@ if input('Start automated hyperparameter optimisation? (y/n) ').lower() == 'y':
     roc_score_hyperopt = calculate_roc_auc_for_random_forest(
         best_hyperparams_hyperopt, print_title='HYPERPARAMETER OPTIMISATION -- hyperopt')
 
-    def _unpack(x):
-        """Helper: fill missing values in dataframe with `numpy.nan`."""
-        if x:
-            return x[0]
-        return np.nan
-
-    trials_df = pd.DataFrame([pd.Series(t["misc"]["vals"]).apply(_unpack) for t in trials])
-    trials_df["loss"] = [t["result"]["loss"] for t in trials]
-    trials_df["trial_number"] = trials_df.index
-
-    def _algorithm_name_from_int(n):
-        """Helper: replace integers with appropriate strings."""
-        if n == 0:
-            return RANDOM_FOREST_CLASSIFIER
-        elif n == 1:
-            return DECISION_TREE_CLASSIFIER
-        elif n == 2:
-            return K_NEIGHBORS_CLASSIFIER
-        elif n == 3:
-            return GAUSSIAN_NB
-        else:
-            raise ValueError('Illegitimate value for \'n\'!')
-
-    trials_df['algorithm'] = trials_df['algorithm'].apply(lambda x: _algorithm_name_from_int(x))
-
-    def add_hover_data(figure, df, algorithm_name):
-        """Display hyperparameters on hover."""
-
-        df_for_algorithm = df[df['algorithm'] == algorithm_name].dropna(axis=1)
-        columns = df_for_algorithm.columns
-
-        customdata = df.loc[df_for_algorithm.index, columns]
-        hovertemplate = '<br>'.join([f'{column}: %{{customdata[{i}]}}' for i, column in enumerate(columns)])
-        selector = {'name': algorithm_name}
-
-        fig.update_traces(customdata=customdata, hovertemplate=hovertemplate, selector=selector)
-
-        return figure
-
-    fig = px.scatter(trials_df, x="trial_number", y="loss", color='algorithm')
-    for alg in [RANDOM_FOREST_CLASSIFIER, DECISION_TREE_CLASSIFIER, K_NEIGHBORS_CLASSIFIER, GAUSSIAN_NB]:
-        fig = add_hover_data(fig, trials_df, alg)
-
     if input('Display optimisation results on a plot? (y/n) ').lower() == 'y':
-        fig.show()
-
-    del alg, trials, best
+        plot_algorithm_and_hyperparameter_comparison(trials, [RANDOM_FOREST_CLASSIFIER,
+                                                              DECISION_TREE_CLASSIFIER,
+                                                              K_NEIGHBORS_CLASSIFIER,
+                                                              GAUSSIAN_NB])
+    del trials, best
 del hyperparams
 
 del RANDOM_FOREST_CLASSIFIER, DECISION_TREE_CLASSIFIER, K_NEIGHBORS_CLASSIFIER, GAUSSIAN_NB
