@@ -43,6 +43,7 @@ and homework assignments.
   - [Class 1: Fundamentals of Machine Learning in Python](#class-1-fundamentals-of-machine-learning-in-python)
   - [Class 2: Meta-learning](#class-2-meta-learning)
   - [Class 3: Meta-learning, and Hyperparameter Optimisation](#class-3-meta-learning-and-hyperparameter-optimisation)
+  - [Class 4: Hyperparameter Optimisation with `hyperopt`](#class-4-hyperparameter-optimisation-with-hyperopt)
   
 - [Homework Assignments](#homework-assignments)
   - [Assignment 1: Method Selection, Hyperparameter Optimisation, Meta-learning](#assignment-1-method-selection-hyperparameter-optimisation-meta-learning)
