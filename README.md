@@ -151,6 +151,8 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   4. Define hyperparameter space
   5. Compare algorithm performance with default and optimised hyperparameters
 
+[(Back to top)](#table-of-contents)
+
 
 ## Homework Assignments
 

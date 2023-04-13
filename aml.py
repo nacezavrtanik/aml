@@ -4,6 +4,7 @@ Includes functions:
     fancy_print
     plot_validation_curve
     plot_grid_search_results
+    plot_algorithm_and_hyperparameter_comparison
     compare_models_cross_validation
     features_by_importance
 
