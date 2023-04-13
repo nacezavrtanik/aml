@@ -7,7 +7,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
 
-from aml import fancy_print
+from aml import fancy_print, plot_algorithm_and_hyperparameter_comparison
 
 
 MAX_EVALS = 100
@@ -336,6 +336,11 @@ for t in [1, 2, 3]:
     best_5_optimised = space_eval(space_5_optimised, best_5_optimised)
     fancy_print(best_5_optimised.get('algorithm'))
     fancy_print('Score', 1 - objective_5_optimised(best_5_optimised))
+
+    if input(f'\nPlot algorithm and hyperparameter comparison for data type {t}? (y/n) ').lower() == 'y':
+        plot_algorithm_and_hyperparameter_comparison(trials_5_optimised, [K_NEIGHBORS_CLASSIFIER,
+                                                                          DECISION_TREE_CLASSIFIER,
+                                                                          SUPPORT_VECTOR_CLASSIFIER])
     del t, X_train_5, X_test_5, y_train_5, y_test_5
 
 del KNeighborsClassifier, DecisionTreeClassifier, SVC
