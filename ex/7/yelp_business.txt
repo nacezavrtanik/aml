@@ -1,0 +1,633 @@
+business_id	name	full_address	city	state	latitude	longitude	stars	review_count	open	category
+KPoTixdjoJxSqRSEApSAGg	Wild Thaiger	2631 N Central Ave - Phoenix, AZ 85004	Phoenix	AZ	33.4779358	-112.073524	4	281	t	Restaurants
+2bZk38_vJCkAVI0f2TeqZQ	Eye Lounge	419 E Roosevelt St - Phoenix, AZ 85004	Phoenix	AZ	33.4586525	-112.067703	5	11	t	Shopping
+MwmXm48K2g2oTRe7XmssFw	Arizona Science Center	600 E Washington St - Phoenix, AZ 85004	Phoenix	AZ	33.4484291	-112.067284	4	171	t	Shopping
+-PisznY2s13FyX3tASY4aA	Ace Hardware	5555 N 7th St - Phoenix, AZ 85014	Phoenix	AZ	33.5115242	-112.055534	4	17	t	Shopping
+AkOruz5CrCxUmXe1p_WoRg	Cherryblossom Noodle Cafe	914 E Camelback Rd - Phoenix, AZ 85014	Phoenix	AZ	33.5098152	-112.061005	4	494	t	Restaurants
+HgoYXFi_R2LbzYUDsa79Sw	Samurai Comics	1051 E Camelback Rd - Phoenix, AZ 85014	Phoenix	AZ	33.5089493	-112.058655	5	35	t	Shopping
+GrGHVKec258eN1_gtJwS1w	Michaels	1925 E Camelback Rd - Phoenix, AZ 85016	Phoenix	AZ	33.5092201	-112.041138	3	28	t	Shopping
+P6H-p8fXbPq8VjO4kLTz4A	Runner's Den	6505 N 16th St - Phoenix, AZ 85016	Phoenix	AZ	33.531292	-112.047295	5	71	t	Shopping
+5kRug3bEienrpovtPRVVwg	Rokerij	6335 N 16th St - Phoenix, AZ 85016	Phoenix	AZ	33.5303345	-112.047104	4	375	t	Restaurants
+P3DbF086gy6yMYIgTdR9yg	Big Lots	3144 E Thomas Rd - Phoenix, AZ 85016	Phoenix	AZ	33.480484	-112.013397	3	8	t	Shopping
+OkRzw22eDg45do8i-1jHow	My Sister's Closet	4869 N 20th St - Phoenix, AZ 85016	Phoenix	AZ	33.509285	-112.037216	4	47	t	Shopping
+DC77ROlgfnpxQNFKQbbpnw	The Home Depot	3609 E Thomas Rd - Phoenix, AZ 85018	Phoenix	AZ	33.478981	-112.002975	4	38	t	Shopping
+b-IWZuVd3f0GcbtetwG5WA	Arizona Hiking Shack	3244 E Thomas Rd - Phoenix, AZ 85018	Phoenix	AZ	33.480999	-112.010895	4	26	t	Shopping
+aBHf1s6Epi3k4pXKIGd0dg	Anna's Linens	245 E. Bell Rd, #16 - Phoenix, AZ 85022	Phoenix	AZ	33.6394997	-112.07177	3	4	t	Shopping
+jq_YnMQjcArdBWuwRospFg	Salute Ristorante Italiano	13226 N 7th St - Phoenix, AZ 85022	Phoenix	AZ	33.6063309	-112.066093	4	44	t	Restaurants
+rDyAYMl4kRnut0mruZctOw	Aaron Brothers Art &	10633 N Tatum Boulevard - Phoenix, AZ 85028	Phoenix	AZ	33.5841217	-111.977623	5	4	t	Shopping
+CvUiIs8x_Um5LjzA0t9wGA	Wigs Amor	13636 N Tatum Blvd - Ste 7 - Phoenix, AZ 85032	Phoenix	AZ	33.61092	-111.978912	3	4	t	Shopping
+OCfXJuLuGKS0s7pZsKCf0A	Safeway Food & Drug	6202 S 16th Street - Phoenix, AZ 85042	Phoenix	AZ	33.3911591	-112.048874	3	5	t	Shopping
+jz084uDhqyUK_jdbAqkYRg	Target	21001 N Tatum Blvd - Ste 1630 - Phoenix, AZ 85050	Phoenix	AZ	33.6760902	-111.971954	4	25	t	Shopping
+6w-hwYu8Km3tKp0RFTp0bQ	Marshalls-Mega	21001 N Tatum Blvd - Ste 56 - Phoenix, AZ 85050	Phoenix	AZ	33.6777763	-111.970375	4	15	t	Shopping
+OyJ_CGX0-bh-7VicqfBXGw	Barnes & Noble Booksellers	21001 N Tatum Blvd Suite 42 - Phoenix, AZ 85050	Phoenix	AZ	33.6754913	-111.975227	4	17	t	Shopping
+WorzvsB28dlSnCyuNslSdA	Goodwill of Central Arizona	930 N Alma School Rd - Chandler, AZ 85224	Chandler	AZ	33.3194733	-111.860565	4	12	t	Shopping
+OXJZlVOYZwyrf5cHLmfStw	Michaels	16239 N Scottsdale Rd - Scottsdale, AZ 85254	Scottsdale	AZ	33.6341286	-111.925377	4	14	t	Shopping
+BUsmaloKEZeOvXLrSjKWSQ	Shane Co.	7144 E Acoma Dr - Scottsdale, AZ 85254	Scottsdale	AZ	33.6183128	-111.926193	5	84	t	Shopping
+VLRmecRseHP8ZLljlp7CFw	Kidstop Toys & Books	6990 E Shea Blvd - Ste 103 - Scottsdale, AZ 85254	Scottsdale	AZ	33.5831642	-111.931007	5	19	t	Shopping
+m7uxAxL9L3kuB8XWkoveHQ	Z Gallerie	Kierland Commons - 15044 N Scottsdale Rd - Ste 100 - Scottsdale, AZ 85254	Scottsdale	AZ	33.623909	-111.927628	4	13	t	Shopping
+elBgDynz6UPoSqQgxiggJw	Revolution Hair Company Inc	3201 Glacier Ridge Rd - Middleton, WI 53562	Middleton	WI	43.107769	-89.4971848	5	3	t	Beauty_and_Spas
+gZJmtLYGNLoAFU82XjJ75g	El Y Ella	1731 E McDowell Rd - Phoenix, AZ 85006	Phoenix	AZ	33.4656601	-112.044319	4	5	t	Beauty_and_Spas
+reU2VaO-QvNAyCZEyxHMBw	Great Clips For Hair	1928 E Highland Ave - Ste F103 - Phoenix, AZ 85016	Phoenix	AZ	33.5057182	-112.040428	4	18	t	Beauty_and_Spas
+aApHpyUbnqBJmL_3X6UFOA	Andys Nails	4041 E Thomas Rd - Phoenix, AZ 85018	Phoenix	AZ	33.4798508	-111.994041	3	10	t	Beauty_and_Spas
+UAnuqYY2EoGSh4vC8BByyw	Skin Bliss	6317 N 7th St - Phoenix, AZ 85014	Phoenix	AZ	33.5295372	-112.06469	5	5	t	Beauty_and_Spas
+ykBWmSL1yDrAob2a20b2DQ	Jewelry Nail & Spa	13448 N 7th Street - Phoenix, AZ 85022	Phoenix	AZ	33.609417	-112.065346	3	8	t	Beauty_and_Spas
+MglY-6zpPbBUhbCZElSwrA	Sincerely Yours Salon - Hair!	401 E Bell Rd - Suite 5 - Phoenix, AZ 85022	Phoenix	AZ	33.6383629	-112.068443	5	28	t	Beauty_and_Spas
+JlwJPlkE5E_97sPhqWnmCg	Hair Attractions	1245 W Baseline Rd - Ste 108 - Mesa, AZ 85202	Mesa	AZ	33.3783112	-111.86142	5	20	t	Beauty_and_Spas
+vQQBk3jsTkbPfa-qGeF3rg	China Nail Salon	6245 E Bell Road - Scottsdale, AZ 85254	Scottsdale	AZ	33.6398964	-111.944389	4	7	t	Beauty_and_Spas
+C6QXPtims5nbDj1uhoVkeQ	High Society Resale Boutique	10805 N 71st Way - Scottsdale, AZ 85254	Scottsdale	AZ	33.5843353	-111.926842	4	12	t	Shopping
+XgVyl3T3Zn_k7SljAJ1d0Q	Dollar Tree	4831 E Greenway Rd - Scottsdale, AZ 85254	Scottsdale	AZ	33.6259537	-111.976143	4	8	t	Shopping
+DxUn-ukNL27GOuwjnFGFKA	Hiro Sushi	9393 N 90th St - Ste 116 - Scottsdale, AZ 85258	Scottsdale	AZ	33.5705681	-111.886604	5	280	t	Restaurants
+XovIlMQEVSC5_WLUKKJJjA	Psycho Jock Embroidery	9420 E Doubletree Ranch Rd - Ste C-109 - Scottsdale, AZ 85258	Scottsdale	AZ	33.5692177	-111.877541	5	3	t	Shopping
+5g9IvafVHBiM1SsLnONq0Q	Ace Hardware	9015 E Via Linda - Scottsdale, AZ 85258	Scottsdale	AZ	33.5687561	-111.886436	5	10	t	Shopping
+2A3y7QOidAu1Mm_DeFSDjg	Bicycle Ranch Retail Store	15454 N Frank Lloyd Wright Blvd - Scottsdale, AZ 85260	Scottsdale	AZ	33.6296577	-111.888161	4	28	t	Shopping
+zKFX8BVTWYZNa2vJ46UdmQ	Arizona Mills	5000 S Arizona Mills Cir - Tempe, AZ 85282	Tempe	AZ	33.3846207	-111.960968	3	173	t	Shopping
+qg_glGo5-t9VPvAyfSYyTQ	Target Stores	10404 N 43rd Ave - Glendale, AZ 85302	Glendale	AZ	33.5792084	-112.152618	3	21	t	Shopping
+9ggd0DySEZNw990JGaFSQQ	Arrowhead Towne Center	7700 W Arrowhead Towne Ctr - Glendale, AZ 85308	Glendale	AZ	33.6397896	-112.224556	4	63	t	Shopping
+CXHnDc0-HW6pqgbs6fhj7g	Michaels	13716 W Bell Rd - Surprise, AZ 85374	Surprise	AZ	33.6387291	-112.353172	3	14	t	Shopping
+jkWXB-nCjNTE0V6UFItMSQ	Target Stores	13731 W Bell Rd - Surprise, AZ 85374	Surprise	AZ	33.6370277	-112.353729	4	20	t	Shopping
+MP4o3hP1k4VHfDxBuaqYCw	Ross Stores	8115 W Bell Road - Peoria, AZ 85382	Peoria	AZ	33.6380386	-112.231323	3	6	t	Shopping
+fCIg2B9pTzPGX1-yPXOo4A	Target Stores	8055 W Bell Rd - Peoria, AZ 85382	Peoria	AZ	33.6362572	-112.228104	3	21	t	Shopping
+moRg50uN6-cX9DGeJODd2A	Big Lots	7765 W Bell Road - Peoria, AZ 85382	Peoria	AZ	33.6379776	-112.2257	3	4	t	Shopping
+4BHDz9dQXjvlgDY6u6UiiA	Victoria's Secret Stores	1300 W Sunset Rd - Henderson, NV 89014	Henderson	NV	36.0682411	-115.045074	4	11	t	Shopping
+OPaIMeAElf0SqfRAnkmUNA	A Beautiful Bouquet	641 Marks St - Ste C - Henderson, NV 89014	Henderson	NV	36.0650673	-115.036339	4	9	t	Shopping
+IyFBccpU5DlK2ZqZFhRoaw	Vons	2667 Windmill Pkwy - Henderson, NV 89074	Henderson	NV	36.0405464	-115.101913	3	19	t	Shopping
+FV16IeXJp2W6pnghTz2FAw	Pho Kim Long	4029 Spring Mountain Rd - Chinatown - Las Vegas, NV 89102	Las Vegas	NV	36.1261787	-115.19397	4	1314	t	Restaurants
+4UVhuOLaMm2-34SrW8y-ag	Ichiza	4355 Spring Mountain Rd - Chinatown - Las Vegas, NV 89102	Las Vegas	NV	36.1259079	-115.197906	4	1062	t	Restaurants
+fpDFSoDPNzIFke8ZZ-yO1g	The Salvation Army	4001 W Charleston Blvd - Westside - Las Vegas, NV 89102	Las Vegas	NV	36.1589775	-115.193802	4	14	t	Shopping
+AnilW4ktTrtOfNFLlf6BnQ	Hotai Furniture	4681 Spring Mountain Road - Chinatown - Las Vegas, NV 89102	Las Vegas	NV	36.1259003	-115.204781	4	4	t	Shopping
+KjBAUYy7m4vhSoFIrz2WjQ	World's Largest Gift Shop	2440 Las Vegas Blvd S - The Strip - Las Vegas, NV 89104	Las Vegas	NV	36.1442184	-115.157112	3	39	t	Shopping
+sLjdmfeh7mPALZ_CyMt8dg	Ez Pawn	821 N Rancho Dr - Las Vegas, NV 89106	Las Vegas	NV	36.1792946	-115.178505	3	6	t	Shopping
+fdpSckVuIARSUdI9Us4C9A	Sam's Club	5101 S Pecos Rd - Southeast - Las Vegas, NV 89120	Las Vegas	NV	36.0965271	-115.10244	4	14	t	Shopping
+QF0GWVyYi6xIYLL5xYEz_w	Sahara Jewelers	2550 S Rainbow Blvd Ste E3 - Westside - Las Vegas, NV 89146	Las Vegas	NV	36.143364	-115.242447	5	3	t	Shopping
+3C7AWEyLV1DHf8rTaJDACA	Willy Street Grocery Co-Op	1221 Williamson St - Williamson - Marquette - Madison, WI 53703	Madison	WI	43.0837059	-89.3628769	4	84	t	Shopping
+R5uo6DzA8vGLIbatkt7vZQ	Frugal Muse Books Music & Video	7475 Mineral Point Rd - Madison, WI 53717	Madison	WI	43.0585327	-89.512413	4	5	t	Shopping
+_BixD7yelciWJchKldbKkQ	Toys R Us	7309 W Town Way - Madison, WI 53719	Madison	WI	43.0542526	-89.5081406	2	4	t	Shopping
+K8pM6qQdYu5h6buRE1-_sw	Lo-Lo's Chicken & Waffles	1220 S Central Ave - Phoenix, AZ 85003	Phoenix	AZ	33.4357033	-112.073792	4	707	t	Restaurants
+Ase-gwT_0s4Wfv7XWXzE6A	Landis Cyclery	712 W Indian School Rd - Phoenix, AZ 85013	Phoenix	AZ	33.4951782	-112.084175	4	53	t	Shopping
+igvATKdi31Ve7Jd2B6-g9g	Strands Salon	7000 E Shea Blvd - Ste 170 - Scottsdale, AZ 85254	Scottsdale	AZ	33.5825539	-111.930191	5	5	t	Beauty_and_Spas
+zHRrHljBbGqlXb3R5P85bw	Laser for Less	9301 E Shea Blvd - Ste 106 - Scottsdale, AZ 85260	Scottsdale	AZ	33.5802727	-111.881241	5	22	t	Beauty_and_Spas
+LeNwTWPic58PDzm3xfJhrw	Champs Salon	1804 E Southern Ave - Ste 7 - Tempe, AZ 85282	Tempe	AZ	33.3931618	-111.908058	5	6	f	Beauty_and_Spas
+nzAKY6Jw1Sv4nGdHWM9_EQ	True Nails	9019 N 51st Ave - Glendale, AZ 85302	Glendale	AZ	33.568264	-112.168839	5	5	t	Beauty_and_Spas
+vtWYMSCfLzoq96VKo0Cv0Q	Gerardo's Classic Barber Shop	3869 Spring Mountain Rd - Chinatown - Las Vegas, NV 89102	Las Vegas	NV	36.1264114	-115.19252	4	44	t	Beauty_and_Spas
+NPzDL6t4W536eti47vPhcQ	Art Nails	3114 N Rainbow Blvd - Las Vegas, NV 89108	Las Vegas	NV	36.2153549	-115.242218	3	7	t	Beauty_and_Spas
+OmU-dolUJIyAPlp1INrBcQ	Nail Care	2300 N Rainbow Blvd Unit 107 - Las Vegas, NV 89108	Las Vegas	NV	36.2026329	-115.242249	2	5	t	Beauty_and_Spas
+YHDKMl5ij09wncT3eTX0yg	Famous Nails	3113 N Rainbow Blvd - Las Vegas, NV 89108	Las Vegas	NV	36.2164841	-115.242363	2	5	t	Beauty_and_Spas
+P6V2IYRTCIXq0j7VkgCSNw	Bad Apple Tattoo	5640 W Charleston Blvd - Ste B - Westside - Las Vegas, NV 89146	Las Vegas	NV	36.1592445	-115.218987	5	30	t	Beauty_and_Spas
+WUTSRw9kiDHmQeoylYfrnA	Costco Wholesale	19001 N 27th Ave - Phoenix, AZ 85027	Phoenix	AZ	33.659687	-112.115845	4	31	t	Shopping
+WUZxVr_CaRqEQgzvyeK5tw	IKEA	2110 W Ikea Way - Tempe, AZ 85281	Tempe	AZ	33.3406448	-111.970184	4	274	t	Shopping
+H5tbvDIw7oojoTcmaXsUrw	Merchant Square Antique Marketplace	1509 N Arizona Ave - Chandler, AZ 85225	Chandler	AZ	33.3307724	-111.840111	4	36	t	Shopping
+V6BYjHM9SnXscfkln3hCdA	Orange Table	7373 E Scottsdale Mall - Ste 6 - Scottsdale, AZ 85251	Scottsdale	AZ	33.4922714	-111.923058	4	456	t	Restaurants
+KCKq8rwYSaVFHP8w694TAQ	Pinnacle Peak Ace Hardware & Paint	23623 N Scottsdale Rd - Scottsdale, AZ 85255	Scottsdale	AZ	33.7019043	-111.925301	4	11	t	Shopping
+JokKtdXU7zXHcr20Lrk29A	Four Peaks Brewing Co	1340 E 8th St - Ste 104 - Tempe, AZ 85281	Tempe	AZ	33.4195671	-111.9161	5	1110	t	Restaurants
+7KK78Q6XjM14g0ykVvg-OQ	Hippie Gypsy	601 S Mill Ave - Tempe, AZ 85281	Tempe	AZ	33.4241486	-111.939583	3	24	t	Shopping
+2ceeU8e3nZjaPfGmLwh4kg	Casey Moore's Oyster House	850 S Ash Ave - Tempe, AZ 85281	Tempe	AZ	33.4209213	-111.943268	4	445	t	Restaurants
+kJh6851D00h5ioNiw5nQBw	Desert Foothills Gardens	33840 N Cave Creek Rd - Cave Creek, AZ 85331	Cave Creek	AZ	33.7932777	-111.968712	5	3	t	Shopping
+r9nLQrVfyqCDVT-Gvx8w9g	Ross Store	9460 W Northern Ave - Glendale, AZ 85305	Glendale	AZ	33.5516434	-112.262505	3	6	t	Shopping
+G69-uLxHs3h6uvrikivpVA	Gold & Silver Pawn Shop	713 Las Vegas Blvd S - Downtown - Las Vegas, NV 89101	Las Vegas	NV	36.1615677	-115.14521	3	436	t	Shopping
+4GQhbPvGU5r23YdVm8EmkQ	Ferraro's  Restaurant & Wine Bar	4480 Paradise Rd - Eastside - Las Vegas, NV 89169	Las Vegas	NV	36.1091309	-115.15126	4	275	t	Restaurants
+8buIr1zBCO7OEcAQSZko7w	Firefly	3900 Paradise Rd - Eastside - Las Vegas, NV 89169	Las Vegas	NV	36.1185532	-115.154694	5	1355	f	Restaurants
+SazFxQogqwJAMbi3dTFVuw	The Grand Canal Shoppes	The Venetian Hotel - 3377 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1226044	-115.171089	4	73	t	Shopping
+0NaMndmNpVG619STpRCY7Q	Discount Firearms & Ammo	3084 S Highland Dr - Ste B - Las Vegas, NV 89109	Las Vegas	NV	36.1336784	-115.174713	4	88	t	Shopping
+AB7oEY5ACn0JUfD114hcow	Neiman Marcus	Fashion Show Mall - 3200 Las Vegas Blvd S, Ste 100 - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1274261	-115.170815	4	49	t	Shopping
+AWJgaGmK4aIy_PIuTYKjJA	Kiesub Electronic Supply	3185 S Highland Dr - Las Vegas, NV 89109	Las Vegas	NV	36.1320801	-115.177155	4	6	t	Shopping
+tqu42L0qXzkvYKSruOz0IA	Ellis Island Casino & Brewery	4178 Koval Ln - Eastside - Las Vegas, NV 89109	Las Vegas	NV	36.1132851	-115.163948	4	1085	t	Restaurants
+Ensu96ecI0OReupNS2x7ig	Gallagher's Steakhouse	New York New York Hotel Casino - 3790 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1025162	-115.174248	4	523	t	Restaurants
+wuQPytBIhsHvs2KplscYXA	Nate's Barber Shop	5041 N 7th Ave - Phoenix, AZ 85013	Phoenix	AZ	33.5109062	-112.082481	5	11	t	Beauty_and_Spas
+44F_ToZqKYlP1aPY769RNg	King Nails	3414 W Union Hills Dr Ste 1 - Phoenix, AZ 85027	Phoenix	AZ	33.6552544	-112.132622	4	8	t	Beauty_and_Spas
+QPbjoQn2Vty29ZaLOpzwXw	Cost Cutters	3418 W Bell Rd - Sunset Village Shopping Center - Phoenix, AZ 85053	Phoenix	AZ	33.6396904	-112.130684	4	7	t	Beauty_and_Spas
+fiakOloknJZNUDD-yly-Ew	Daisy Nails	1239 E McKellips Rd - Mesa, AZ 85203	Mesa	AZ	33.4515114	-111.804497	3	10	t	Beauty_and_Spas
+AcBXW-uhOftCVHxX8qng8g	The Brow Lady USA	7007 E 5th Ave - Scottsdale, AZ 85251	Scottsdale	AZ	33.4969444	-111.930069	4	61	f	Beauty_and_Spas
+EcHuaHD9IcoPEWNsU8vDTw	JW Marriott Scottsdale Camelback Inn Resort & Spa	5402 E Lincoln Dr - Scottsdale, AZ 85253	Scottsdale	AZ	33.5343285	-111.964569	4	144	t	Beauty_and_Spas
+AtoMSHZ-lO7kxHRBdioMtA	Willow Stream Spa at the Fairmont	7575 E Princess Dr - Scottsdale, AZ 85255	Scottsdale	AZ	33.6456184	-111.917122	5	62	t	Beauty_and_Spas
+PScORaVSoRKBzaXzxdzsMw	Grooming Humans Hair Studio	709 S Forest Ave - Tempe, AZ 85281	Tempe	AZ	33.422657	-111.936546	5	45	t	Beauty_and_Spas
+I5xBrzmTIUKHlj01JU6Z5w	Snow Nails	1825 N Scottsdale Rd - Tempe, AZ 85281	Tempe	AZ	33.4493637	-111.926453	4	17	t	Beauty_and_Spas
+NFuk3ZMFnGW9uqT-D9CoCQ	Celebrity Tanning	725 S Rural - Ste 217 - Tempe, AZ 85281	Tempe	AZ	33.4227562	-111.925682	3	17	t	Beauty_and_Spas
+JXZiWJiiUM1J8GBUkEGp3g	Ultra Nails	825 W Baseline Road - Tempe, AZ 85283	Tempe	AZ	33.3771896	-111.952011	3	4	t	Beauty_and_Spas
+-KZC-59mP5Kcr52Zk7W89w	Chavez Barber Shop	715 W Baseline Road - Tempe, AZ 85283	Tempe	AZ	33.3772888	-111.950012	5	3	t	Beauty_and_Spas
+3Dj0FsIr2Kw0e1nsaDSGig	Altered Ego Salon & Spa	107 E Baseline Rd - Ste 6 - Tempe, AZ 85283	Tempe	AZ	33.3782158	-111.938225	5	104	t	Beauty_and_Spas
+iMbDhkmIqBLedsbu1sIixA	Min Permanent Make-Up & Day Spa	3529 S Valley View Blvd - Chinatown - Las Vegas, NV 89103	Las Vegas	NV	36.1256256	-115.190514	4	8	t	Beauty_and_Spas
+Z0kyK8wCBNGkkUT9UrMWcg	Del Frisco's Double Eagle Steak House	3925 Paradise Rd - Eastside - Las Vegas, NV 89169	Las Vegas	NV	36.1180687	-115.155281	5	817	t	Restaurants
+jh7S78tc9oXCDjAjP_OrLw	India Palace	505 E Twain Ave - Eastside - Las Vegas, NV 89169	Las Vegas	NV	36.1212387	-115.151855	4	345	t	Restaurants
+sCcXpSPRyq3360vHsAzf-A	Vegas Foto	3475 Las Vegas Boulevard S - Eastside - Las Vegas, NV 89109	Las Vegas	NV	36.124424	-115.14637	1	4	t	Shopping
+ASOiJ8MmbBTgK2D1_MQrqg	Eiffel Tower Restaurant	Paris Hotel - 3655 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1104851	-115.174187	4	810	t	Restaurants
+EpJ0uk82tWFEUnfTwPPSKA	Antiques At the Market	6665 S Eastern Ave - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.0682793	-115.120338	4	17	t	Shopping
+Q_Rwcv9APBLggk2KAsBEvg	Border Grill	Mandalay Bay Resort & Casino - 3950 S Las Vegas Boulevard - The Strip - Las Vegas, NV 89119	Las Vegas	NV	36.0919647	-115.173058	4	702	t	Restaurants
+jR3IlOmE8UZQ1DuQphdvcw	Urban Outfitters	3930 Las Vegas Blvd S - The Strip - Las Vegas, NV 89119	Las Vegas	NV	36.0912666	-115.174095	4	35	f	Shopping
+eLPld7Q17XxlclFGzZQX5g	Yama Sushi	1350 E Flamingo Rd - Ste 18 - Eastside - Las Vegas, NV 89119	Las Vegas	NV	36.1155014	-115.135002	4	874	t	Restaurants
+1Ue0s0Aw2kwVAB9FU4gjzQ	Alternate Reality Comics	4110 S Maryland Pkwy - Ste 8 - Eastside - Las Vegas, NV 89119	Las Vegas	NV	36.1138573	-115.137039	5	60	t	Shopping
+SSnWLYO4ADh33-l8oy0klw	Brookstone	5757 Wayne Newton Boulevard - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.0894928	-115.138023	3	3	t	Shopping
+gkWEjZIVcrUerEzed6IKpg	Mint Indian Bistro	730 E Flamingo Rd - Ste 10 - Eastside - Las Vegas, NV 89119	Las Vegas	NV	36.1148758	-115.147408	4	460	t	Restaurants
+nxflzDedizEvyvxqhz1ghw	Walmart	3075 E Tropicana Ave - Southeast - Las Vegas, NV 89121	Las Vegas	NV	36.0982666	-115.10833	3	34	t	Shopping
+yD1dRYi7USzhYVKiqZ7JVg	Sushi Mon	9770 S Maryland Pkwy - Ste 3 - Southeast - Las Vegas, NV 89183	Las Vegas	NV	36.0119438	-115.136169	4	562	t	Restaurants
+7UStzgu75kpOKBoc2JnmVw	Nordstrom Rack	579 N Stephanie St - Henderson, NV 89014	Henderson	NV	36.0627594	-115.046295	4	62	t	Shopping
+VVeogjZya58oiTxK7qUjAQ	Pizzeria Bianco	623 E Adams St - Phoenix, AZ 85004	Phoenix	AZ	33.449234	-112.06546	4	1289	t	Restaurants
+aRkYtXfmEKYG-eTDf_qUsw	Lux	4402 N Central Ave - Phoenix, AZ 85012	Phoenix	AZ	33.5005722	-112.074112	5	747	t	Restaurants
+lliksv-tglfUz1T3B3vgvA	Lotus of Siam	953 E Sahara Ave - Eastside - Las Vegas, NV 89104	Las Vegas	NV	36.1435661	-115.14283	4	1809	t	Restaurants
+xyTJYlbE_MLouK6rCou6zg	Burger Bar	Mandalay Bay Resort & Casino - 3930 S Las Vegas Boulevard - The Strip - Las Vegas, NV 89119	Las Vegas	NV	36.0928764	-115.176247	4	1876	t	Restaurants
+DO3Gk17RyJVW7zYMCtYPnw	Mesa Grill	Caesars Palace Las Vegas Hotel & Casino - 3570 Las Vegas Boulevard South - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1259499	-115.171051	4	2004	t	Restaurants
+Hdi7jkB7pHiM1nyPHcqSdw	Scottsdale Fashion Square	7014 E Camelback Rd - Scottsdale, AZ 85251	Scottsdale	AZ	33.502594	-111.92968	4	297	t	Shopping
+YacTpiq0ZptFcXD7I-kdGA	Delmonico Steakhouse	The Venetian - 3355 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1217918	-115.16938	4	962	t	Restaurants
+5IWu0xhlZEopvIz3w7o_3w	Palm Restaurant	Caesar's Palace - 3500 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1183281	-115.176033	4	370	t	Restaurants
+4bEjOyTaDG24SY5TxsaUNQ	Mon Ami Gabi	3655 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1129532	-115.172592	4	4084	t	Restaurants
+SsTxjxo8qvqBMvan1rzNzg	The Peppermill Restaurant & Fireside Lounge	2985 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1336136	-115.163124	4	1215	t	Restaurants
+HbUQ_3dlm3uCacmhTEMnuA	Tom Colicchio's Craftsteak	MGM Grand Hotel and Casino - 3799 Las Vegas Blvd S - Eastside - Las Vegas, NV 89109	Las Vegas	NV	36.103054	-115.167694	4	1413	t	Restaurants
+tFU2Js_nbIZOrnKfYJYBBg	Bouchon	3355 Las Vegas Blvd S - Venetian Resort and Casino - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1222916	-115.17028	4	2419	t	Restaurants
+KjymOs12Mpy0Kd54b7T9MA	Olives	Bellagio Resort &Casino - 3600 S Las Vegas Blvd - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1119766	-115.176979	4	980	t	Restaurants
+fkacCsAiwXYQzdlaQZm0Gg	Las Vegas North Premium Outlets	875 S Grand Central Pkwy - Downtown - Las Vegas, NV 89106	Las Vegas	NV	36.1629143	-115.159332	4	531	t	Shopping
+WhBxWYRj6rycigYqdXY9cA	Great Dane Pub & Brewing Co	123 E Doty St - Capitol - Madison, WI 53703	Madison	WI	43.0740089	-89.380867	4	406	t	Restaurants
+Zx8_4zKdDBSO3qGrkukBIA	Chino Bandido	15414 N 19th Ave - Ste K - Phoenix, AZ 85023	Phoenix	AZ	33.6269341	-112.100731	4	660	t	Restaurants
+CZjcFdvJhksq9dy58NVEzw	The Buffet at Bellagio	Bellagio Resort &Casino - 3600 S Las Vegas Blvd - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1131592	-115.176407	4	2404	t	Restaurants
+SLyacGZuMUKqrQJEooSkjw	Spice Market Buffet	Planet Hollywood Las Vegas Resort & Casino - 3667 Las Vegas Boulevard South - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1102486	-115.171669	3	1088	t	Restaurants
+-5RN56jH78MV2oquLV_G8g	Picasso	Bellagio Resort &Casino - 3600 S Las Vegas Blvd - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1119919	-115.177002	5	485	t	Restaurants
+jOuERtVf7QePnK9ZcdH5XA	Grand Lux Cafe	The Venetian Hotel & Casino - 3355 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1222763	-115.17012	4	1497	t	Restaurants
+M2SjLXsuAy5RNKwxaA5E1g	House of Blues	Mandalay Bay Hotel - 3950 Las Vegas Blvd S - The Strip - Las Vegas, NV 89119	Las Vegas	NV	36.092865	-115.175865	4	462	t	Restaurants
+V1nEpIRmEa1768oj_tuxeQ	Cibo	603 N 5th Ave - Phoenix, AZ 85003	Phoenix	AZ	33.4549599	-112.07991	5	1052	t	Restaurants
+EWMwV5V9BxNs_U6nNVMeqw	FEZ	3815 N Central Ave - Phoenix, AZ 85012	Phoenix	AZ	33.4916954	-112.073494	4	1046	t	Restaurants
+iXA8Y2bzvZo8MjALfZxrIg	Margaritaville	3555 South Las Vegas Boulevard - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1156349	-115.172554	4	755	t	Restaurants
+c2eeBEolkJRloXVBuD6cjg	Sassy Nails	6454 Sky Pointe Dr - Centennial - Las Vegas, NV 89131	Las Vegas	NV	36.2812119	-115.261604	4	9	t	Beauty_and_Spas
+eojCmqNcITAlgy5m0dA7jA	Creative Nails	3635 S Fort Apache Rd - Ste 202 - Spring Valley - Las Vegas, NV 89147	Las Vegas	NV	36.1248436	-115.297104	4	114	t	Beauty_and_Spas
+FuZRtK2kf6iPHHwjjclnsQ	Nellis AFB Salon	5691 Rickenbacker Rd - Nellis AFB, NV 89191	Nellis AFB	NV	36.2398186	-115.043457	5	3	t	Beauty_and_Spas
+YNQgak-ZLtYJQxlDwN-qIg	The Buffet	3131 Las Vegas Blvd S - 3131 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1268883	-115.165588	4	2791	t	Restaurants
+-2n-OHbbwIv3SY8RP9bgTQ	Maggiano's Little Italy	Fashion Show Mall - 3200 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1282234	-115.172989	4	616	t	Restaurants
+ngNvH4sxnH9aMukTZ67R_Q	Carnival World Buffet	Rio All Suite Hotel & Casino - 3700 W. Flamingo Road - Las Vegas, NV 89103	Las Vegas	NV	36.1178894	-115.189392	4	1071	t	Restaurants
+rBPQuQgTcMtUq5-RYhY2uQ	Le Village Buffet	Paris Las Vegas Hotel & Casino - 3655 Las Vegas Boulevard South - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1129303	-115.169968	4	1338	t	Restaurants
+5FLRsYrT6w2VSDvQDhphXg	Fiamma Trattoria & Bar	MGM Grand Hotel and Casino - 3799 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1015587	-115.172951	4	448	t	Restaurants
+N50HceZf1595UtU867u4uQ	Fleur by Hubert Keller	Mandalay Bay Resort and Casino - 3950 Las Vegas Blvd - The Strip - Las Vegas, NV 89119	Las Vegas	NV	36.0920792	-115.17511	4	745	t	Restaurants
+M-vOSYnyuaE2TsFJF0uMbQ	Lucille's Smokehouse Bar-B-Que	The District At Green Valley Ranch - 2245 Village Walk Dr - Anthem - Henderson, NV 89052	Henderson	NV	36.0214043	-115.086304	4	412	t	Restaurants
+rmiK8V7l7NgEJSHJT-zWQQ	Las Vegas South Premium Outlets	7400 Las Vegas Blvd S - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0549278	-115.169151	3	218	t	Shopping
+J4qLz0nGzCTMf6-kf_SiQg	Carnegie	The Mirage Hotel and  Casino - 3400 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1215477	-115.174515	3	578	t	Restaurants
+xLCbkTYQaP-nij6mEfaw7A	Bookmans Entertainment Exchange	8034 N 19th Ave - Phoenix, AZ 85021	Phoenix	AZ	33.5542908	-112.099983	4	110	t	Shopping
+1yx2zLskVTe5WQdYjL2Apw	Egg & I	4533 W Sahara Ave - Ste 5 - Westside - Las Vegas, NV 89102	Las Vegas	NV	36.1443939	-115.201637	5	832	t	Restaurants
+fr1EyhR8-YgwWmN5oV4r8w	Burberry	7014 East Camelback Road - Scottsdale Fashion Square - Phoenix, AZ 85251	Phoenix	AZ	33.502327	-111.927597	4	3	t	Shopping
+rZbHg4ACfN3iShdsT47WKQ	Bobby Q	8501 N 27th Ave - Phoenix, AZ 85051	Phoenix	AZ	33.5608521	-112.116196	5	720	t	Restaurants
+5y88Y-RbndE0QNwQMeScew	American Apparel	526 S Mill Ave - Tempe, AZ 85281	Tempe	AZ	33.4246788	-111.940155	3	12	f	Shopping
+yzYSY-yFyS64uL4lTnUysQ	DA's Modern	527 W McDowell Rd - Phoenix, AZ 85003	Phoenix	AZ	33.4656448	-112.081955	5	6	f	Shopping
+c12WDNrP2wyQgbnEYDdxCw	MGM Grand Buffet	MGM and Hotel & Casino - 3799 Las Vegas Blvd S - Eastside - Las Vegas, NV 89109	Las Vegas	NV	36.1020546	-115.171356	3	503	t	Restaurants
+tI3J5jomrBs--n7r92186g	Ping Pang Pong	4000 W Flamingo Rd - 4000 W Flamingo Rd - Las Vegas, NV 89103	Las Vegas	NV	36.1153107	-115.195198	4	398	t	Restaurants
+GwSdGrvaXi4BdXNSWKn-EA	Changing Hands Bookstore	6428 S McClintock Dr - Tempe, AZ 85283	Tempe	AZ	33.3624573	-111.912666	5	187	t	Shopping
+tn5SXZvWiT-uVsjXLGSrww	Village Seafood Buffet	Rio All Suite Hotel & Casino - 3700 W. Flamingo Road - Las Vegas, NV 89103	Las Vegas	NV	36.1181183	-115.187302	4	637	t	Restaurants
+ehMlRCtT0-VFfSMOR2NrvA	Boot Barn	7265 Las Vegas Blvd. South - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.057888	-115.172607	4	30	t	Shopping
+xfwRO04KbAPw_zRotCfWQQ	Hash House A Go Go	6800 W Sahara Ave - Westside - Las Vegas, NV 89146	Las Vegas	NV	36.1446686	-115.239952	4	2201	t	Restaurants
+9Bnc9YP0n5cR57xkP6fQmQ	Top of the World Restaurant	Stratosphere Las Vegas - 2000 Las Vegas Blvd S - The Strip - Las Vegas, NV 89104	Las Vegas	NV	36.1475487	-115.155754	4	560	t	Restaurants
+gGeVLZ9j_wAYKbaqgnKSJA	Tao Asian Bistro	The Venetian - 3355 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1214561	-115.169609	4	820	t	Restaurants
+QB1dMlATwesPf6rrJGLQww	Desert Ridge Marketplace	21001 N Tatum Blvd - Phoenix, AZ 85050	Phoenix	AZ	33.6760902	-111.971954	4	69	t	Shopping
+FTV78oT5bgaH1lYSEZVEzA	Hobby Lobby	10045 W McDowell Rd - Avondale, AZ 85392	Avondale	AZ	33.4646912	-112.275879	4	23	t	Shopping
+NK-8zniVfA21IQoQCynrDg	America	New York New York Hotel & Casino - 3790 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1025887	-115.174568	3	234	t	Restaurants
+AumuGuTg3HqvtwbLPi-ZCg	Satay Thai Bistro & Bar	3900 Paradise Rd - Ste N - Eastside - Las Vegas, NV 89169	Las Vegas	NV	36.1186981	-115.154266	4	256	t	Restaurants
+8zL3V6rmFKBess3bxPLAoQ	Cravings Buffet at Mirage	The Mirage Hotel and  Casino - 3400 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1212387	-115.174103	4	642	t	Restaurants
+Gn7bMxhZgY0bivsthvJWJQ	Bayside Buffet at Mandalay Bay	Mandalay Bay Hotel and Casino - 3950 S Las Vegas Blvd - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.091938	-115.17659	3	533	t	Restaurants
+RlrqwlKKAwzyxBAVoFMwBA	American Shooters	3440 Arville St - Chinatown - Las Vegas, NV 89102	Las Vegas	NV	36.1274338	-115.198631	4	124	t	Shopping
+WNy1uzcmm_UHmTyR--o5IA	Cornish Pasty Company	960 W University Dr - Tempe, AZ 85281	Tempe	AZ	33.4227295	-111.951492	5	905	t	Restaurants
+4gIV5MYpCDbNI-bL3g_tSw	Old Town Scottsdale	Scottsdale, AZ 85250	Scottsdale	AZ	33.4946747	-111.922958	4	66	t	Shopping
+1M7ScVRCiUYJVqjDbBx5pQ	Anthropologie	2275 Village Walk Dr - Anthem - Henderson, NV 89052	Henderson	NV	36.0217247	-115.085312	4	24	t	Shopping
+pQ3kRVmttsV1bHxuTf7TAg	The Lost Leaf	914 N 5th St - Phoenix, AZ 85004	Phoenix	AZ	33.4581947	-112.067688	4	274	t	Shopping
+50nln4YPr0QDo_v1uBmHfg	Bouchon Bakery	3355 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1217728	-115.169228	4	788	t	Restaurants
+N-OADXqvljHA0JD-Q7pfgA	Sears	4604 E Cactus Rd - Phoenix, AZ 85032	Phoenix	AZ	33.5991478	-111.981522	4	13	t	Shopping
+mD3_Ta6YURrSbF8Dft885w	FYE	937 E Broadway - Tempe, AZ 85282	Tempe	AZ	33.4074478	-111.924927	4	16	f	Shopping
+8qL697NwICTc_ac0-26Ycw	Chandler Fashion Center	3111 W Chandler Blvd - Chandler, AZ 85226	Chandler	AZ	33.3022461	-111.897964	4	105	t	Shopping
+UIhFRsZoPTWY38njcKKWiw	Fry's Electronics	6845 S Las Vegas Blvd - Southeast - Las Vegas, NV 89115	Las Vegas	NV	36.0651321	-115.174934	3	204	t	Shopping
+vEeiIvhzz29rO-6EPFqkjQ	Tableau	3131 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1264153	-115.167618	4	207	t	Restaurants
+rNahhyqDlouyDMHh57p3ug	B&B Ristorante	The Venetian Hotel Casino - 3355 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1230011	-115.168724	4	519	t	Restaurants
+GRVMk9inxsLOmCnztVPQWw	Bellagio Gallery of Fine Art	Bellagio Resort and Casino - 3600 S Las Vegas Blvd - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1125069	-115.177498	4	79	t	Shopping
+6vKgpermKi8PNDYD5mkpKQ	Zia Record Exchange	1940 W Chandler Blvd - Chandler, AZ 85224	Chandler	AZ	33.3072968	-111.875404	4	31	t	Shopping
+saCtN9IoDXPFk1KuB2FO6A	Melrose Pharmacy	706 W Montecito Ave - Phoenix, AZ 85013	Phoenix	AZ	33.4994278	-112.083321	4	29	t	Shopping
+e9JhcYEgNbRL8i8CTdQO2w	Kierland Commons	15205 N Kierland Blvd - Ste 150 - Scottsdale, AZ 85254	Scottsdale	AZ	33.6246376	-111.930344	5	73	t	Shopping
+eHN6eErehDXorUfE_u_rzA	Albertsons	750 E Guadalupe Rd - Tempe, AZ 85283	Tempe	AZ	33.3647003	-111.929947	3	6	t	Shopping
+xxI4mlNAkbOxVTt9SufkNw	Ace Hardware & Rental-Scottsdale	10300 N Scottsdale Road - Paradise Valley, AZ 85253	Paradise Valley	AZ	33.5790405	-111.927299	4	6	t	Shopping
+uKSX1n1RoAzGq4bV8GPHVg	St Francis Restaurant	111 E Camelback Rd - Phoenix, AZ 85012	Phoenix	AZ	33.5092621	-112.071815	4	743	t	Restaurants
+2GX0N7hHmR9EuROfQ6fktg	Shooter's Vault	3202 E Greenway Rd - Phoenix, AZ 85032	Phoenix	AZ	33.6272316	-112.012115	5	15	t	Shopping
+XgfKcL7eBJE9B66qoaIlJQ	Freed's Bakery	9815 S Eastern Ave - Southeast - Las Vegas, NV 89183	Las Vegas	NV	36.0109901	-115.119972	4	253	t	Restaurants
+LJLHQgMIeDhzqzleWOSmqg	The District At Green Valley Ranch	2240 Village Walk Dr - Anthem - Henderson, NV 89015	Henderson	NV	36.0210419	-115.086861	4	81	t	Shopping
+coP52gLXJLodXSNJUEB-Ug	Antique Mall of America	9151 Las Vegas Boulevard S - Suite 344 - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0236359	-115.173721	3	23	t	Shopping
+qt7FbvoCU6aJvZ9CgiN6bg	Jos. A. Bank	The District At Green Valley Ranch - 2225 Village Walk Dr, Ste 187 - Anthem - Henderson, NV 89052	Henderson	NV	36.0216255	-115.085236	4	9	t	Shopping
+xzcbAF-YsyeCr4c0s3uq0A	Spa Mandalay	Mandalay Bay Resort & Casino - 3950 Las Vegas Boulevard - Las Vegas, NV 89136	Las Vegas	NV	36.2318573	-115.068176	4	109	t	Beauty_and_Spas
+3uGQDrswQnDTns4ov0Ae3A	Roosters Men's Grooming Center	790 Coronado Ste 135 - Anthem - Henderson, NV 89052	Henderson	NV	36.0028839	-115.107819	4	30	t	Beauty_and_Spas
+mzlfFGQGysd5iMaGbbxgpw	All Star Hair & Nails	1600 S Las Vegas Blvd - Ste 110 - Downtown - Las Vegas, NV 89104	Las Vegas	NV	36.1519394	-115.152534	4	29	t	Beauty_and_Spas
+so5WuWyT05NeSzHU_67dWg	Mirage Nail and Spa	1005 S Arizona Ave - Chandler, AZ 85248	Chandler	AZ	33.2907448	-111.841431	4	15	t	Beauty_and_Spas
+T9rA3hcdT9s3i4z_VUrgvA	Charlie's Nails	3124 E Camelback Road - Phoenix, AZ 85016	Phoenix	AZ	33.5100136	-112.01519	2	10	t	Beauty_and_Spas
+rh4PhLk_jZQcpIxkQ4JT4A	Luxury Paulene's Nails	14676 N Frank Lloyd Wright Blvd - Ste 145 - Scottsdale, AZ 85260	Scottsdale	AZ	33.619133	-111.876846	3	15	t	Beauty_and_Spas
+8oMeYOC-BrtfvoRto6KBaw	Q Royal Nail and Spa	15231 N 87th St - Scottsdale, AZ 85260	Scottsdale	AZ	33.6239853	-111.892128	3	9	t	Beauty_and_Spas
+_RGFp7n1u-PBo8BjGXYgRQ	Prestige Nails and Spa	2815 S Alma School Rd - Chandler, AZ 85248	Chandler	AZ	33.2624817	-111.857567	4	10	t	Beauty_and_Spas
+UZUcfInMD3LEwf99sswUoQ	Boulevard Salon	8174 Las Vegas Blvd S - Ste 105 - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0410233	-115.172241	5	102	t	Beauty_and_Spas
+doub1ZRqO_wScrmHGLNeYg	Desert Nails	7345 S Durango Drive - Southwest - Las Vegas, NV 89113	Las Vegas	NV	36.0547638	-115.280525	3	26	t	Beauty_and_Spas
+l2lpBXx8jKl87J2szyJRuQ	Fashion Show	3200 Las Vegas Blvd S. Ste. 600 - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1234131	-115.171951	4	492	t	Shopping
+vEEjLaibx9ej2DqL1HpU0A	Casa Fuente Cigars	The Forum Shops - 3500 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1194077	-115.174187	4	154	t	Shopping
+ianvVTA81I6lilpN1e0Cig	Magnolia Lane	2260 Village Walk Dr - Ste 100 - Anthem - Henderson, NV 89052	Henderson	NV	36.0214615	-115.087685	4	13	t	Shopping
+J-eUjXNQOL1IFFxacYOyoQ	Cartridge World	3655 S Rainbow Blvd - Ste 104 - Chinatown - Las Vegas, NV 89103	Las Vegas	NV	36.122715	-115.243095	4	13	t	Shopping
+QdHebEly47rw2nrfbUCMMA	Tokyo Discount No 2	4960 S Fort Apache Rd - Spring Valley - Las Vegas, NV 89148	Las Vegas	NV	36.098793	-115.29493	4	37	t	Shopping
+uA3XsQqogLsjP7clEdt00w	Tokyo Discount	9890 S Maryland Pkwy - Southeast - Las Vegas, NV 89183	Las Vegas	NV	36.0101585	-115.135307	4	42	t	Shopping
+LLDGTT7FExklkQvHebEjRg	Joe's Seafood Prime Steak & Stone Crab	The Forum Shop at Caesars Palace - 3500 Las Vegas Blvd S, Ste R-05 - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1181946	-115.172974	4	889	t	Restaurants
+Pz7SWZQhxL6ZbhL9jE2NTA	MIX	Mandalay Bay Resort & Casino - 3950 Las Vegas Boulevard - The Strip - Las Vegas, NV 89119	Las Vegas	NV	36.0930672	-115.177811	4	878	t	Restaurants
+Qt0PRaIzUd3oQMRgqm1NmA	Dailey's Ace Hardware	2718 N Green Valley Pkwy - Henderson, NV 89014	Henderson	NV	36.0704384	-115.082108	5	10	f	Shopping
+05tazaFQt1EnQ_Gk_1AFyg	Nine Fine Irishmen	New York New York Hotel and Casino - 3790 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1030884	-115.173523	4	508	t	Restaurants
+h6jfMpTZpNduLG0wE2tbaw	Hana Japanese Eatery	5524 N 7th Ave - Phoenix, AZ 85013	Phoenix	AZ	33.5173988	-112.082466	4	288	t	Restaurants
+YrIfgzLj0DPStJ1ESAS_Qg	Hot N Juicy Crawfish	4810 Spring Mountain Rd - Ste C & D - Chinatown - Las Vegas, NV 89102	Las Vegas	NV	36.1265907	-115.206306	4	1076	t	Restaurants
+cnvdbnfyINH40fprm9izqA	Albertsons	7350 S Rainbow Blvd - Southwest - Las Vegas, NV 89139	Las Vegas	NV	36.0547409	-115.241737	4	29	t	Shopping
+gHq5ZzOCvQ7-2pVCpORy6A	Galleria Mall at Sunset	1300 W Sunset Rd - Henderson, NV 89014	Henderson	NV	36.0671692	-115.04274	4	106	t	Shopping
+pG9AXrNWpjhX8p4Bz7bLrA	Miracle Mile Shops	Planet Hollywood Resort & Casino - 3663 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1098633	-115.169937	4	308	t	Shopping
+FABjKVuA6qUgE2_wB6tUsw	Custo Barcelona	3500 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1183968	-115.172943	4	4	t	Shopping
+2e2e7WgqU1BnpxmQL5jbfw	Earl of Sandwich	3667 Las Vegas Blvd. S. - Planet Hollywood Resort & Casino - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1092072	-115.172592	5	3655	t	Restaurants
+blbv5orsmJ_u8v_51CXBgQ	aka Green	8100 E Indian School Rd - Scottsdale, AZ 85250	Scottsdale	AZ	33.495121	-111.906349	5	4	f	Shopping
+mzVhCMNkndrgdZFqducydg	Target	1800 E Rio Salado Pkwy - Ste 120 - Tempe, AZ 85281	Tempe	AZ	33.4301796	-111.905495	4	40	t	Shopping
+Zb6DZ4OGmKWcEGc9h1ew1w	The Gift of Lights	2601 E Sunset Rd - Southeast - Paradise, NV 89120	Paradise	NV	36.0678024	-115.11412	4	5	f	Shopping
+PmPOuRvuN3CoNOi1nBj_TQ	Pappadeaux Seafood Kitchen	11051 N Black Canyon Hwy - Phoenix, AZ 85029	Phoenix	AZ	33.5877647	-112.115898	4	407	t	Restaurants
+lPh02W25cOrAz57UbTpbFQ	Oyshi Sushi	7775 S Rainbow Blvd - Southwest - Las Vegas, NV 89113	Las Vegas	NV	36.0473061	-115.244156	4	658	t	Restaurants
+3fj1catIDdJbnrprKAbMDQ	Off Chute Too	4111 N 7th Ave - Phoenix, AZ 85013	Phoenix	AZ	33.4954147	-112.082993	5	15	t	Shopping
+O-Xa9GCFWI65YiBD5Jw_hA	Mastro's City Hall Steakhouse	6991 E Camelback Rd - Scottsdale, AZ 85251	Scottsdale	AZ	33.5018692	-111.931923	5	454	t	Restaurants
+j2KCZNlWnu-L4j0yJ3zAHA	More Buffet at Luxor	Luxor Hotel and Casino - 3900 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.0945473	-115.177261	2	319	t	Restaurants
+26DWDgTLuo4qhDbLDJHIdg	Barnes & Noble	7030 E Greenway Pkwy - Scottsdale, AZ 85254	Scottsdale	AZ	33.6233597	-111.92865	4	17	t	Shopping
+akCEmlqxFOTpn2oxSPDLkA	Paradise Valley Mall	4568 E Cactus Rd - Phoenix, AZ 85032	Phoenix	AZ	33.6011162	-111.983437	3	83	t	Shopping
+3e9IUI5Dt-ktDKEQNkENVA	Walmart	3721 E Thomas Rd - Phoenix, AZ 85018	Phoenix	AZ	33.4790001	-112.000893	2	63	t	Shopping
+3MmHmJXr8Ltk_Z5EGE4KUw	Carnevino	The Palazzo - 3325 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1245804	-115.168411	4	772	t	Restaurants
+ta6GXjcGAhMlC-KtxX6VfQ	Canyon Ranch SpaClub	3355 Las Vegas Blvd South - Suite 1159 - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1229897	-115.170219	4	274	t	Beauty_and_Spas
+gg0j4D4A1JJxLJvEMgvrDw	Great Clips	10620 Southern Highlands P - Southwest - Las Vegas, NV 89141	Las Vegas	NV	35.9968834	-115.20755	4	7	t	Beauty_and_Spas
+yEcd-Tu1gHDu6mruYkpVqg	BOX	4750 W Sahara Ave - Ste 28 - Westside - Las Vegas, NV 89102	Las Vegas	NV	36.1472015	-115.189201	5	60	f	Beauty_and_Spas
+JfMWD7eZHg1IfBVGZdPamw	Diva Nail Spa	7240 W Azure Dr - Centennial - Las Vegas, NV 89130	Las Vegas	NV	36.2736778	-115.254234	4	41	t	Beauty_and_Spas
+aB2w4XFUi2Djp4t-XDLBOQ	Nails R US	55 S Valle Verde Dr - Henderson, NV 89012	Henderson	NV	36.0257416	-115.06366	4	58	t	Beauty_and_Spas
+G2Re2E5Jkv_UF1xrenSsDg	Macy's	4500 E. Cactus Road - Phoenix, AZ 85032	Phoenix	AZ	33.5993385	-111.982086	4	18	t	Shopping
+CPaFYTecafyEqrmmI34ZBw	Michaels	4727 E Cactus Rd - Phoenix, AZ 85032	Phoenix	AZ	33.5980415	-111.97905	3	12	t	Shopping
+naLrErBuJr9IWd6_rv6-XQ	CUT	The Palazzo - 3325 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1243782	-115.168762	4	718	t	Restaurants
+Fh6OndE60vzvyhCX1Wg7Aw	In-N-Out Burger	4888 Dean Martin Dr - Las Vegas, NV 89136	Las Vegas	NV	36.1013145	-115.182205	4	502	t	Restaurants
+NsnZ5GhagXBKrCOelxVQxw	SUSHISAMBA Las Vegas	The Palazzo - 3327 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1239777	-115.167755	4	1132	t	Restaurants
+HZf4PgSXgGZ0EPGa-cuUPQ	Macy's	7014 East Camelback Road - Suite 5000 - Scottsdale, AZ 85251	Scottsdale	AZ	33.5025101	-111.929024	3	33	t	Shopping
+EkVVyv9lsB02qE0kXpuccA	Pitaya	534 S Mill Ave - Tempe, AZ 85281	Tempe	AZ	33.4248543	-111.940056	4	17	t	Shopping
+sGXtpt1bkeZgjBeCbegZXA	DSW Designer Shoe Warehouse	2100 North Rainbow Boulevard - Las Vegas, NV 89108	Las Vegas	NV	36.1975708	-115.238388	4	31	t	Shopping
+NdWepl0uhdzWDLANul0Uqg	Forever 21	3200 S Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1274261	-115.170815	4	147	t	Shopping
+xNcqwYAUeVOhe3KNC4Xjaw	Raku	5030 Spring Mountain Rd - Chinatown - Las Vegas, NV 89146	Las Vegas	NV	36.1264381	-115.209549	5	705	t	Restaurants
+3fV9sL5LklD9ZSeONKmjkw	BLT Burger	The Mirage Hotel and Casino - 3400 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1231613	-115.173683	4	833	t	Restaurants
+5GKbGn9-fAgQ0njSh3OJ8A	LAVO Italian Restaurant & Lounge	3325 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1244354	-115.169067	4	1019	t	Restaurants
+cxNssAOXk9N6McTeD0LwiQ	Michaels	55 S McClintock Dr - Tempe, AZ 85281	Tempe	AZ	33.4308472	-111.908058	3	24	t	Shopping
+IVv4Lr5_OXuezqe9vct8_g	Old Navy	21001 N Tatum Blvd - Phoenix, AZ 85050	Phoenix	AZ	33.6786156	-111.974609	4	9	t	Shopping
+ryvMJK6AlbU35HKrlFT61w	Texas de Brazil	Town Square Shopping Center - 6533 S Las Vegas Blvd - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.0685844	-115.178604	4	790	t	Restaurants
+vWuvLRUj-RRVDGxQZf32kw	Old Navy	16215 N Scottsdale Rd - Scottsdale, AZ 85255	Scottsdale	AZ	33.633728	-111.925316	3	8	t	Shopping
+kKcniirsMqUd_x0pZEGcWA	T&T - Tacos and Tequila	Luxor Hotel & Casino - 3900 Las Vegas Blvd - The Strip - Las Vegas, NV 89119	Las Vegas	NV	36.0970154	-115.175896	4	395	t	Restaurants
+iZFBEWy5goKIspxXLVmcpg	Oxfam	120-122 Nicolson St - Newington - Edinburgh EH8 9EJ	Edinburgh	EDH	55.9442558	-3.1835587	5	14	t	Shopping
+cpEvyoXL5Z6fbMQ6HZaVTg	Bethany Shop	65 Bonnington Road - Leith - Edinburgh EH6 5JQ	Edinburgh	EDH	55.9715424	-3.17699885	5	4	t	Shopping
+6imLt53br7SJ3av07jjH7w	Hanny's	40 N 1st St - Phoenix, AZ 85004	Phoenix	AZ	33.4492264	-112.072853	4	430	t	Restaurants
+OE5nAmaSVaopeRS1Cs9Kuw	Fogo de Chão Brazilian Steakhouse	6300 North Scottsdale Rd - Scottsdale, AZ 85253	Scottsdale	AZ	33.5299034	-111.926437	4	383	t	Restaurants
+n2GvkLwD8kjrovGYimpoBg	J Goldman	Bethany East Shopping Center - 1515 E Bethany Home Rd, Ste 156 - Phoenix, AZ 85014	Phoenix	AZ	33.5074806	-112.037628	5	8	t	Shopping
+HXATHtS6NpV7UrOVZZ4PGw	Fresh & Easy Neighborhood Market	1450 W. Horizon Ridge Pkwy, # 415 - Ste 415 - Henderson, NV 89012	Henderson	NV	36.0223579	-115.050255	4	21	f	Shopping
+9c_9SX-7hB7HW8KatQbD8g	Coronado Cafe	South Point Hotel and Casino - 9777 Las Vegas Blvd S - Southeast - Las Vegas, NV 89183	Las Vegas	NV	36.011425	-115.174194	4	216	t	Restaurants
+91uSm9J20iRmqe7qmINs4w	The LEGO Store	Chandler Fashion Center - 3111 W Chandler Blvd - Chandler, AZ 85226	Chandler	AZ	33.305233	-111.902611	5	18	t	Shopping
+RhbOa-Ft3sZB4B_1j5LfyA	Mr. Mama's	5580 S Decatur Blvd - Ste 112 - Las Vegas, NV 89118	Las Vegas	NV	36.0887756	-115.207336	5	703	t	Restaurants
+vxxMqBaAHuWdx4impsLSSA	Studio B	12300 Las Vegas Blvd - Henderson, NV 89044	Henderson	NV	35.9647789	-115.168526	4	1336	t	Restaurants
+MjNHFNzphMaDI5d-VLEj2Q	Savers	1231 W Warm Springs Rd - Bldg F - Henderson, NV 89014	Henderson	NV	36.0534782	-115.038979	4	33	t	Shopping
+Xhg93cMdemu5pAMkDoEdtQ	Serendipity 3	Caesars Palace Las Vegas Hotel & Casino - 3570 Las Vegas Boulevard South - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1172676	-115.177856	3	2682	t	Restaurants
+VQAL0hpGZVDgFuTU_x3N9w	CVS Pharmacy	2406 E Thomas Road - Phoenix, AZ 85016	Phoenix	AZ	33.4808006	-112.029549	3	8	t	Shopping
+LUpmo9ApE-W69SC8K1Wsfg	Rolfs Salon At Gainey Village	8787 N Scottsdale Rd - Ste 202 - Scottsdale, AZ 85253	Scottsdale	AZ	33.5460014	-111.968277	4	21	t	Beauty_and_Spas
+WGNIYMeXPyoWav1APUq7jA	The Lady Luck Tattoo Gallery	961 E Guadalupe Rd - Tempe, AZ 85283	Tempe	AZ	33.3637619	-111.927299	4	35	t	Beauty_and_Spas
+-sC66z4SO3tR7nFCjfQwuQ	Gallo Blanco	401 W Clarendon Ave - Phoenix, AZ 85013	Phoenix	AZ	33.4914055	-112.079132	4	837	t	Restaurants
+rBCX6nU2ub6v8ErfzXyjtg	Crystals at CityCenter	The Shops at Crystals - 3720 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1081581	-115.174477	4	187	t	Shopping
+pwpl-rxwNRQdgqFz_-qMPg	The Parlor	1916 E Camelback Rd - Phoenix, AZ 85016	Phoenix	AZ	33.5094452	-112.040398	4	694	t	Restaurants
+D_BMUHbZk67hzRcK3xQQmg	Mount Everest India's Cuisine	3641 W Sahara Ave - Westside - Las Vegas, NV 89102	Las Vegas	NV	36.1439552	-115.189819	5	386	t	Restaurants
+OiCxoAIoBvEWxf7p1qVVmA	Sage	Aria Resort and Casino - 3732 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1075783	-115.176498	4	646	t	Restaurants
+zTCCbg7mGslxACL5KlAPIQ	The Buffet at ARIA	Aria Resort and Casino - 3743 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1079407	-115.175774	3	995	t	Restaurants
+a4cMKOjdVLTmJNhRl6-17g	Lemongrass	Aria Resort and Casino - 3737 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1077118	-115.175774	4	398	t	Restaurants
+8Pzdk19tA2bKlKDSgwWqoQ	Scarpetta	Cosmopolitan Hotel - 3708 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1098061	-115.174355	4	611	t	Restaurants
+JauLZ0TL3D3VIGtSnStzhA	First Food & Bar	The Palazzo - 3327 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.123558	-115.168671	4	361	f	Restaurants
+mAWC_dt8LaxTRF6sFXSxBw	Cactus Bike	4747 E Elliot Rd - Phoenix, AZ 85044	Phoenix	AZ	33.3480606	-111.982025	5	8	t	Shopping
+vPnwX30Gn0oa4dVBL0W4Ww	Sura BBQ Buffet	4480 Spring Mountain Rd - Chinatown - Las Vegas, NV 89102	Las Vegas	NV	36.1267281	-115.20118	4	380	t	Restaurants
+ncuj9qx4WjprfJfYJGdmtQ	Smeeks	2502 E Camelback Rd - Phoenix, AZ 85016	Phoenix	AZ	33.5102081	-112.027206	4	100	f	Shopping
+fZWVI2Bjk6wJoRUB0s4Pzg	Goodwill	4005 N 16th St - Phoenix, AZ 85016	Phoenix	AZ	33.4941101	-112.047188	4	23	t	Shopping
+8mcXktLkaY1pcEMhFuSo2w	lululemon athletica	2502 E Camelback Rd - Ste 133 - Phoenix, AZ 85016	Phoenix	AZ	33.5102081	-112.027206	4	39	t	Shopping
+_FXql6eVhbM923RdCi94SA	Hula's Modern Tiki	4700 N Central Ave - Phoenix, AZ 85012	Phoenix	AZ	33.5062065	-112.073914	4	663	t	Restaurants
+Z6aaze-cgaYKKXlpuH9LqA	Glazier's Food Marketplace	8525 W Warm Springs Rd - Southwest - Las Vegas, NV 89113	Las Vegas	NV	36.0541687	-115.277458	4	255	t	Restaurants
+tZCn_2lablrYBYwTtF2sqQ	Wholesale Fashion Shoes	4041 E Thomas Rd - Phoenix, AZ 85018	Phoenix	AZ	33.4798508	-111.994041	4	22	t	Shopping
+KcSJUq1kwO8awZRMS6Q49g	Pink's Hot Dogs	Planet Hollywood Resort & Casino - 3667 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1095161	-115.173538	3	717	t	Restaurants
+RRWRvdziNs9S5zl4G39Fyw	Retro Redux	4303 N 7th Ave - Phoenix, AZ 85013	Phoenix	AZ	33.4988403	-112.082932	4	17	f	Shopping
+Lp-A-JNRUUH72uou5-pMtQ	Lola's	241 W Charleston Blvd - Ste 101 - Downtown - Las Vegas, NV 89102	Las Vegas	NV	36.1586685	-115.158302	4	406	t	Restaurants
+z67yrh03lRSANrpPsRcTfw	Grimaldi's Pizzeria	9595 S Eastern Ave - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0159683	-115.119308	4	395	t	Restaurants
+CfIPNXy_FcIAgbka7ja0qg	Ross	217 E. Dunlap Avenue - Sunnyslope Village - Phoenix, AZ 85020	Phoenix	AZ	33.5677338	-112.071259	4	7	t	Shopping
+yIRwXAtC3zLGy0_FaBecpQ	Scottsdale Quarter	15279 N Scottsdale Rd - Scottsdale, AZ 85254	Scottsdale	AZ	33.6251526	-111.92524	4	73	t	Shopping
+rrcQiwCCBoJuezMgJzx3GA	Uptown Bridal and Boutique	11 W Boston St - Ste 3 - Chandler, AZ 85225	Chandler	AZ	33.3021088	-111.842064	5	36	t	Shopping
+a0qlhZlik3vNXEHsf-pEgQ	Soma Intimates	7700 W Arrowhead Towne Center - Arrowhead Towne Center - Glendale, AZ 85308	Glendale	AZ	33.6415367	-112.226425	3	3	t	Shopping
+xY1sPHTA2RGVFlh5tZhs9g	Culinary Dropout	7135 E Camelback Rd - Ste 125 - Scottsdale, AZ 85251	Scottsdale	AZ	33.5020065	-111.928299	4	655	t	Restaurants
+zp713qNhx8d9KCJJnrw1xA	La Santisima Gourmet Taco Shop	1919 N 16th St - Phoenix, AZ 85006	Phoenix	AZ	33.4692001	-112.047394	5	502	t	Restaurants
+H3xCT0WUSN24xNilQKPkww	Zia Records	4503 W Sahara - Westside - Las Vegas, NV 89102	Las Vegas	NV	36.144249	-115.201141	4	50	t	Shopping
+QbmcCE_cLq4WO8ZMKImaLw	Hash House A Go Go	The Quad Resort & Casino - 3535 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1178818	-115.171242	4	1759	t	Restaurants
+5Feaj6aixO_QxKFnkHf3xg	Arizona Biltmore Resort & Spa	2400 E Missouri Ave - Phoenix, AZ 85016	Phoenix	AZ	33.5160675	-112.029564	4	251	t	Beauty_and_Spas
+iDVVyTPcZq1UCJSw_xpeWQ	Spa at Green Valley Ranch Resort	Green Valley Ranch Resort & Spa - 2308 Paseo Verde Pkwy - Anthem - Henderson, NV 89052	Henderson	NV	36.0191994	-115.086929	4	48	t	Beauty_and_Spas
+rE2InW2Jmjy6hzH3p4Iyjw	Biagio Nail & Spa	6825 N 16th St - Phoenix, AZ 85016	Phoenix	AZ	33.5369148	-112.04731	4	64	t	Beauty_and_Spas
+mlgD0zcqkWdGBzX97NS-8g	R Salon	1940 E Camelback Rd - Phoenix, AZ 85016	Phoenix	AZ	33.5101318	-112.039391	4	106	t	Beauty_and_Spas
+J-FcHI69k_MpSKjwkDURuw	Spa Mio	The M Resort - 12300 Las Vegas Blvd S - Southeast - Henderson, NV 89044	Henderson	NV	35.9657516	-115.171112	5	49	t	Beauty_and_Spas
+b0XSFuuhNZ70-x6ikR3C5A	Albertsons	18411 N Cave Creek Rd - Phoenix, AZ 85032	Phoenix	AZ	33.6535416	-112.029655	3	8	t	Shopping
+2w_d4H-DX104D_Va3UqE1A	Sleep America	2010 E Rio Salado Pkwy - Tempe, AZ 85281	Tempe	AZ	33.4293633	-111.900131	1	3	t	Shopping
+VDO6x9jFJBBboTSAJUa7RQ	AT&T	20235 N Cave Creek Rd - Suite A100 - Phoenix, AZ 85024	Phoenix	AZ	33.670742	-112.030792	5	4	t	Shopping
+4WX-IwJUdEmnSWgEce2S7w	Ross Store Inc	10114 W Happy Valley Rd - Peoria, AZ 85383	Peoria	AZ	33.7129211	-112.278656	4	4	t	Shopping
+UaPGk7bYvL5hIdbEoGtRfw	Office Depot	3890 Blue Diamond Rd - Southwest - Las Vegas, NV 89139	Las Vegas	NV	36.0405617	-115.190384	4	5	t	Shopping
+jJi6f7xjkdDmiKnpJpd3KA	Lowe's Home Improvement	5825 S Eastern Ave - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.0842934	-115.122101	4	13	t	Shopping
+dt5kCN2U26W1OKKnDWfORA	AT&T	4380 Blue Diamond Road - Suite 101 - Southwest - Las Vegas, NV 89139	Las Vegas	NV	36.0368614	-115.199112	3	9	t	Shopping
+AMEI0DxPHPcDJJfIuxPmog	Donaldson Watches &  Repair	1840 E Warner Rd - Ste 118 - Tempe, AZ 85284	Tempe	AZ	33.3355484	-111.907829	5	21	t	Shopping
+vSf0pqvaLp5sVSjJPeOqqQ	Todd English P.U.B.	The Shops at Crystals - 3720 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1088066	-115.173584	4	824	t	Restaurants
+WS1z1OAR0tRl4FsjdTGUFQ	The Vig Uptown	6015 N 16th St - Phoenix, AZ 85014	Phoenix	AZ	33.5242767	-112.04747	4	321	t	Restaurants
+eviEAWE1D_tJaYKz8abjyA	Downeast Basics	2240 Village Walk Dr - Ste 128 - Anthem - Henderson, NV 89052	Henderson	NV	36.0219841	-115.084373	4	6	t	Shopping
+gnezwnCcfQLeu82hV6duHg	Charming Charlie - Scottsdale	7014 East Camelback - Suite 2005 - Scottsdale, AZ 85251	Scottsdale	AZ	33.5025101	-111.929024	4	18	t	Shopping
+PXviRcHR1mqdH4vRc2LEAQ	Bachi Burger	470 E Windmill Ln - Ste 100 - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0427971	-115.153229	4	1657	t	Restaurants
+RSCPys-z6rKA7RnpaAF43w	Arizona Premium Mattress Co	22201 N 24th Ave - Ste 2 - Phoenix, AZ 85027	Phoenix	AZ	33.6879196	-112.109589	5	18	t	Shopping
+H_SuH7uLiYahDMbNBB9kog	KoMex Fusion	633 N Decatur Blvd - Ste H - Las Vegas, NV 89107	Las Vegas	NV	36.1799393	-115.206413	5	837	t	Restaurants
+Xsp9Dy4PQgAssCVk2-f73w	Lee's Sandwiches	3989 Spring Mountain Rd - Chinatown - Las Vegas, NV 89102	Las Vegas	NV	36.1261444	-115.192032	3	355	t	Restaurants
+DjOxXobyGDwWt89q4z1twg	Monta Ramen	5030 Spring Mountain Rd - Ste 6 - Chinatown - Las Vegas, NV 89146	Las Vegas	NV	36.1270447	-115.209656	4	1127	t	Restaurants
+mErsY2ye5aW8_Z2eIrfNCA	T-Mobile	6925 S. Rainbow Blvd - Spring Valley - Las Vegas, NV 89113	Las Vegas	NV	36.0628929	-115.24295	3	15	t	Shopping
+7q1FpSXbE6XtLNg518pxDA	Miller's Alehouse	6683 S Las Vegas Blvd - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.0698433	-115.172211	3	293	t	Restaurants
+AmomRzNtHoHtbwXKjwwqxA	Walmart	7200 Arroyo Crossing Pkwy - Spring Valley - Las Vegas, NV 89113	Las Vegas	NV	36.0647049	-115.248779	3	57	t	Shopping
+UvlNaaa-PmCib2lO71NW7w	Divine Hair Design	3544 E Southern Ave - Ste 101 - Mesa, AZ 85204	Mesa	AZ	33.3951607	-111.754379	4	21	t	Beauty_and_Spas
+7P9XY8EoBr-Ksoh3Xtq0Xg	Wild Nail	15643 N Reems Rd Ste 104 - Surprise, AZ 85374	Surprise	AZ	33.6266785	-112.393776	4	17	t	Beauty_and_Spas
+8JjXh6nHgRPqxKE4jXa80w	LV Nail Spa	4430 E Charleston Blvd - Ste 4 - Sunrise - Las Vegas, NV 89104	Las Vegas	NV	36.1591568	-115.079247	3	4	t	Beauty_and_Spas
+BkRQSTwBkXT6b1bqQ0gOFQ	Fashion Nails & Spa	6575 N Decatur Blvd - Centennial - Las Vegas, NV 89131	Las Vegas	NV	36.2750359	-115.206902	4	17	t	Beauty_and_Spas
+YlN_tF1mKK7XYNEkPmmBSA	Vanity Nails & Spa	7620 S Las Vegas Blvd - Ste 120 - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0512009	-115.171539	4	63	t	Beauty_and_Spas
+-c-qfgM7OWavhLe1wwSR9Q	Backstage Salon & Spa	6442 S McClintock Dr - Tempe, AZ 85283	Tempe	AZ	33.3622971	-111.91124	5	5	t	Beauty_and_Spas
+kV37euU3wV69qHncpimVtA	Downtown Tattoo	1106 Fremont St - Downtown - Las Vegas, NV 89101	Las Vegas	NV	36.1661263	-115.133522	5	64	t	Beauty_and_Spas
+KEaaDaiP5tSm80NA00l11w	Miraculous Massage	3415 W Craig Rd - Ste 209 - North Las Vegas, NV 89032	North Las Vegas	NV	36.2389374	-115.18618	4	14	t	Beauty_and_Spas
+QYquHLC1r7t4pFI4mpdQ0w	A Harmony Nail Spa	953 E Sahara Ave - Ste E-11A - Eastside - Las Vegas, NV 89104	Las Vegas	NV	36.142128	-115.142395	4	35	t	Beauty_and_Spas
+EtijSxqheu_LHohSvKQfLA	Ken's Nails and Spa	4730 E Indian School Rd - Ste 126 - Phoenix, AZ 85018	Phoenix	AZ	33.4946823	-111.980278	4	113	t	Beauty_and_Spas
+vIPNamLZH5dnIMFXzI9rUg	Kashmir Rock Spa	1601 E Bell Rd - Ste 200 - Phoenix, AZ 85022	Phoenix	AZ	33.6398163	-112.047089	3	24	t	Beauty_and_Spas
+9VNJm4tGjxy88iqH0pXJxQ	Inizio Salon	4206 N Goldwater Blvd - Scottsdale, AZ 85251	Scottsdale	AZ	33.4967041	-111.930565	5	7	t	Beauty_and_Spas
+5tsqcZEvZYTpqux7_IGHVw	Polished Nails & Spa	7575 S Rainbow Blvd - Ste 107 - Southwest - Las Vegas, NV 89139	Las Vegas	NV	36.0496712	-115.243851	4	204	t	Beauty_and_Spas
+BMnG5WBW1UyyjrzTYbF0Tw	Best Buy	6950 Arroyo Crossing Pkwy - Spring Valley - Las Vegas, NV 89113	Las Vegas	NV	36.0643463	-115.243401	3	60	t	Shopping
+YNH_ipgJX6DluTS46T8r9w	The Bee's Knees	2222 N 16th St - Phoenix, AZ 85006	Phoenix	AZ	33.4719429	-112.048035	5	14	t	Shopping
+VbI_ryrGPdNRaDrYRJGMiA	Crepe Shack & Waffles	10345 S Eastern Ave - Ste 100 - Anthem - Henderson, NV 89052	Henderson	NV	36.0009079	-115.109253	5	230	t	Restaurants
+Y2BXS2OOrlMSYfS5xdjtmw	Patisserie Manon	8751 W Charleston Blvd - Ste 110 - Westside - Las Vegas, NV 89117	Las Vegas	NV	36.1580276	-115.285797	5	313	t	Restaurants
+zNzJkzZxPTeTbRIRfeU9_Q	Rise & Shine, a Steak & Egg Place	10690 Southern Highlands Pwy - Ste 105 - Southwest - Las Vegas, NV 89141	Las Vegas	NV	35.9953995	-115.206703	4	402	t	Restaurants
+AnjC5W7LGM5tzGW0oVwDNg	Kitchen Switchin'	7118 N 7th St - Phoenix, AZ 85020	Phoenix	AZ	33.5405273	-112.065224	5	12	f	Shopping
+tWEYt-sTRGHEaV8l27I14w	H&M	3500 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1185608	-115.176537	4	122	t	Shopping
+BqrTtox0JbG-P_DKBB5bBw	Holsteins Shakes and Buns	3708 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.109623	-115.17321	4	1523	t	Restaurants
+npfVfumxVAkQNYpY1fSvew	Steak 'n Shake	9777 Las Vegas Blvd S - Southeast - Las Vegas, NV 89183	Las Vegas	NV	36.0113106	-115.174706	4	445	t	Restaurants
+zt1TpTuJ6y9n551sw9TaEg	Wicked Spoon	The Cosmopolitan of Las Vegas - 3708 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1098747	-115.175163	4	3408	t	Restaurants
+cMvN1j-LK64zqmT4vnl8NA	China Poblano	3708 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.109623	-115.17321	3	735	t	Restaurants
+eq6lQI039SBLC6sHm3idGA	Secret Pizza	The Cosmopolitan of Las Vegas - 3708 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1115189	-115.17485	4	1830	t	Restaurants
+MuIXnv7Oq7X3-4aEsp9dDA	Citizen Public House	7111 E 5th Ave - Ste E - Scottsdale, AZ 85251	Scottsdale	AZ	33.4982109	-111.927963	5	760	t	Restaurants
+BdsVOlCc_eSVH2-PwZ7H7g	The Forum Shops	Caesars Palace Las Vegas Hotel & Casino - 3570 Las Vegas Boulevard South - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1187134	-115.175034	4	495	t	Shopping
+nZgYNbl1XlZyyKlISMoG6w	Sugar Factory American Brasserie	Paris Las Vegas Hotel - 3655 Las Vegas Blvd S - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1120148	-115.172531	3	626	t	Restaurants
+FURgKkRFtMK5yKbjYZVVwA	Windsor	5223 N Central Ave - Phoenix, AZ 85012	Phoenix	AZ	33.5136986	-112.07341	4	550	t	Restaurants
+23sB_DG-bQO3luNlZ-vi4g	Flora Unique Florist	4032 N Miller Rd - Ste 106 - Scottsdale, AZ 85251	Scottsdale	AZ	33.4943619	-111.917496	5	34	t	Shopping
+IRYj1b1-mlXqABVsl9SoqQ	Tacos El Gordo	3049 S Las Vegas Blvd - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.131443	-115.164886	5	1035	t	Restaurants
+nXQEWHCNlOt4Z6XH98dwpg	Pottery Barn	15279 N Scottsdale Rd - Scottsdale, AZ 85260	Scottsdale	AZ	33.6251526	-111.92524	3	9	t	Shopping
+Cd9wyN-tWM32jdtPYoq0_g	Perfect Hair and Makeup	8889 S Eastern Ave - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0278091	-115.118546	5	26	t	Beauty_and_Spas
+RyUIcbNgIjzTE01rguyXUg	Chic Nails	4290 E Indian School Rd - Phoenix, AZ 85018	Phoenix	AZ	33.494976	-111.989738	4	18	t	Beauty_and_Spas
+BJ32TvfcVvlNKdjjtA5qgg	Natural Nails by Silva	7403 E 6th Ave - Ste 3 - Scottsdale, AZ 85251	Scottsdale	AZ	33.4987144	-111.92112	5	6	t	Beauty_and_Spas
+Iac4FRO1pGHnAwJcAMUq8A	Par Exsalonce CityScape Salon & Spa	11 W Washington St - Ste 240 - Phoenix, AZ 85003	Phoenix	AZ	33.4520531	-112.077202	4	28	f	Beauty_and_Spas
+Bm1OdFUtvf-PuWAKUyItaA	Muse Independent Styling	520 University Ave - Capitol - Madison, WI 53703	Madison	WI	43.0731964	-89.3943481	5	29	t	Beauty_and_Spas
+-YEZDSLKjTZbGnsp0F7nyg	American Male	Rainbow Pavilon Shopping Center - 6070 S Rainbow Blvd, Ste 5 - Spring Valley - Las Vegas, NV 89118	Las Vegas	NV	36.0784302	-115.241905	4	34	t	Beauty_and_Spas
+Db75Zr2zrKyiWzVUPkG2OQ	Best Foot Spa	4124 S Rainbow Blvd - Spring Valley - Las Vegas, NV 89103	Las Vegas	NV	36.1129875	-115.24189	5	208	t	Beauty_and_Spas
+Y6YCdd7RrTXpGFoACkyGuw	Twins Barber Shop	3415 W Thunderbird Rd - Phoenix, AZ 85053	Phoenix	AZ	33.6107178	-112.132225	5	12	t	Beauty_and_Spas
+qdDLtRi-OiZZKKSxyz_fzQ	Hair Artisans @ Sola Salons	170 S Green Valley Pkwy - Ste 100 - Studio 31 - Henderson, NV 89012	Henderson	NV	36.0219955	-115.082657	5	24	t	Beauty_and_Spas
+ExmitXhX5exM6y6W9JXXQQ	JT Aesthetics	4131 N 24th St - Ste 217 - Phoenix, AZ 85016	Phoenix	AZ	33.4959717	-112.029755	5	26	t	Beauty_and_Spas
+SDciNW-3TnC2ro8WzDrEvw	Arch Threading Studio	10530 Southern Highlands Pkwy - Unit 130 - Southwest - Las Vegas, NV 89141	Las Vegas	NV	35.9981384	-115.205627	4	11	t	Beauty_and_Spas
+b1cpIWkBelVMrmcTUwGDsA	Harmony Salon and Spa	1725 E Warm Spring Rd - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.0572472	-115.128906	5	36	t	Beauty_and_Spas
+A3UmvZpEIgegEmdFjCRo_w	Nail TK	7421 W Lake Mead Blvd - Ste 3 - Las Vegas, NV 89128	Las Vegas	NV	36.1959724	-115.254166	4	55	t	Beauty_and_Spas
+ieYiud3trM-9e7E8YUhK0g	Bread and Butter	10940 S Eastern Ave - Ste 107 - Anthem - Henderson, NV 89052	Henderson	NV	35.9941101	-115.099854	4	334	f	Restaurants
+puMcI6XOgAq7QOy0vGcv6A	Valley Estate Sale Company	702 W Camelback Rd - Phoenix, AZ 85013	Phoenix	AZ	33.5094719	-112.082664	4	8	t	Shopping
+wNsmt1hF1uv3YvbwXZMAoQ	O.H.S.O. Eatery + nanoBrewery	4900 E Indian School Rd - Phoenix, AZ 85018	Phoenix	AZ	33.495018	-111.975899	4	463	t	Restaurants
+kYjfdxTS-pb7rJwfzqw_AA	Sole Sports Running Zone	18583 N 59th Ave - Ste 112 - Glendale, AZ 85308	Glendale	AZ	33.6540375	-112.186249	5	12	t	Shopping
+Vh1oWQcztg4by2q8GWrGEg	Patty's Closet	6659 Las Vegas Blvd - Ste B110 - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.0695496	-115.172256	4	10	t	Shopping
+DuoUSE3x2ExjjkequBNhrA	Pearle Vision	6231 Mckee Rd - Suite C - Fitchburg, WI 53719	Fitchburg	WI	43.0156517	-89.4813004	5	4	t	Shopping
+pPfQ73--Y_h5Or0aqDgEGA	BabyStacks Cafe	4135 S Buffalo Dr - Ste 101 - Spring Valley - Las Vegas, NV 89147	Las Vegas	NV	36.1136551	-115.261482	4	524	t	Restaurants
+H_xynKoLMvqtudM90rKrCQ	Balenciaga	Crystals City Center - 3720 Las Vegas Blvd S, Ste 220 - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1086884	-115.173172	5	5	t	Shopping
+u7E7_VtKhGBbH9sMoIQCIw	Gun Garage	5155 Dean Martin Dr - Las Vegas, NV 89118	Las Vegas	NV	36.0957527	-115.181442	5	85	t	Shopping
+mDdqifuTrfXAOfxiLMGu5Q	Gordon Ramsay Steak	Paris Las Vegas Hotel & Casino - 3655 Las Vegas Blvd South - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.11763	-115.174904	4	1230	t	Restaurants
+BNww37a5p5aYE1i0_BYJxQ	The Orchard	1919 West Chandler Blvd - Chandler, AZ 85224	Chandler	AZ	33.3058128	-111.87439	5	8	t	Shopping
+b-0bS82UE1q_Bv1IOV0tJA	Rainbow Gardens	4471 W Charleston Blvd - Westside - Las Vegas, NV 89102	Las Vegas	NV	36.1589775	-115.200645	4	4	t	Shopping
+MzGatC-mzv9pIe1f6yhXFw	Walgreens	3717 Las Vegas Blvd S - Ste 100 - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1091042	-115.172394	4	44	t	Shopping
+zVe1protCqK2TkR8LpJtQA	Patty's Closet	6592 N Decatur Blvd - Ste 125 - Las Vegas, NV 89084	Las Vegas	NV	36.2999077	-115.141869	5	5	t	Shopping
+8ZDpVhvAWyMQb5LkPizj8Q	Battlefield Vegas	2771 Industrial Rd - Las Vegas, NV 89109	Las Vegas	NV	36.1394539	-115.168198	5	74	t	Shopping
+BHqiIqN-iBNS1QzGAo6c_Q	Walmart	14111 N Prasada Gateway Ave - Surprise, AZ 85388	Surprise	AZ	33.6116142	-112.421066	4	16	t	Shopping
+ZP6qFq7LUh6Tr7WHPoOW6g	eat.	707 Carson Ave - Downtown - Las Vegas, NV 89101	Las Vegas	NV	36.1667213	-115.138939	4	650	t	Restaurants
+sIyHTizqAiGu12XMLX3N3g	Bacchanal Buffet	Caesars Palace Las Vegas Hotel & Casino - 3570 Las Vegas Boulevard South - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1162109	-115.174828	4	2369	t	Restaurants
+kxDVLLS06L-5rtcQS0Yhuw	Modern On Melrose	4610 N 7th Ave - Phoenix, AZ 85013	Phoenix	AZ	33.504055	-112.082809	4	7	t	Shopping
+xnmwzklOe8EkfDlnRQCPPA	Jehnuine Designs	Phoenix, AZ	Phoenix	AZ	33.4483757	-112.074036	5	4	t	Shopping
+-llVVJ6nzq_Io2o-m3EOEQ	Diamond Kitchen & Bath	13636 N Tatum Blvd - Phoenix, AZ 85032	Phoenix	AZ	33.6108017	-111.979034	2	6	t	Shopping
+4YEOIQmgklOpaS3cVFySDw	Elite Tanning	467 E Silverado Ranch Blvd - Southeast - Las Vegas, NV 89183	Las Vegas	NV	36.0125542	-115.153374	5	21	t	Beauty_and_Spas
+GPjNTcCMGa_YYQv1CYPENA	Phoenix Salon by Matt Rose	9151 S Las Vegas Blvd - Ste 322 - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0197906	-115.15036	5	19	t	Beauty_and_Spas
+QygMZmPO8A6OaJYO2a0pnw	Studio C Hair Salon	37555 N Hum Rd - Carefree, AZ 85262	Carefree	AZ	33.825676	-111.923134	5	7	t	Beauty_and_Spas
+q7MXrL3K5COL51o_bxDLDQ	Beautiful Skin and Nails	4131 N 24th St - Ste A201 - Phoenix, AZ 85016	Phoenix	AZ	33.5085564	-112.032402	5	26	t	Beauty_and_Spas
+bjEG3BmwkHmBGISnVCIvEg	Kimberly The Pedicurist	Henderson, NV 89074	Henderson	NV	36.0713005	-115.056725	5	4	t	Beauty_and_Spas
+SiNo08iNNiqV9ketg5CQGQ	Renu Skin Care	13634 E Williamsfield Rd - Gilbert, AZ 85295	Gilbert	AZ	33.3066711	-111.788399	5	12	t	Beauty_and_Spas
+RroUdGop9iKwVOISl0KIeg	Highlights Nails & Spa	2025 N Pebble Creek Pkwy - Ste A09 - Goodyear, AZ 85395	Goodyear	AZ	33.4694557	-112.390045	4	27	f	Beauty_and_Spas
+jtTG8I_Iu-4QMlZXpdc9Fg	Massage Envy Spa Desert Ridge	21001 N. Tatum Boulevard - Suite Z-1 - Phoenix, AZ 85050	Phoenix	AZ	33.6790276	-111.974731	4	19	t	Beauty_and_Spas
+roymvpm55gNjDRf-es2PKg	Elan Nails & Spa	2101 S Decatur Blvd - Ste 7 - Westside - Las Vegas, NV 89102	Las Vegas	NV	36.1486588	-115.209816	4	91	t	Beauty_and_Spas
+Zi-dpvV3879RgW_LeZ49uQ	CC Nail Spa	9550 S Eastern Ave. - Ste 150 - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0146599	-115.117584	5	185	t	Beauty_and_Spas
+8KSK12p77qHb4gvN6DAncg	The Polish Room	3622 W Pinnacle Peak Rd - Glendale, AZ 85308	Glendale	AZ	33.6983185	-112.140251	5	48	t	Beauty_and_Spas
+n4kQBw7XX1tSJMPhM5SyAQ	Tanger Outlets	6800 N 95th Ave - Glendale, AZ 85305	Glendale	AZ	33.5343132	-112.264992	3	78	t	Shopping
+ujkFN6kSrXVzq3epVeWmzQ	Record Room	4211 N Scottsdale Rd - Scottsdale, AZ 85251	Scottsdale	AZ	33.4972763	-111.925941	5	19	t	Shopping
+CFcw-FSoImgmZBiXlzbdEA	Big Lots	350 W Lake Mead Pkwy - Henderson, NV 89015	Henderson	NV	36.0386124	-114.994698	4	5	t	Shopping
+p0lGspE79cegxU_1xY22ww	DIRECTV	Phoenix, AZ 85001	Phoenix	AZ	33.4500008	-112.07	2	52	t	Shopping
+aGbjLWzcrnEx2ZmMCFm3EA	Gordon Ramsay BurGR	Planet Hollywood - 3667 Las Vegas Boulevard South - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1101074	-115.17234	4	1890	t	Restaurants
+3ZnV5rMrxDWOCNziT3vPoQ	Costco	2850 Hoepker Rd - Sun Prairie, WI 53590	Sun Prairie	WI	43.1674767	-89.2734222	5	10	t	Shopping
+sL4n5lhxqoZ5l0d8gwIPyA	North Mountain Brewing Co.	522 E Dunlap Ave - Phoenix, AZ 85020	Phoenix	AZ	33.5679207	-112.066399	4	142	t	Restaurants
+e9Bg3IaFrFz-d_lbVM-GZw	Nevada Guns & Gear	237 N Stephanie St - Ste D - Henderson, NV 89074	Henderson	NV	36.0441933	-115.046638	5	11	t	Shopping
+czwbmZktTUQ3Vhxgq1bnPQ	The Find, LLC	3170 E Sunset Rd - Southeast - Las Vegas, NV 89120	Las Vegas	NV	36.0723228	-115.105743	5	10	t	Shopping
+DnRlgVMRC5XI7urv1A35_Q	Stripside Comics and Sportscards	9620 S Las Vegas Blvd - Southeast - Las Vegas, NV 89123	Las Vegas	NV	36.0148811	-115.171471	4	11	t	Shopping
+1vFDFWDrlVSDEcuLTUD3oQ	Phoenix Premium Outlets	4976 Premium Outlets Way - Chandler, AZ 85226	Chandler	AZ	33.2861595	-111.973579	4	62	t	Shopping
+jDdRxo7Krsl1qfxhkocL4w	Vape Escapes	4667 E Cactus Rd - Phoenix, AZ 85032	Phoenix	AZ	33.5988159	-111.981712	5	27	t	Shopping
+3OB5gQqibKGTzx9R1w7wKQ	SkinnyFATS	6261 Dean Martin Dr - Las Vegas, NV 89118	Las Vegas	NV	36.0775261	-115.181366	5	394	t	Restaurants
+notMxQXE3BaBAgiD-o1jgg	Joyride Taco House	302 N Gilbert Rd - Ste 101 - Gilbert, AZ 85234	Gilbert	AZ	33.3549538	-111.789726	4	279	t	Restaurants
+DC9Gr3z2LHtlqoCG2-fwKQ	Vape Distrct	1775 E Tropicana Blvd - Ste 16 - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.0999603	-115.128563	5	14	t	Shopping
+MN0OLvP8i0SirMJ7AMuMzA	Pizza Rock	201 N 3rd St - Downtown - Las Vegas, NV 89101	Las Vegas	NV	36.1718292	-115.142006	4	384	t	Restaurants
+qGffC4h6UOTSkLhzjj59FQ	Braddah's Island Style	2330 S Rainbow Blvd - Westside - Las Vegas, NV 89146	Las Vegas	NV	36.1462173	-115.242485	5	278	t	Restaurants
+G9kP3YiSNPfjbCbvorTDEQ	Potato Barn	7000 E Mayo Blvd - Phoenix, AZ 85374	Phoenix	AZ	33.6554985	-111.929916	3	4	t	Shopping
+u2PL3uLmwF2HBldVeouFxA	Living Spaces	16275 N Scottsdale Rd - Scottsdale, AZ 85260	Scottsdale	AZ	33.6338043	-111.925346	3	40	t	Shopping
+YeFdVd9zmNWQYirgQS-NaQ	T- Mobile	2815 S Alma School Rd - Chandler, AZ 85286	Chandler	AZ	33.2624817	-111.857567	3	4	t	Shopping
+iQ7zpXQfcRE3Ld5tjMKzJQ	H&M	1300 W Sunset Rd - Henderson, NV 89014	Henderson	NV	36.0682411	-115.045074	4	7	t	Shopping
+Q5Kz97C8UUh3vEOCVVFvFw	One Love Vapors	6814 W Cheyenne Ave - Northwest - Las Vegas, NV 89108	Las Vegas	NV	36.2186508	-115.242996	5	12	t	Shopping
+OwBPjUz2o0J5K3DzcHkBtg	Soho Japanese Restaurant	7377 S Jones Blvd - Ste 116 - Southwest - Las Vegas, NV 89139	Las Vegas	NV	36.0552444	-115.225868	5	424	t	Restaurants
+kSTs0hYF0tFsiGj7aiMDYA	Foxtail Salon	115 W 6th St - Ste 101 - Tempe, AZ 85281	Tempe	AZ	33.4241295	-111.941849	5	27	t	Beauty_and_Spas
+0ZeqT7wJrXHMLdfIiYO69w	Sol y Luna Beauty Studio	901 S Rancho Dr - Ste 6 - Downtown - Las Vegas, NV 89106	Las Vegas	NV	36.1604996	-115.172371	5	6	t	Beauty_and_Spas
+bb9edeoz_hmC6vSHYOU8kA	JR CUTS	804 E Indian School - Phoenix, AZ 85014	Phoenix	AZ	33.4949226	-112.063843	5	8	t	Beauty_and_Spas
+SqtqHxqNcwwH8rv4XB3Q1w	Lucky Day Nails & Spa	13560 W Van Buren St - Ste B104 - Goodyear, AZ 85338	Goodyear	AZ	33.4509773	-112.351616	4	4	t	Beauty_and_Spas
+dfOFgjhuEp5GdHJhVzjOAA	Bali Foot Spa	5599 Spring Mountain Rd - Chinatown - Las Vegas, NV 89146	Las Vegas	NV	36.1253166	-115.218315	4	79	t	Beauty_and_Spas
+bp_pR4yFDKGyJwQkrMFWQQ	The Nail Room, LLC	15425 N Scottsdale Rd - Ste 110 - Scottsdale, AZ 85254	Scottsdale	AZ	33.6263428	-111.924728	4	55	t	Beauty_and_Spas
+DJMC1HD4XEeaJaWlR6ISBw	Buddha Bar | Nails & Threading	1690 W Sunset Rd - Ste 103 - Henderson, NV 89014	Henderson	NV	36.0645027	-115.05954	5	130	t	Beauty_and_Spas
+2tP7IwNgrcLepEj0wUh-Dw	My Pink Hare	Southeast - Las Vegas, NV 89120	Las Vegas	NV	36.0833359	-115.099976	5	8	t	Beauty_and_Spas
+fMyk-uQgPSMIxp9N5gn2Uw	Nails 63	3769 E Washington Ave - Mayfair Park - Madison, WI 53704	Madison	WI	43.1180573	-89.3215408	4	10	t	Beauty_and_Spas
+XAWDT6cv5aADi-TG2rKyFw	Professor Nails & Spa	10470 S Decatur Blvd - Southwest - Las Vegas, NV 89141	Las Vegas	NV	35.9991951	-115.206512	4	62	t	Beauty_and_Spas
+DpboR9RGiOsjRdgP2_m0pw	Hollywood Beauty	6135 N 35th Ave - Ste 187 - Phoenix, AZ 85017	Phoenix	AZ	33.5251923	-112.131485	5	15	t	Beauty_and_Spas
+k_oGELzpHDK6JrHRsCD2lQ	LOOK Style Society	6539 Las Vegas Blvd S - Ste 110-111 - Southeast - Las Vegas, NV 89119	Las Vegas	NV	36.0701714	-115.172264	5	34	t	Beauty_and_Spas
+kufnnFsB28y8TbJm1o9vHw	Nike Factory Outlet	4976 Premium Outlets Way - Chandler, AZ 85226	Chandler	AZ	33.2878342	-111.97377	5	3	t	Shopping
+EXpmsQhHjk7U5X1kw7Rk_Q	WinCo Foods	Santan Village - 1967 E Pecos Rd - Gilbert, AZ 85023	Gilbert	AZ	33.2951546	-111.748596	4	22	t	Shopping
+LgA2Ljw4ulJkv9F-gbZeVg	First Time Vape	351 E Silverado Ranch Blvd - Ste 110 - Southeast - Las Vegas, NV 89183	Las Vegas	NV	36.0125732	-115.156334	5	17	t	Shopping
+M-4pyUDq6jWwDvvoQTIS-A	TASC, Inc	2234 N 7th St - Phoenix, AZ 85006	Phoenix	AZ	33.4726944	-112.065521	1	6	t	Health_and_Medical
+-TIyxSc-lLmJzunje6MD9Q	Phoenix VA Health Care System	Carl T Hayden VA Medical Center - 650 E Indian School Rd - Phoenix, AZ 85012	Phoenix	AZ	33.4967575	-112.065407	3	21	t	Health_and_Medical
+IZvR2t778V-3PqopbsZdeg	SCP Chiropractic	4767 N 20th St - Phoenix, AZ 85016	Phoenix	AZ	33.5064888	-112.038841	5	4	t	Health_and_Medical
+psMQBi2uQVN7c-Sw0xjNMw	Family Practice Specialist Ltd	4350 E Camelback Rd - Ste F100 - Phoenix, AZ 85018	Phoenix	AZ	33.5100746	-111.987839	4	22	t	Health_and_Medical
+8rMSbtMFVtEien-2EfFu6w	John C. Lincoln Deer Valley Hospital	19829 N. 27th Ave. - Phoenix, AZ 85027	Phoenix	AZ	33.6659546	-112.11618	4	26	t	Health_and_Medical
+QsCCPWxWqMe-0jSfryhkXg	Sonora Quest Laboratories	11209 N Tatum Blvd - Ste 185 - Phoenix, AZ 85028	Phoenix	AZ	33.5879631	-111.977737	4	4	t	Health_and_Medical
+BNhnxtafzFg5D3aVBxz7jA	Mark J Woodland, DDS	4950 E Elliot Rd - Phoenix, AZ 85044	Phoenix	AZ	33.3492126	-111.975594	5	11	t	Health_and_Medical
+-xfC8kvDn3TN5uhkeTT0JA	Foothills Sports Medicine Physical Therapy	15410 S Mountain Pkwy - Ste 112 - Phoenix, AZ 85044	Phoenix	AZ	33.3067207	-111.998222	4	5	t	Health_and_Medical
+SHOF1J3_V1z_HjsXqnIxqA	Foothills Neurology	4530 E Muirwood Dr - Ste 111 - Phoenix, AZ 85048	Phoenix	AZ	33.3030853	-111.985306	3	13	t	Health_and_Medical
+9JkAZsDK2d2ingb8Pjyp3Q	Semrad Sidney DO	4566 E Inverness Ave - Ste 202 - Mesa, AZ 85206	Mesa	AZ	33.381115	-111.734795	2	3	t	Health_and_Medical
+8w48H-7HwQX-fJx1Wl8glg	Sunwest Dental Centers	2175 N Alma School Rd - Ste C-108 - Chandler, AZ 85224	Chandler	AZ	33.3384781	-111.858894	4	7	t	Health_and_Medical
+K7l8kVfpCWBhQpMHEhCv5w	Goodman & Partridge	485 S Dobson Rd - Ste 200 - Chandler, AZ 85224	Chandler	AZ	33.2965469	-111.875557	1	9	t	Health_and_Medical
+J6ZcTaL_4XaC7SwV1w9IOg	Southwestern Pediatrics	2730 S Val Vista Dr - Ste 161 - Gilbert, AZ 85295	Gilbert	AZ	33.3013153	-111.757782	5	6	t	Health_and_Medical
+xpnNsrT8QsCIUdawnsBvoQ	Family Optometry	2950 N Dobson Rd - Chandler, AZ 85224	Chandler	AZ	33.3487778	-111.877274	5	3	t	Health_and_Medical
+Hls6Cl5Wo8f1FS5ZDtntXA	Chandler Dental Health	1035 W Queen Creek Rd Suite 206 - Ste 206 - Chandler, AZ 85248	Chandler	AZ	33.260891	-111.859283	5	28	t	Health_and_Medical
+NKKt_CxHCggMvuvrqJEjSA	Scottsdale/Paradise Valley YMCA	6869 E Shea Blvd - Scottsdale, AZ 85254	Scottsdale	AZ	33.5815773	-111.933121	4	14	t	Health_and_Medical
+hvnNXEPHglWqRjFRtTMi9w	Paradise Valley OB-Gyn	10261 N 92nd St - Scottsdale, AZ 85258	Scottsdale	AZ	33.5790024	-111.879074	4	25	t	Health_and_Medical
+BLHR4o5R4uTuRV0uY-COjg	Schwartz Laser Eye Center	8416 E Shea Blvd - Ste C-101 - Scottsdale, AZ 85260	Scottsdale	AZ	33.5832939	-111.898911	4	15	t	Health_and_Medical
+PCGQnghGB0btxBaU6D70bA	George Carr, DDS & Associates	2072 E Southern Ave - Ste A103 - Tempe, AZ 85282	Tempe	AZ	33.3933945	-111.896873	5	34	t	Health_and_Medical
+XVHLXkjnzZxIvyvi9VZkPg	Galleria Family Dental	715 Mall Ring Cir - Ste 200 - Henderson, NV 89014	Henderson	NV	36.0695877	-115.045914	4	4	t	Health_and_Medical
+FGorBTbpa1VmLwf4nXBqPw	Ear Nose & Throat Consultants of Nevada	8530 W Sunset Rd - Ste 230 - Spring Valley - Las Vegas, NV 89113	Las Vegas	NV	36.0714493	-115.27771	3	13	t	Health_and_Medical
+4vVDMWGD9pasq-KEHZY7AA	Quest Diagnostics	1701 N Green Valley Pkwy - Henderson, NV 89074	Henderson	NV	36.0358238	-115.087708	2	12	t	Health_and_Medical
+79oyYc48uyR8dgwt34ukig	Paul Thompson, OD PC	Walmart Supercenter - 4505 W Charleston Blvd - Westside - Las Vegas, NV 89102	Las Vegas	NV	36.1579208	-115.203094	5	8	t	Health_and_Medical
+YWIDquDD5n7L7VWD6D4mig	MountainView Hospital	3100 N Tenaya Way - Las Vegas, NV 89128	Las Vegas	NV	36.2156105	-115.249084	3	36	t	Health_and_Medical
+M9iAeKY3TH-aGOYfi3Kdgw	UMC Quick Care	2031 N Buffalo Dr - Summerlin - Las Vegas, NV 89128	Las Vegas	NV	36.1976318	-115.260895	2	19	t	Health_and_Medical
+PvRGbTosdScecvPlB5kVfA	Associated Dentists	1010 N Edge Trl - Verona, WI 53593	Verona	WI	43.0020714	-89.5329132	5	3	t	Health_and_Medical
+Ar8BfETzZ2QRrQ8LrdcX2Q	Open Wide Dental	6520 N 7th Ave - Ste 1 - Phoenix, AZ 85013	Phoenix	AZ	33.5315247	-112.083008	5	27	t	Health_and_Medical
+cQrDRErbvkhtz7Xbmuz0Gw	Griffin E Cipolla, DO	120 E Monterey Way - Phoenix, AZ 85012	Phoenix	AZ	33.4854965	-112.071136	4	12	t	Health_and_Medical
+ecKVPeamtQ2Dvv8i68ucZw	Bethany Womens Healthcare	3660 W Bethany Home Rd - Ste A - Phoenix, AZ 85019	Phoenix	AZ	33.5239639	-112.137276	3	9	t	Health_and_Medical
+43E2pI23izWmOjLd7bkb0g	Mesa Family Medical Center PC	1345 E McKellips Road - Suite 106 - Mesa, AZ 85203	Mesa	AZ	33.4514351	-111.802238	2	4	t	Health_and_Medical
+TrkF3j4-uBNxkmLVQsbMtg	Abbott James L OD	1919 E McKellips Rd Ste 103 - Mesa, AZ 85203	Mesa	AZ	33.4389496	-111.800735	4	3	t	Health_and_Medical
+XN4i-qZ3cFK6cqcFRD2WNQ	Chandler Valley Urgent Care	936 W Chandler Blvd - Ste 1 - Chandler, AZ 85225	Chandler	AZ	33.3064919	-111.857956	4	10	t	Health_and_Medical
+piymIHE-6HFS1ODP2uFfxA	Chandler Eyecare	916 W Chandler Blvd - Ste 1 - Chandler, AZ 85225	Chandler	AZ	33.3077583	-111.85862	5	31	t	Health_and_Medical
+jhI4kxnLhK3olQ5rfCyvPQ	Eyecare Plus Scottsdale	4441 N 75 St - Scottsdale, AZ 85251	Scottsdale	AZ	33.5014229	-111.920029	5	21	t	Health_and_Medical
+kJkCD-oHLpaFLeXSrgWqgw	Paradise Valley Dental Group PC	7125 E Lincoln Dr - Paradise Valley, AZ 85253	Paradise Valley	AZ	33.5306587	-111.928223	3	4	t	Health_and_Medical
+S74jUZREftrfar8cs629Jw	Cardiovascular Consultants	8575 E Princess Dr - Ste 115 - Scottsdale, AZ 85255	Scottsdale	AZ	33.6453133	-111.895897	3	4	t	Health_and_Medical
+t9fDDws6uSEnAm0eupcLrQ	James W Jenista, DDS	11390 E Via Linda - Ste 104 - Scottsdale, AZ 85259	Scottsdale	AZ	33.5902443	-111.834274	4	4	t	Health_and_Medical
+hh2GJyfWJYojFiNAADDXSg	Tempe Dental Care	5801 S McClintock Dr - Ste 101 - Tempe, AZ 85283	Tempe	AZ	33.3707581	-111.911041	5	15	t	Health_and_Medical
+JYnZna-lXy-pv8P22tloIA	Fremont Medical Center	595 W Lake Mead Pkwy - Henderson, NV 89015	Henderson	NV	36.0339508	-114.999298	3	10	t	Health_and_Medical
+NQZKp0H6u2qHLOiz1990jw	Premier Dental Care	220 E Horizon Dr - Ste F - Henderson, NV 89015	Henderson	NV	36.0128517	-114.984428	5	9	t	Health_and_Medical
+0_5w-MEtHerOiXf7rki08A	St. Rose Dominican Hospitals - Rose De Lima Campus	102 East Lake Mead Parkway - Henderson, NV 89015	Henderson	NV	36.0389023	-114.984505	3	18	t	Health_and_Medical
+ZN8OHbdTgMLMF5WKRDC90A	Sheldon Freedman, MD	9280 W Sunset Rd - Ste 200 - Spring Valley - Las Vegas, NV 89148	Las Vegas	NV	36.0718193	-115.294899	5	4	t	Health_and_Medical
+0eW24T41olc6pqK4r9FKAw	Optic Gallery	8880 W Charleston Blvd - Westside - Las Vegas, NV 89117	Las Vegas	NV	36.1601067	-115.28878	5	15	t	Health_and_Medical
+n3YOqSuvd-DqvrmfKxGWog	Benjamin Glick, DMD	1070 W Horizon Ridge Pkwy - Ste 120 - Henderson, NV 89012	Henderson	NV	36.023365	-115.032532	5	4	t	Health_and_Medical
+LUFA1zyso9upnRQnO2qbQA	St. Rose Dominican Hospitals - Siena Campus	3001 St. Rose Parkway - Anthem - Henderson, NV 89052	Henderson	NV	36.0045662	-115.115166	5	41	t	Health_and_Medical
+bRijcLYfpRdxaABwVbeJ_A	Ziltzer Vivian Gee, MD	10200 N 92nd St - Ste 150 - Scottsdale, AZ 85258	Scottsdale	AZ	33.5785789	-111.880463	5	3	t	Health_and_Medical
+elKDW2151GDdM7QC8EgWAw	VIP Adjust	Las Vegas, NV 89109	Las Vegas	NV	36.1310577	-115.173531	5	16	t	Health_and_Medical
+AmrJkhuLdS_3_GQKj01WAg	Arcadia Dermatology	7331 E Osborn Dri - Ste 250 - Scottsdale, AZ 85251	Scottsdale	AZ	33.4867439	-111.924103	2	5	t	Health_and_Medical
+DR1k5qCRvTFYxHGiBUJimw	Desert Jewel Obstetrics & Gynecology	3501 N Scottsdale Rd - Ste 230 - Scottsdale, AZ 85251	Scottsdale	AZ	33.4888687	-111.925751	3	10	t	Health_and_Medical
+OyehKmT9fPoin5jzfJZ0Fg	Valley Endodontic Specialty Group	4141 N 32nd St - Phoenix, AZ 85018	Phoenix	AZ	33.4968529	-112.012093	5	6	t	Health_and_Medical
+HvSzADIoexXueDYTD5FY2w	Comprehensive Womens Health	201 W Guadalupe Rd - Ste 310 - Gilbert, AZ 85233	Gilbert	AZ	33.3632393	-111.793694	3	4	t	Health_and_Medical
+gKh7V9YKQruApSvaWUnSRw	North Scottsdale Pediatric Dentistry	14269 N 87th St - Ste 103 - Scottsdale, AZ 85260	Scottsdale	AZ	33.6154289	-111.892723	4	7	t	Health_and_Medical
+SEt4A0vHXFRJE-Z-Qr9Ybg	Gilbert Center For Family & Cosmetic Dentistry	3011 S Lindsay Road - Gilbert, AZ 85296	Gilbert	AZ	33.2946243	-111.773552	5	3	t	Health_and_Medical
+jdMZwzgn6A1_1gP2Wz2uwg	Arizona Associates For Reproductive Health	8573 E Princess Dr - Ste 101 - Scottsdale, AZ 85255	Scottsdale	AZ	33.645298	-111.895889	3	5	t	Health_and_Medical
+Yi3XJM01p6hvXH3mLZfSIg	Prenatal Peek	1626 N 7th St - Phoenix, AZ 85006	Phoenix	AZ	33.4666862	-112.065392	5	21	t	Health_and_Medical
+XU0Q4q3aJTrhgOXe5HMYdg	Angel Dentistry	21027 N Cave Creek Rd - Phoenix, AZ 85024	Phoenix	AZ	33.6773872	-112.029739	5	12	t	Health_and_Medical
+mIaR-t3rLp8FeuqCbFKeuw	Desert Oasis Family Dentistry	9059 W Lake Pleasant Pkwy - Peoria, AZ 85382	Peoria	AZ	33.6735191	-112.253929	5	5	t	Health_and_Medical
+pjGUK8rHXq8P4ubUoNNc5A	Integrated Associates In Medicine	1968 E Baseline Road - Tempe, AZ 85283	Tempe	AZ	33.3786774	-111.90181	5	6	t	Health_and_Medical
+FydUxPwn2p1pcGNacbIIdQ	Apex Endodontics	3303 S Lindsay Rd - Ste 127 - Gilbert, AZ 85296	Gilbert	AZ	33.3116722	-111.772011	4	11	t	Health_and_Medical
+H0HioNQP6kicnH5a91oIZQ	Encanto Family Dental Care	1525 W Thomas Rd - Phoenix, AZ 85015	Phoenix	AZ	33.4802589	-112.09256	5	6	t	Health_and_Medical
+k50mFc8dCvmqGVkexg6iGw	Brothers Chiropractic	8060 E Gelding Dr - Scottsdale, AZ 85260	Scottsdale	AZ	33.615921	-111.907097	4	4	t	Health_and_Medical
+G1F5EEUXOwjvUmgnnOgyCw	Desert Ridge Pediatric Dentistry	5315 E High St - Ste 115 - Phoenix, AZ 85054	Phoenix	AZ	33.6747894	-111.964996	5	7	t	Health_and_Medical
+46Pklsv4V2dku7yY5rvhIw	David T Madder, DMD	1757 E Baseline Rd - Ste 129 - Gilbert, AZ 85233	Gilbert	AZ	33.3775826	-111.79422	5	14	t	Health_and_Medical
+ZRWPkOAqJFm5p1CNlLffLA	Comprehensive Cancer Centers of Nevada	3730 S Eastern Ave - Eastside - Las Vegas, NV 89169	Las Vegas	NV	36.1212463	-115.118256	4	8	t	Health_and_Medical
+TpbjNkUAeh50hSviDaATiQ	Smile Design Center	10120 S Eastern Ave - Ste 375 - Anthem - Henderson, NV 89052	Henderson	NV	36.006073	-115.110878	5	11	t	Health_and_Medical
+3ZKcmh0XczhqVSkbn9ucuw	Siena Pediatrics	2847 St. Rose Pkwy - Ste 150 - Anthem - Henderson, NV 89052	Henderson	NV	36.0070763	-115.109489	4	21	t	Health_and_Medical
+z-eC60_lycTCetjkN-HcRg	My Left Foot Children's Therapy	3030 S Jones Blvd - Ste 105 - Westside - Las Vegas, NV 89146	Las Vegas	NV	36.1343536	-115.224464	4	18	t	Health_and_Medical
+RlSC-4lbSgMOfnb8_qEYAw	Tyler M. Christensen, DDS	10521 Jeffreys St - Ste 200 - Southeast - Henderson, NV 89052	Henderson	NV	36.000576	-115.11956	5	3	t	Health_and_Medical
+NtJ7vZMnSZxPjyudmmuoHQ	Optic Gallery	2260 Village Walk Drive - Suite 108 - Anthem - Henderson, NV 89052	Henderson	NV	36.0214615	-115.087685	5	17	t	Health_and_Medical
+0FE_I1Mnq3uvtCbxMrMwYA	Crowne Dental	8390 W Sahara Ave - Ste 110 - Westside - Las Vegas, NV 89117	Las Vegas	NV	36.1442757	-115.274323	5	6	t	Health_and_Medical
+LUhVfCMmLaiKKGvXTVc20A	Meadows Pediatric	9030 W Cheyenne Ave - Ste 120 - Summerlin - Las Vegas, NV 89129	Las Vegas	NV	36.218708	-115.293411	4	16	t	Health_and_Medical
+-pAx9xVYiJR7fUdKoQPp9g	Absolute Dental	860 S Rancho Drive - Downtown - Las Vegas, NV 89106	Las Vegas	NV	36.1609802	-115.172958	3	5	t	Health_and_Medical
+-82nEX0RZoD16Bk-VdYDXw	Raw Health Vitamin Store	7445 S Durango Dr - Ste 101 - Southwest - Las Vegas, NV 89113	Las Vegas	NV	36.0535698	-115.279167	4	15	t	Health_and_Medical
+j5gjpWwAVP12-WopcSo5YQ	Alfred A Thresher, DDS	9500 W Flamingo Rd - Ste 102 - Spring Valley - Las Vegas, NV 89147	Las Vegas	NV	36.1163712	-115.299118	5	4	t	Health_and_Medical
+ZdemvVChUqk74CezZ9SD4g	Miracle In Progress 3D4D Ultrasound Studio - LV	4220 S Grand Canyon Dr - Ste 1 - Spring Valley - Las Vegas, NV 89147	Las Vegas	NV	36.112957	-115.305954	4	21	t	Health_and_Medical
+Q6exnM7RmHdNMZqegdrmoA	Simply Dentistry	7552 E Camelback Rd - Scottsdale, AZ 85251	Scottsdale	AZ	33.5023193	-111.917999	5	58	t	Health_and_Medical
+wi6-9GyhR3srZ8NodhVcDA	Sonoran Desert Dentistry	9220 E Raintree Dr - Ste 102 - Scottsdale, AZ 85260	Scottsdale	AZ	33.6193771	-111.882385	5	42	t	Health_and_Medical
+W79tyu1eR9pcPquM5qFLXw	True Results of Phoenix Weight Loss Center	8360 E. Raintree Dr - Ste 120 - Scottsdale, AZ 85260	Scottsdale	AZ	33.6196098	-111.899223	3	3	t	Health_and_Medical
+744lrfK9GWSFD6XwkKB5Rg	AZ Body Mechanics	5410 E High St - Ste 107 - Phoenix, AZ 85054	Phoenix	AZ	33.6763191	-111.964935	5	7	t	Health_and_Medical
+HHNnxstKEjJ0ofgoKk1jSg	N8 Touch Massage and Chiropractic	21050 N Tatum Blvd Suite 114 - Ste 114 - Phoenix, AZ 85050	Phoenix	AZ	33.6778526	-111.978577	5	18	t	Health_and_Medical
+whQtEKAAwtP7HAbsgYLn3w	East Valley Family Physicians	1455 W Chandler Blvd Ste A4 - Chandler, AZ 85224	Chandler	AZ	33.3223	-111.876701	3	13	t	Health_and_Medical
+PCd22VEO3hrNsi_E2rh4nQ	Arizona Medical Clinic	1847 W Heatherbrae Dr - Phoenix, AZ 85015	Phoenix	AZ	33.497982	-112.099625	5	11	t	Health_and_Medical
+W3jMr5dHJSe_CfzcpNGFww	Hunt Courtney A, MD	3501 N Scottsdale Rd - Ste 230 - Scottsdale, AZ 85251	Scottsdale	AZ	33.4888687	-111.925751	1	6	t	Health_and_Medical
+AhP_vpSv3r8EU9_Xkej69A	Aesthetic Dentistry	8084 W Sahara Ave - Westside - Las Vegas, NV 89117	Las Vegas	NV	36.1440239	-115.267319	5	4	t	Health_and_Medical
+Y8-1LzsaiNb-SdePFU2iuQ	Evan C Allen MD	2510 Wigwam Pkwy Ste 109 - Henderson, NV 89074	Henderson	NV	36.0350952	-115.097237	2	10	t	Health_and_Medical
+ttTp9QDQzx6GHxnRv6Wn1w	Desert Institute of Spine Care	9339 W Sunset Rd - Spring Valley - Las Vegas, NV 89148	Las Vegas	NV	36.0696526	-115.296486	3	6	t	Health_and_Medical
+1jxNxa8V0RUQaydMLTR3mw	Any Lab Test Now Las Vegas	708 N. Rainbow Blvd. - Las Vegas, NV 89107	Las Vegas	NV	36.1800346	-115.242126	4	3	t	Health_and_Medical
+MMM2S_9t9_oRXsrniLJR1A	Hillcrest Dental	3350 Novat St - Ste 145 - Northwest - Las Vegas, NV 89129	Las Vegas	NV	36.2210236	-115.328674	5	13	t	Health_and_Medical
+RP9-bcbJJmnWBU2GyijxsA	Tim Soder Physical Therapy	2779 W Horizon Ridge Pkwy - Anthem - Henderson, NV 89052	Henderson	NV	35.9982414	-115.109428	4	3	t	Health_and_Medical
+YS69FK3Bul30xflmvYN4Xw	Cherrington Dental	7500 W Lake Mead - Ste 11 - Las Vegas, NV 89128	Las Vegas	NV	36.1972351	-115.25779	5	17	t	Health_and_Medical
+Xb-cp9LxwZKGBPpwz3HoiA	Cavitybusters	6910 S Rainbow Blvd - Ste 104 - Spring Valley - Las Vegas, NV 89118	Las Vegas	NV	36.0629234	-115.242073	4	9	t	Health_and_Medical
+MOkQOf8XvO4mCBvARJNQYQ	Emerge Acupuncture	123 E Baseline Rd - Ste D102 - Tempe, AZ 85283	Tempe	AZ	33.3776588	-111.937889	5	25	t	Health_and_Medical
+Qnev_Q2CHjCTwX7lLsl6lA	Banner Boswell Medical Center	10401 West Thunderbird Boulevard - Sun City, AZ 85351	Sun City	AZ	33.6039391	-112.283569	3	6	t	Health_and_Medical
+hkGUrbJeIAUtOQ_5mRmy9A	Quest Diagnostics	4180 S. Rainbow Blvd - Spring Valley - Las Vegas, NV 89103	Las Vegas	NV	36.1122246	-115.241798	2	13	t	Health_and_Medical
+lElMV65G2sOH2X5-OvFeuQ	Take Care Clinic	3450 W Dunlap Rd - Phoenix, AZ 85051	Phoenix	AZ	33.5675735	-112.133575	4	3	t	Health_and_Medical
+84c2it9SM3XajJHltybpgg	Healthy Habits Massage, LLC	13839 W Bell Rd - Ste 100 - Surprise, AZ 85374	Surprise	AZ	33.636364	-112.358276	4	13	t	Health_and_Medical
+I9ej2N9lYsxQWay6EHLP2g	Massage 702 Las Vegas	3508 Victory Ave - Eastside - Las Vegas, NV 89121	Las Vegas	NV	36.1194038	-115.098701	5	30	t	Health_and_Medical
+3o1YTQpduZ2WeyGzYJcEWQ	Innovative Pain Care Center	9920 W Cheyenne Ave - Ste 110 - Summerlin - Las Vegas, NV 89129	Las Vegas	NV	36.2186546	-115.311806	4	3	t	Health_and_Medical
+pIQvJ9vMMCmTZF9QDK8zxg	A Woman's Place	2789 Sunridge Heights Pkwy - Ste 100 - Anthem - Henderson, NV 89052	Henderson	NV	35.9911575	-115.108452	3	14	f	Health_and_Medical
+8nK5CL8OUnqc1qRDV7AZvw	Advanced Orthopedic and Sport Medicine	2451 W. Horizon Ridge Pkwy - Ste 130 - Anthem - Henderson, NV 89052	Henderson	NV	36.0054932	-115.094124	4	7	t	Health_and_Medical
+CMdNwkfXQanQ3asGkNTFIA	Quan Chiropractic	3047 S Decatur Blvd - Westside - Las Vegas, NV 89102	Las Vegas	NV	36.134491	-115.20842	5	46	t	Health_and_Medical
+QsaY4Ev1Abfcewol7uIaOg	Resolution Therapeutic Massage	520 University Ave - Suite 145 - Capitol - Madison, WI 53703	Madison	WI	43.0731964	-89.3943481	5	5	t	Health_and_Medical
+m-32wtMGKTJe_8Z9gn_kAQ	The Mindful Way	5150 N 20th St - Ste 209 - Phoenix, AZ 85016	Phoenix	AZ	33.512558	-112.040024	5	3	t	Health_and_Medical
+6xgBVwvBxN0hqOmw0fQckQ	Modern Dental Care	700 E Silverado Ranch Blvd - Southeast - Las Vegas, NV 89183	Las Vegas	NV	36.0135269	-115.145897	5	16	t	Health_and_Medical
+Y3eSWKC4W9X_2HYzOvEQDw	Woolf Eye Center	1660 N Higley Rd - Ste 101 - Gilbert, AZ 85206	Gilbert	AZ	33.4013634	-111.728271	2	4	t	Health_and_Medical
+Chr3qQFRdMJoeBpjvrA-Bw	Kosama Tempe	1121 W Warner Rd - Ste 106 - Tempe, AZ 85284	Tempe	AZ	33.3339615	-111.957451	5	12	t	Health_and_Medical
+K0JvsZWSdz4y1EeQNINWnA	Queen Creek Back Care	20231 E Ocotillo Rd - Ste 1 - Queen Creek, AZ 85242	Queen Creek	AZ	33.2553902	-111.620193	5	3	t	Health_and_Medical
+CV-HN_ZoT1vEK10wE7988g	Ryken Chiropratic and Wellness Center	610 N Alma School Rd - Chandler, AZ 85224	Chandler	AZ	33.3148613	-111.859589	5	5	t	Health_and_Medical
+AaTQEcN3Tt9tspQoPDVpMg	Las Vegas Urgent Care	2901 N Tenaya Way - Ste 200 - Las Vegas, NV 89128	Las Vegas	NV	36.2136765	-115.250778	4	15	t	Health_and_Medical
+C2FC_hsVG4rupRESeUnrcA	Shauna Brown Fitness	Cave Creek, AZ 85331	Cave Creek	AZ	33.8333702	-111.950706	5	5	t	Health_and_Medical
+tD_X2riMnaqIiSXnZuKKxg	Comfort Dental	1130 S Country Club Dr - Ste 101 - Mesa, AZ 85210	Mesa	AZ	33.3890114	-111.844017	5	6	t	Health_and_Medical
+SsWoxazfkRznqvNcBX-hDw	Kopolow & Girisgen, OD, PC	Galleria Mall - 1300 W Sunset Dr, Ste 1617 - Henderson, NV 89014	Henderson	NV	36.0666618	-115.043457	3	3	t	Health_and_Medical
+yLzlhJ0Yi1MvFwAjtcXVfw	Snap On Optics	3116 W Thomas Rd - Ste 601 - Phoenix, AZ 85017	Phoenix	AZ	33.5130615	-112.126122	3	8	t	Health_and_Medical
+_KYLVHfEf45FHv30J1Dc9w	XCEL Sports Clinic	9170 E Bahia Dr - Ste 109 - Scottsdale, AZ 85260	Scottsdale	AZ	33.637516	-111.883354	5	4	t	Health_and_Medical
+O7-O54xA54g_tyP3A9pXZQ	Prime Medical Clinic	3104 E Indian School Rd - Ste 110 - Phoenix, AZ 85016	Phoenix	AZ	33.4953918	-112.015976	5	10	t	Health_and_Medical
+WL-ITZuPOjH3tCrxTM9cUg	Valley ENT	5110 E Warner Ave - Ste 100 - Phoenix, AZ 85044	Phoenix	AZ	33.3348122	-111.975426	3	5	t	Health_and_Medical
+Xotu8sxEdcFgaWGYV-GkIg	Biomat USA	4020 North 19th Ave. - Phoenix, AZ 85015	Phoenix	AZ	33.4939308	-112.100067	2	4	t	Health_and_Medical
+9fHZTgqVkMpNZrYSr4P3fA	OneSelf Therapy	4425 E Agave Rd - Bldg 4, Ste 113 - Phoenix, AZ 85044	Phoenix	AZ	33.3222961	-111.987938	5	12	t	Health_and_Medical
+4cYoIWa9ZKMLWsU1ovAizQ	Lyon Chiropractic	430 W Warner Rd - Ste B-105 - Tempe, AZ 85284	Tempe	AZ	33.3357658	-111.944153	5	8	t	Health_and_Medical
+_jvevtzOritUu8ihwnToIA	Urgent Care Extra	8300 W Cheyenne Ave - Ste 106 - Summerlin - Las Vegas, NV 89129	Las Vegas	NV	36.2188911	-115.274628	4	32	t	Health_and_Medical
+nRLOlJcdyFw_V17KiTtAmg	Optic Gallery	5705 Centennial Center Blvd - Ste 150 - Northwest - Las Vegas, NV 89149	Las Vegas	NV	36.2647896	-115.257843	5	5	t	Health_and_Medical
+602gnSwkHsGfftakZ1ckaA	GNC	10701 N Scottsdale Rd - Ste 105 - Scottsdale, AZ 85254	Scottsdale	AZ	33.5846863	-111.924393	5	3	t	Health_and_Medical
+pN4jqdn84fs2Eq14thXbMw	FastMed Urgent Care	2720 West Baseline Road - Suite 140 - Tempe, AZ 85283	Tempe	AZ	33.3793831	-111.977798	3	6	t	Health_and_Medical
+_izZ_euPbjphpiobMkLzSw	Scottsdale Family Birthing Suites-Osborn	3624 N Wells Fargo Ave - Scottsdale, AZ 85251	Scottsdale	AZ	33.4899254	-111.923248	5	5	t	Health_and_Medical
+ORzOJJTNe_9dlICqhVKhAw	Garner Orthodontics	803 W Elliot Rd - Chandler, AZ 85225	Chandler	AZ	33.3493652	-111.855392	5	3	t	Health_and_Medical
+DpYmAEx1phLM1m4MUUjddA	Southwest Medical Associates	270 W Lake Mead Pkwy - Henderson, NV 89015	Henderson	NV	36.0362396	-114.993683	4	3	t	Health_and_Medical
+hV-FzNJNznWCgnq8a0mmiQ	Chandler Modern Dentistry and Orthodontics	2875 W Ray Rd - Ste 16 - Chandler, AZ 85224	Chandler	AZ	33.320282	-111.890594	5	4	t	Health_and_Medical
+hQ49CyifoJmQ8Vafz_Zhhw	Arizona Professional Weight Loss	1323 E Northern Ave - Phoenix, AZ 85020	Phoenix	AZ	33.5533638	-112.053764	4	4	t	Health_and_Medical
+UyKNaZFGA3p63UM7esDAsg	Shea Women's Care	9522 E San Salavdor Dr - Ste 319 - Scottsdale, AZ 85258	Scottsdale	AZ	33.5711555	-111.875702	4	5	t	Health_and_Medical
+MqDha_bLVNqYShMzJtxvlg	Natural Health Chiropractic	1830 S Alma School Rd - Ste 135 - Mesa, AZ 85210	Mesa	AZ	33.3817024	-111.859375	5	12	t	Health_and_Medical
+JGUqJWpQnM003_p6qCWurg	Eye Care North	29605 N Cave Creek Rd - Ste 102 - Cave Creek, AZ 85331	Cave Creek	AZ	33.7541695	-111.990303	5	6	t	Health_and_Medical
+qUEUAGqhkZeq7hwf5-yVGA	Elizabeth Arden Red Door Spa	The Wigwam Golf Resort & Spa - 195 Old Litchfield Road - Litchfield Park, AZ 85340	Litchfield Park 	AZ	33.4964218	-112.357887	5	15	t	Beauty_and_Spas
+WFDxa8r0sT2ZnehYTyT1LQ	The Boulders, A Waldorf Astoria Resort	34631 N Tom Darlington Dr - Carefree, AZ 85377	Carefree	AZ	33.8040466	-111.927361	5	83	t	Beauty_and_Spas
+8ZwO9VuLDWJOXmtAdc7LXQ	The Clarendon Hotel	401 W Clarendon Ave - Phoenix, AZ 85013	Phoenix	AZ	33.4911194	-112.079079	4	282	t	Beauty_and_Spas
+-FCQ6tpsdpbeEJX8R_-tQQ	Qua Baths & Spa	Caesars Palace Las Vegas Hotel & Casino - 3570 Las Vegas Boulevard South - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1170883	-115.175339	5	393	t	Beauty_and_Spas
+y4Qyf4PPSOHdQFTr3Zi_KA	Red Rock Casino Resort & Spa	11011 W Charleston Blvd - South Summerlin - Las Vegas, NV 89135	Las Vegas	NV	36.1564026	-115.333504	4	700	t	Beauty_and_Spas
+9KWa4gOWYmkzDJjwBlenUg	DC Ranch Village Health Club and Spa	18501 N Thompson Peak Pkwy - Scottsdale, AZ 85255	Scottsdale	AZ	33.6561928	-111.866058	5	23	t	Beauty_and_Spas
+IVtoPY8RerhNQVkbNVTi-A	Roni Josef International Salon & Spa	2000 Las Vegas Blvd S - Ste 48 - The Strip - Las Vegas, NV 89104	Las Vegas	NV	36.1473694	-115.155365	3	17	t	Beauty_and_Spas
+CElwAiXjZdYkojZw5HeSbw	Red Rock Nails	10247 W Charleston Blvd - Ste C - Summerlin - Las Vegas, NV 89135	Las Vegas	NV	36.1588745	-115.317612	4	33	t	Beauty_and_Spas
+RQCQoFVXfW2eRnsIkbFKDw	Excellent Nails & Spa	6015 S Fort Apache Rd - Spring Valley - Las Vegas, NV 89148	Las Vegas	NV	36.0800018	-115.2976	4	18	t	Beauty_and_Spas
+UKgSs_SJzW9fu4CwhIV1yA	Firesky Resort & Spa, a Kimpton Hotel	4925 N Scottsdale Rd - Scottsdale, AZ 85251	Scottsdale	AZ	33.5088043	-111.925255	4	222	t	Beauty_and_Spas
+yZ6t7vkPPNzBj-EPKMqaqA	Snapdragon Salon	347 E Camelback Rd - Phoenix, AZ 85012	Phoenix	AZ	33.5090256	-112.067383	5	115	t	Beauty_and_Spas
+mopddAK-ajxxRcN9w6YGHQ	Sundrops Nail Spot	3949 E Camelback Rd - Phoenix, AZ 85018	Phoenix	AZ	33.5090027	-111.995941	4	71	t	Beauty_and_Spas
+y3NvkzRwdBPafEorivJ2Eg	Bellagio Spa	Bellagio Resort &Casino - 3600 S Las Vegas Blvd - The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1117592	-115.176819	4	110	t	Beauty_and_Spas
+RRF7KrSLVK19P8UsLXBhzg	Dolce Salon & Spa At the Borgata	6166 N Scottsdale Rd - Scottsdale, AZ 85253	Scottsdale	AZ	33.5278625	-111.927071	4	90	f	Beauty_and_Spas
+c2OXxIm1Gu3Hxh7K9Rsovw	Traditional Foot Massage	5595 W Spring Mountain Rd - Chinatown - Las Vegas, NV 89146	Las Vegas	NV	36.1257744	-115.218094	3	33	t	Beauty_and_Spas
+mbbgs8HS0meLkmeWWWE-pQ	Get Nailed 24/7	4480 S Paradise Rd - Eastside - Las Vegas, NV 89169	Las Vegas	NV	36.109024	-115.150948	3	83	t	Beauty_and_Spas
+Wa9nN637fEBbcAafbn2c8A	7 Day Spa & Nails	2040 E Rio Salado Pkwy - Ste 115 - Tempe, AZ 85281	Tempe	AZ	33.4322815	-111.902336	4	88	t	Beauty_and_Spas
+bv24q_KXS4t2G82UnjWuwA	V Nails	8975 W Charleston Blvd - Westside - Las Vegas, NV 89117	Las Vegas	NV	36.1578064	-115.288902	4	47	t	Beauty_and_Spas
+AO-s6ht21TfAIkPPPS1L4g	Pretty Nails & Spa by BN	2403 N Pebble Creek Pkwy - Goodyear, AZ 85338	Goodyear	AZ	33.4735222	-112.392235	3	5	t	Beauty_and_Spas
+UKq38-9aOgEbJojosyS8gQ	CNC Barber Shop & Spa	19756 N John Wayne Pkwy - Maricopa, AZ 85239	Maricopa	AZ	33.0594025	-112.048149	5	8	t	Beauty_and_Spas
+DIlh3Ta7-7tfjKL1apaYHw	Sheraton Grand Hotel & Spa	1 Festival Square - Old Town - Edinburgh EH3 9SR	Edinburgh	EDH	55.9473686	-3.20627475	4	25	t	Beauty_and_Spas
+FoTtH1Uo9n05akS4dkxNkg	V-K Elle Nails	20 E Camelback Rd - Ste 20B - Phoenix, AZ 85012	Phoenix	AZ	33.509285	-112.073174	3	30	t	Beauty_and_Spas
+VXxbj6kbrxAcOFmIf2eVrQ	Thorps	1988 Atwood Ave - Schenk - Atwood - Madison, WI 53704	Madison	WI	43.0925674	-89.3551788	4	65	t	Beauty_and_Spas
+tbANFIP17slL1xPIUsl1MA	Sutra Midtown	2317 N 7th Street - Phoenix, AZ 85006	Phoenix	AZ	33.473896	-112.064919	5	46	t	Beauty_and_Spas
+34daJSPwbBzn0CKx5VDIxA	European Wax Center	McDowell Mountain Village - 15029 N Thompson Peak Pkwy - Scottsdale, AZ 85260	Scottsdale	AZ	33.6226311	-111.8741	4	41	t	Beauty_and_Spas
+M-fdFyIwcAfl8A0_JWsX4A	BOLD Body Bronzing	The Strip - Las Vegas, NV 89103	Las Vegas	NV	36.1144638	-115.172943	5	6	t	Beauty_and_Spas
+pidp6_t-o_lVi2khcPvp4A	Glow Skin & Body Studio	4350 E Ray Rd - Ste 108 - Phoenix, AZ 85044	Phoenix	AZ	33.3209686	-111.990913	5	19	t	Beauty_and_Spas
+4MDELmrapOVyZjtpWHGz6A	Kelly Cardenas Salon	6015 S Fort Apache - Spring Valley - Las Vegas, NV 89148	Las Vegas	NV	36.0800018	-115.2976	5	111	t	Beauty_and_Spas
+YvU-M_NJR-3_rrdn0KXlcQ	Nash's Valley Fair Barber Shop	115 E Southern Ave - Tempe, AZ 85282	Tempe	AZ	33.3928642	-111.937149	5	12	t	Beauty_and_Spas
+vWMSbzxT7RmjKc7NEPuCMQ	Tc Nails and Spa	2981 Triverton Pike Dr - Ste 130 - Fitchburg, WI 53711	Fitchburg	WI	43.0162468	-89.4290695	3	6	t	Beauty_and_Spas
+MljVwuO92Yjr7dKU1QlS8A	20 Lounge	7001 N Scottsdale Rd - Ste 166 - Scottsdale, AZ 85255	Scottsdale	AZ	33.6803017	-111.833008	4	39	t	Beauty_and_Spas
+kc-H9K9IH2pVKw06LWCfpQ	Inkenstein Tattoo Company	7120 N 55th Dr - Glendale, AZ 85301	Glendale	AZ	33.5406075	-112.178909	5	16	t	Beauty_and_Spas
+9VqoZVN8iqf5UsMIwQkgDA	Space Massage Studio	4545 N 36th St - Ste 209 - Phoenix, AZ 85018	Phoenix	AZ	33.5031967	-112.003937	5	52	t	Beauty_and_Spas
+OAxo3-fSgPPuucWO6GR3IQ	It Girl Diva	4419 N Scottsdale Rd - Ste 224 - Scottsdale, AZ 85251	Scottsdale	AZ	33.5006332	-111.925804	5	17	t	Beauty_and_Spas
+Q_Y1fdGlg-DsLanYHFDSrw	Martinee Nail & Salon	1525 S Higley Rd - Gilbert, AZ 85296	Gilbert	AZ	33.3225861	-111.71965	4	18	t	Beauty_and_Spas
+023OzoARRfuaNVPqaDB3qA	Satya Aveda Salon & Spa	950 E Pecos Rd - Ste 11 - Room 41 - Chandler, AZ 85225	Chandler	AZ	33.2917786	-111.825485	3	10	t	Beauty_and_Spas
+beOfWs3b1SrPORBit9Lu_g	Salon Embellish	3508 N 7th St - Phoenix, AZ 85014	Phoenix	AZ	33.4885483	-112.065506	5	23	t	Beauty_and_Spas
+-YYlBL2gDXXIahbkayglvw	teres : A NAIL BAR	7120 E Indian School Rd - Scottsdale, AZ 85251	Scottsdale	AZ	33.4953613	-111.92746	4	102	t	Beauty_and_Spas
+jIMZ4emK6VYAqTGR6qiuwg	Divas Xpress	3620 E Flamingo Ave - Ste 10 - Eastside - Las Vegas, NV 89121	Las Vegas	NV	36.1205101	-115.091507	4	30	t	Beauty_and_Spas
+EX6vhAsNRceoJ0avc6sl0g	Hi-Rollers Barber Shop	1120 S Maryland Pkwy - Downtown - Las Vegas, NV 89104	Las Vegas	NV	36.1577759	-115.137657	5	29	t	Beauty_and_Spas
+T9V8pY5aLMM85cu9xVP3CQ	Happy Feet Spa	4970 Arville St - Ste 110 - Las Vegas, NV 89118	Las Vegas	NV	36.0995674	-115.19854	4	64	t	Beauty_and_Spas
+LcAamvosJu0bcPgEVF-9sQ	Drybar	3172 E Camelback Rd - Phoenix, AZ 85018	Phoenix	AZ	33.5107765	-112.013191	4	47	t	Beauty_and_Spas
+fe5POlOi11-vckcK_C7kHQ	Dolce Salon & Spa	15323 N Scottsdale Rd - Ste 180 - Scottsdale, AZ 85254	Scottsdale	AZ	33.6255684	-111.924477	4	15	t	Beauty_and_Spas
+2LTB3GUdb_4UXGPO-VGM2Q	Repose Salon And Spa	11 W Washington St - Ste 240 - Phoenix, AZ 85003	Phoenix	AZ	33.4480286	-112.074104	5	12	t	Beauty_and_Spas
+bu5DZxTNf1094Mh8RrnL6g	High Profile Barbershop	3016 N Dobson Rd - Chandler, AZ 85224	Chandler	AZ	33.3504105	-111.876701	5	3	t	Beauty_and_Spas
+ToSm1CIH3xgaedt63f3FCQ	Scottsdale Hand and Foot Spa	9397 E Shea Blvd - Ste 105 - Scottsdale, AZ 85260	Scottsdale	AZ	33.5815125	-111.879219	4	33	t	Beauty_and_Spas
+tdY-8wY8cHIEZoX3jUz93g	Lux Nail Bar	3431 W Frye Rd - Ste 7 - Chandler, AZ 85226	Chandler	AZ	33.2958565	-111.900482	5	39	t	Beauty_and_Spas
+dPDO8O1TK_fa1BrhG1VYNA	Whitney Hedrick MUA	The Strip - Las Vegas, NV 89109	Las Vegas	NV	36.1285591	-115.171127	4	3	t	Beauty_and_Spas
+ahksxAh7VfKhHdBO6ZGZ1w	Dolce Salon & Spa At Lincoln	6340 N Scottsdale Rd - Scottsdale, AZ 85253	Scottsdale	AZ	33.5301094	-111.925827	4	10	f	Beauty_and_Spas
+4IZX62a5w1YueiuAN5z6JQ	Jimmy's Barbershop	5651 S Grand Canyon Dr - Ste 105 - Spring Valley - Las Vegas, NV 89148	Las Vegas	NV	36.086319	-115.307266	5	28	t	Beauty_and_Spas
+S9lri8SZi3r-Q61zN1pzGg	Tonys Barber Shop And Shaving Parlor	801 S Power Rd - Mesa, AZ 85206	Mesa	AZ	33.3998833	-111.684128	5	3	t	Beauty_and_Spas
+CbUkl9BpdI_m7Yt4yTca_Q	Nv Hair Studio	1608 E Bethany Home Rd - Phoenix, AZ 85016	Phoenix	AZ	33.5238953	-112.046898	3	34	t	Beauty_and_Spas
+h3iArEf7z8PHxN4WCEdA1A	Scottsdale Lavish Nails	21811 N Scottsdale Rd - Suite135 - Scottsdale, AZ 85255	Scottsdale	AZ	33.6852608	-111.924782	5	35	t	Beauty_and_Spas
+anuT2XHtgBlEpzkS_vLIiQ	Trip Ink Tattoo Co	5115 Dean Martin Dr - Las Vegas, NV 89118	Las Vegas	NV	36.0966682	-115.181656	5	6	t	Beauty_and_Spas
+brgFzIixDXcg8G77oe5ofw	Nailcessity	17650 W Elliot Rd - Goodyear, AZ 85338	Goodyear	AZ	33.3575058	-112.428795	5	4	t	Beauty_and_Spas

@@ -44,7 +44,8 @@ and homework assignments.
   - [Class 2: Meta-learning](#class-2-meta-learning)
   - [Class 3: Meta-learning, and Hyperparameter Optimisation](#class-3-meta-learning-and-hyperparameter-optimisation)
   - [Class 4: Hyperparameter Optimisation with `hyperopt`](#class-4-hyperparameter-optimisation-with-hyperopt)
-  
+  - [Class 7: Machine Learning on Complex Data Structures, Part 1](#class-7-machine-learning-on-complex-data-structures-part-1)
+
 - [Homework Assignments](#homework-assignments)
   - [Assignment 1: Method Selection, Hyperparameter Optimisation, Meta-learning](#assignment-1-method-selection-hyperparameter-optimisation-meta-learning)
 
@@ -151,6 +152,17 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
      - `hyperopt.hp.choice`
   4. Define hyperparameter space
   5. Compare algorithm performance with default and optimised hyperparameters
+
+[(Back to top)](#table-of-contents)
+
+### Class 7: Machine Learning on Complex Data Structures, Part 1
+
+- Exercise A: ***Analyzing the Given Code Template***
+- Exercise B: ***Filling in Missing Code***
+  1. Complete `razsiri_z_hours`
+  2. Complete `razsiri_z_attributes`
+  3. Complete the final for-loop
+- Exercise C: ***Contemplating the Inclusion of Tables `REVIEWS` and `USERS`***
 
 [(Back to top)](#table-of-contents)
 
