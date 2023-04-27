@@ -285,19 +285,19 @@ def razsiri_z_hours(business_ids):
     new_df = pd.DataFrame(index=business_ids, columns=new_columns, data=np.nan)
 
     # 5) Fill dataframe with actual values
-    for row in hours.iterrows():
-        row_id = row[0]
-        business_id = row[1]['business_id']
-        day = hours.loc[row_id, 'day']
+    for _, row in hours.iterrows():
+        business_id = row['business_id']
+        day = row['day']
         for action in actions:
-            new_df.loc[business_id, f'{day}_{action}'] = row[1][f'{action} time']
+            new_df.loc[business_id, f'{day}_{action}'] = row[f'{action} time']
 
-    # 6) Transform pandas.DataFrame to numpy.ndarray
+    # 6) Convert pandas.DataFrame to numpy.ndarray
     new_df = np.array(new_df)
 
     return new_df
 
 
+# 2 Complete `razsiri_z_attributes`
 ########################################################################################################################
 # Zapišite funkcijo razsiri_z_attributes(business_ids), ki sprejme zaporedje id-jev biznisov in izvede naslednje korake:
 #  1) izlušči iz stolpca "name" v tabeli PODATKI["attributes"] vse vrednosti tega stolpca
@@ -314,8 +314,33 @@ def razsiri_z_hours(business_ids):
 
 
 def razsiri_z_attributes(business_ids):
-    # TODO
-    return np.zeros((len(business_ids), 1))
+
+    attributes = PODATKI.get('attributes')
+
+    # 1) Extract unique name values
+    names = pd.unique(attributes['name'])
+
+    # 2) Create list of column names from `names`
+    new_columns = list(names)
+
+    # 3) Create dataframe with dummy values, with new columns, and indexed by `business_ids`
+    new_df = pd.DataFrame(index=business_ids, columns=new_columns, data=np.nan)
+
+    # 4) Fill dataframe with actual values
+    for _, row in attributes.iterrows():
+        business_id = row['business_id']
+        name = row['name']
+        value = row['value']
+        new_df.loc[business_id, name] = value
+
+    # 5) Transform columns with numeric attributes into numeric columns
+    for column in new_df.columns:
+        new_df[column] = pd.to_numeric(new_df[column], errors='ignore')
+
+    # 6) Convert pandas.DataFrame to numpy.ndarray
+    new_df = pretvori_vse_one_hot(new_df, new_df.columns)
+
+    return new_df
 
 
 ########################################################################################################################
