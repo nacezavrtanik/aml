@@ -247,6 +247,7 @@ y_business = np.array(business[stolpci[-1]])
 preizkusi_podatke(xs_business, y_business)
 
 
+# 1 Complete `razsiri_z_hours`
 ########################################################################################################################
 # Zapišite funkcijo razsiri_z_hours(business_ids), ki sprejme zaporedje id-jev biznisov in izvede naslednje korake:
 #  1) izlušči iz stolpca "day" v tabeli PODATKI["hours"] vse vrednosti tega stolpca (pričakujemo jih 7)
@@ -262,8 +263,39 @@ preizkusi_podatke(xs_business, y_business)
 
 
 def razsiri_z_hours(business_ids):
-    # TODO
-    return np.zeros((len(business_ids), 14))
+
+    hours = PODATKI.get('hours')
+    actions = ['open', 'close']
+
+    # 1) Extract unique day values
+    days = pd.unique(hours['day'])
+
+    # 2) Create list of column names of form 'day_open', 'day_close'
+    new_columns = [f'{day}_{action}' for day in days for action in actions]
+
+    # 3) Convert values in columns 'open time' and 'close time' to numeric values
+    def time_string_to_float(x):
+        h, m, _ = x.split(':')
+        h = int(h)
+        m = int(m) / 60
+        return h + m
+    hours[['open time', 'close time']] = hours[['open time', 'close time']].applymap(time_string_to_float)
+
+    # 4) Create dataframe with dummy values, with new columns, and indexed by `business_ids`
+    new_df = pd.DataFrame(index=business_ids, columns=new_columns, data=np.nan)
+
+    # 5) Fill dataframe with actual values
+    for row in hours.iterrows():
+        row_id = row[0]
+        business_id = row[1]['business_id']
+        day = hours.loc[row_id, 'day']
+        for action in actions:
+            new_df.loc[business_id, f'{day}_{action}'] = row[1][f'{action} time']
+
+    # 6) Transform pandas.DataFrame to numpy.ndarray
+    new_df = np.array(new_df)
+
+    return new_df
 
 
 ########################################################################################################################
