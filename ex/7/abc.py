@@ -282,7 +282,7 @@ def razsiri_z_hours(business_ids):
     hours[['open time', 'close time']] = hours[['open time', 'close time']].applymap(time_string_to_float)
 
     # 4) Create dataframe with dummy values, with new columns, and indexed by `business_ids`
-    new_df = pd.DataFrame(index=business_ids, columns=new_columns, data=np.nan)
+    new_df = pd.DataFrame(index=business_ids, columns=new_columns, data='-100000')
 
     # 5) Fill dataframe with actual values
     for _, row in hours.iterrows():
@@ -324,7 +324,7 @@ def razsiri_z_attributes(business_ids):
     new_columns = list(names)
 
     # 3) Create dataframe with dummy values, with new columns, and indexed by `business_ids`
-    new_df = pd.DataFrame(index=business_ids, columns=new_columns, data=np.nan)
+    new_df = pd.DataFrame(index=business_ids, columns=new_columns, data='-100000')
 
     # 4) Fill dataframe with actual values
     for _, row in attributes.iterrows():
@@ -371,6 +371,12 @@ xs_attributes = razsiri_z_attributes(biznisi)
 vsi_bloki = [xs_business, xs_hours, xs_attributes]
 imena_blokov = ["business", "hours", "attributes"]
 n_blokov = len(imena_blokov)
+
+# 3 Complete the final for-loop
 for podseznam in generiraj_vse_neprazne_podsezname(n_blokov):
-    # TODO
+
+    blocks = [vsi_bloki[i] for i in podseznam]
+    xs = np.block(blocks)
+
     print(f"Rezultati za bloke nekako naračunane iz {podseznam}:")
+    preizkusi_podatke(xs, y_business)
