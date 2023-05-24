@@ -1,13 +1,15 @@
+"""Class 10, Exercises A, B: Equation Discovery
+
+This module contains helper functions for exercise class 10. It was written,
+presumably, by Jure Brence, and was slightly modified by me.
+"""
+
 import pandas as pd
 import numpy as np
 
 
-def generiraj_newton(primeri, sum=0):
-    """
-    Generira podatke za F = m a
-    :param primeri:
-    :return:
-    """
+def generiraj_newton(primeri, sum_=0):
+    """Generira podatke za F = m a"""
     np.random.seed(1234)
     podatki = {"F": [], "m": [], "a": []}
     for i in range(primeri):
@@ -18,12 +20,9 @@ def generiraj_newton(primeri, sum=0):
         podatki["a"].append(a)
     return pd.DataFrame(podatki)
 
-def generiraj_stefan(primeri, sum=0):
-    """
-    Generira podatke za j = sigma T^4
-    :param primeri:
-    :return:
-    """
+
+def generiraj_stefan(primeri, sum_=0):
+    """Generira podatke za j = sigma T^4"""
     np.random.seed(1234)
     podatki = {"j": [], "T": []}
     sigma = 5.67 * 10 ** -8
@@ -35,12 +34,8 @@ def generiraj_stefan(primeri, sum=0):
     return pd.DataFrame(podatki)
 
 
-def generiraj_lorenz(primeri, sum=0):
-    """
-    Generira podatke za gama = sqrt(1 - (v / c)^2)
-    :param primeri:
-    :return:
-    """
+def generiraj_lorenz(primeri, sum_=0):
+    """Generira podatke za gama = sqrt(1 - (v / c)^2)"""
     np.random.seed(1234)
     podatki = {"gama": [], "v": []}
     c = 3 * 10 ** 5  # [km / s]
@@ -52,12 +47,10 @@ def generiraj_lorenz(primeri, sum=0):
     return pd.DataFrame(podatki)
 
 
-def generiraj_energijski_zakon_const(primeri, sum=0):
-    """
-    Generira podatke za m g h + 0.5 m v^2 = c.
+def generiraj_energijski_zakon_const(primeri, sum_=0):
+    """Generira podatke za m g h + 0.5 m v^2 = c.
+
     Predpostavili bomo, da imajo vsa telesa na zacetku isto enerigjo (isti c)
-    :param primeri:
-    :return:
     """
     np.random.seed(1234)
     podatki = {"m": [], "h": [], "v": []}
@@ -72,12 +65,11 @@ def generiraj_energijski_zakon_const(primeri, sum=0):
         podatki["h"].append(h)
     return pd.DataFrame(podatki)
 
-def generiraj_energijski_zakon(primeri, sum=0):
-    """
-    Generira podatke za m g h + 0.5 m v^2 = c.
+
+def generiraj_energijski_zakon(primeri, sum_=0):
+    """Generira podatke za m g h + 0.5 m v^2 = c.
+
     Predpostavili bomo, da imajo vsa telesa na zacetku isto enerigjo (isti c)
-    :param primeri:
-    :return:
     """
     np.random.seed(1234)
     podatki = {"E": [], "m": [], "h": [], "v": []}
@@ -93,12 +85,8 @@ def generiraj_energijski_zakon(primeri, sum=0):
     return pd.DataFrame(podatki)
 
 
-def generiraj_ploscina(primeri, sum=0):
-    """
-    Generira podatke za p = n a ** 2 / (4 tan (pi / n))
-    :param primeri:
-    :return:
-    """
+def generiraj_ploscina(primeri, sum_=0):
+    """Generira podatke za p = n a ** 2 / (4 tan (pi / n))"""
     np.random.seed(1234)
     podatki = {"n": [], "a": [], "p": []}
     for n in range(3, primeri + 3):
@@ -108,8 +96,6 @@ def generiraj_ploscina(primeri, sum=0):
         podatki["a"].append(a)
         podatki["p"].append(p)
     return pd.DataFrame(podatki)
-
-
 
 
 def bacon(datoteka, max_iter=20):
@@ -125,5 +111,3 @@ def bacon(datoteka, max_iter=20):
         # oglej si np.max(korelacije) in np.min(korelacije)
 
         # pamento poimenuj novi stolpec, da bomo lahko iz njega razbrali enacbo
-
-

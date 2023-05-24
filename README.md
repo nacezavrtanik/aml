@@ -45,6 +45,7 @@ and homework assignments.
   - [Class 3: Meta-learning, and Hyperparameter Optimisation](#class-3-meta-learning-and-hyperparameter-optimisation)
   - [Class 4: Hyperparameter Optimisation with `hyperopt`](#class-4-hyperparameter-optimisation-with-hyperopt)
   - [Class 7: Machine Learning on Complex Data Structures, Part 1](#class-7-machine-learning-on-complex-data-structures-part-1)
+  - [Class 10: Equation Discovery](#class-10-equation-discovery)
 
 - [Homework Assignments](#homework-assignments)
   - [Assignment 1: Method Selection, Hyperparameter Optimisation, Meta-learning](#assignment-1-method-selection-hyperparameter-optimisation-meta-learning)
@@ -163,6 +164,14 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   2. Complete `razsiri_z_attributes`
   3. Complete the final for-loop
 - Exercise C: ***Contemplating the Inclusion of Tables `REVIEWS` and `USERS`***
+
+[(Back to top)](#table-of-contents)
+
+### Class 10: Equation Discovery
+
+- Exercise A: ***Equation Discovery with Linear Regression***
+  1. Define a linear regression function
+- Exercise B: ***Equation Discovery with the BACON algorithm***
 
 [(Back to top)](#table-of-contents)
 
