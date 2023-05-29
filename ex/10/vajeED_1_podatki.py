@@ -1,7 +1,8 @@
 """Class 10, Exercises A, B: Equation Discovery
 
-This module contains helper functions for exercise class 10. It was written,
-prenoiseably, by Jure Brence, and was slightly modified by me.
+This module contains data generator functions for exercise class 10. It was
+written, presumably, by Jure Brence, and was slightly modified by me.
+
 """
 
 import pandas as pd

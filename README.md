@@ -170,9 +170,10 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 ### Class 10: Equation Discovery
 
 - Exercise A: ***Equation Discovery with Linear Regression***
-  1. Define a linear regression function
-  2. Test the function on data for the energy conservation law
-  3. Handle noise with regularisation
+  1. Implement linear regression
+  2. Test linear regression on given data
+  3. Handle noise with ridge regression
+  4. Handle noise with lasso regression
 - Exercise B: ***Equation Discovery with the BACON algorithm***
 
 [(Back to top)](#table-of-contents)

@@ -1,23 +1,34 @@
 """Class 10, Exercise A: Equation Discovery with Linear Regression"""
 
-import numpy as np
 import pandas as pd
+import numpy as np
+from scipy.optimize import minimize
 from sklearn.preprocessing import PolynomialFeatures
 
-from vajeED_1_podatki import generiraj_energijski_zakon
+import vajeED_1_podatki
 from aml import fancy_print
 
 
-# 1 Define a linear regression function
-def linear_regrassion(X, y, epsilon=1e-2, ridge_parameter=0):
+DATA_GENERATOR = vajeED_1_podatki.generiraj_energijski_zakon
+
+
+# 1 Implement linear regression
+def linear_regression(X, y, epsilon=1e-2, ridge_param=None, lasso_param=None):
 
     variables = X.columns
 
-    regularisation_factor = ridge_parameter * np.eye(X.shape[1])
+    if ridge_param and lasso_param:
+        raise ValueError("Kwargs 'ridge_parameter' and 'lasso_parameter' cannot both differ from None!")
 
-    beta = np.linalg.pinv(X.T.dot(X) + regularisation_factor).dot(X.T).dot(y)
+    elif ridge_param or not any([ridge_param, lasso_param]):
+        regularisation_factor = (ridge_param or 0) * np.eye(X.shape[1])
+        beta = np.linalg.pinv(X.T.dot(X) + regularisation_factor).dot(X.T).dot(y)
+
+    else:
+        beta = minimize(
+            lambda b: np.sum((X.dot(b)-y)**2) + lasso_param*np.sum(np.abs(b)), np.random.random(X.shape[1]))["x"]
+
     beta = np.where(beta > epsilon, beta, 0)
-
     equation = " ".join([f"{b:+.2f}*{variable}" for b, variable in zip(beta, variables) if b != 0])
 
     return equation
@@ -35,25 +46,37 @@ def preprocess_for_equation_discovery(data, target_name, degree=2):
     return X, y
 
 
-# 2 Test the function on data for the energy conservation law
+# 2 Test linear regression on given data
 fancy_print("LINEAR REGRESSION")
 noises = [0, 0.001, 0.01, 0.1]
 for noise in noises:
     features, target = preprocess_for_equation_discovery(
-        data=generiraj_energijski_zakon(100, noise=noise),
+        data=DATA_GENERATOR(100, noise=noise),
         target_name="E",
         degree=3)
-    fancy_print(f"Noise {noise}", linear_regrassion(features, target))
+    fancy_print(f"Noise {noise}", linear_regression(features, target))
 del noise, noises
 
 
-# 3 Handle noise with regularisation
+# 3 Handle noise with ridge regression
 fancy_print("RIDGE REGRESSION")
-lambdas = [0, 0.1, 1, 10]
+lambdas = [None, 0.1, 1, 10]
 for lambda_ in lambdas:
     features, target = preprocess_for_equation_discovery(
-        data=generiraj_energijski_zakon(100, noise=0.01),
+        data=DATA_GENERATOR(100, noise=0.01),
         target_name="E",
         degree=3)
-    fancy_print(f"Lambda {lambda_}", linear_regrassion(features, target, ridge_parameter=lambda_))
+    fancy_print(f"Lambda {lambda_}", linear_regression(features, target, ridge_param=lambda_))
+del lambda_, lambdas
+
+
+# 4 Handle noise with lasso regression
+fancy_print("LASSO REGRESSION")
+lambdas = [None, 0.1, 1, 10]
+for lambda_ in lambdas:
+    features, target = preprocess_for_equation_discovery(
+        data=DATA_GENERATOR(100, noise=0.01),
+        target_name="E",
+        degree=3)
+    fancy_print(f"Lambda {lambda_}", linear_regression(features, target, lasso_param=lambda_))
 del lambda_, lambdas
