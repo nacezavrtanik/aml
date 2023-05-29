@@ -172,6 +172,7 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 - Exercise A: ***Equation Discovery with Linear Regression***
   1. Define a linear regression function
   2. Test the function on data for the energy conservation law
+  3. Handle noise with regularisation
 - Exercise B: ***Equation Discovery with the BACON algorithm***
 
 [(Back to top)](#table-of-contents)
