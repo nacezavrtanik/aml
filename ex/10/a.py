@@ -5,11 +5,11 @@ import numpy as np
 from scipy.optimize import minimize
 from sklearn.preprocessing import PolynomialFeatures
 
-import vajeED_1_podatki
+import data_generators
 from aml import fancy_print
 
 
-DATA_GENERATOR = vajeED_1_podatki.generiraj_energijski_zakon
+DATA_GENERATOR = data_generators.generate_conservation_of_energy
 
 
 # 1 Implement linear regression
