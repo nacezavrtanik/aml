@@ -40,7 +40,7 @@ def preprocess_for_equation_discovery(data, target_name, degree=2):
 
     poly = PolynomialFeatures(degree=degree)
     X = poly.fit_transform(X, y)
-    feature_names = poly.get_feature_names_out()
+    feature_names = [name.replace(" ", "") for name in poly.get_feature_names_out()]
     X = pd.DataFrame(X, columns=feature_names)
 
     return X, y
