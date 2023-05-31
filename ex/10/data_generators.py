@@ -10,7 +10,7 @@ import numpy as np
 
 
 def generate_newton(n_cases, noise=0):
-    """Generates data for F = m a"""
+    """Generate data for F = m a"""
     np.random.seed(1234)
     data = {"F": [], "m": [], "a": []}
     for _ in range(n_cases):
@@ -23,7 +23,7 @@ def generate_newton(n_cases, noise=0):
 
 
 def generate_stefan(n_cases, noise=0):
-    """Generates data for j = sigma T^4"""
+    """Generate data for j = sigma T^4"""
     np.random.seed(1234)
     data = {"j": [], "T": []}
     sigma = 5.67 * 10 ** -8
@@ -36,7 +36,7 @@ def generate_stefan(n_cases, noise=0):
 
 
 def generate_lorentz(n_cases, noise=0):
-    """Generates data for gamma = sqrt(1 - (v / c)^2)"""
+    """Generate data for gamma = sqrt(1 - (v / c)^2)"""
     np.random.seed(1234)
     data = {"gamma": [], "v": []}
     c = 3 * 10 ** 5  # [km / s]
@@ -49,7 +49,7 @@ def generate_lorentz(n_cases, noise=0):
 
 
 def generate_conservation_of_energy_const(n_cases, noise=0):
-    """Generates data for m g h + 0.5 m v^2 = c.
+    """Generate data for m g h + 0.5 m v^2 = c.
 
     We assume all bodies have the same initial energy c.
     """
@@ -68,7 +68,7 @@ def generate_conservation_of_energy_const(n_cases, noise=0):
 
 
 def generate_conservation_of_energy(n_cases, noise=0):
-    """Generates data for m g h + 0.5 m v^2 = c.
+    """Generate data for m g h + 0.5 m v^2 = c.
 
     We assume all bodies have the same initial energy c.
     """
@@ -87,7 +87,7 @@ def generate_conservation_of_energy(n_cases, noise=0):
 
 
 def generate_surface(n_cases, noise=0):
-    """Generates data for p = n a ** 2 / (4 tan (pi / n))"""
+    """Generate data for p = n a ** 2 / (4 tan (pi / n))"""
     np.random.seed(1234)
     data = {"n": [], "a": [], "S": []}
     for n in range(3, n_cases + 3):
@@ -96,4 +96,30 @@ def generate_surface(n_cases, noise=0):
         data["n"].append(n)
         data["a"].append(a)
         data["S"].append(s)
+    return pd.DataFrame(data)
+
+
+def generate_linear(n_cases, noise=0):
+    """Generate data for y = x1 + 3x2"""
+    np.random.seed(1234)
+    data = {"y": [], "x1": [], "x2": []}
+    for i in range(n_cases):
+        x1, x2 = np.random.rand(2)
+        y = (x1 + 3*x2) * (1 + np.random.normal(0, noise))
+        data["y"].append(y)
+        data["x1"].append(x1)
+        data["x2"].append(x2)
+    return pd.DataFrame(data)
+
+
+def generirate_circular_motion(n_cases, noise=0):
+    """Generate data for y = r sin(1.337 pi t)"""
+    np.random.seed(1234)
+    data = {"y": [], "r": [], "t": []}
+    for i in range(n_cases):
+        r, t = np.random.rand(2)
+        y =  r*np.sin(1.337*np.pi*t) * (1 + np.random.normal(0, noise))
+        data["y"].append(y)
+        data["r"].append(r)
+        data["t"].append(t)
     return pd.DataFrame(data)

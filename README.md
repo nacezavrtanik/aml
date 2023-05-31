@@ -154,15 +154,15 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
   4. Define hyperparameter space
   5. Compare algorithm performance with default and optimised hyperparameters
 
-        [(Back to top)](#table-of-contents)
+[(Back to top)](#table-of-contents)
 
 ### Class 7: Machine Learning on Complex Data Structures, Part 1
 
 - Exercise A: ***Analyzing the Given Code Template***
 - Exercise B: ***Filling in Missing Code***
-    1. Complete `razsiri_z_hours`
-    2. Complete `razsiri_z_attributes`
-    3. Complete the final for-loop
+  1. Complete `razsiri_z_hours`
+  2. Complete `razsiri_z_attributes`
+  3. Complete the final for-loop
 - Exercise C: ***Contemplating the Inclusion of Tables `REVIEWS` and `USERS`***
 
 [(Back to top)](#table-of-contents)
@@ -170,16 +170,16 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 ### Class 10: Equation Discovery
 
 - Exercise A: ***Equation Discovery with Linear Regression***
-    1. Implement linear regression
-       - `sklearn.preprocessing.PolynomialFeatures`
-    2. Test linear regression on given data
-    3. Handle noise with ridge regression
-    4. Handle noise with lasso regression
+  1. Implement linear regression
+     - `sklearn.preprocessing.PolynomialFeatures`
+  2. Test linear regression on given data
+  3. Handle noise with ridge regression
+  4. Handle noise with lasso regression
 - Exercise B: ***Equation Discovery with the BACON algorithm***
-    1. Implement the BACON algorithm
-    2. Test the BACON algorithm on given data
+  1. Implement the BACON algorithm
+  2. Test the BACON algorithm on given data
 
-  [(Back to top)](#table-of-contents)
+[(Back to top)](#table-of-contents)
 
 
 ## Homework Assignments
