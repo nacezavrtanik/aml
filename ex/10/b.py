@@ -12,13 +12,41 @@ DATA_GENERATOR = data_generators.generate_newton
 
 
 # 1 Implement the BACON algorithm
-def bacon(df, max_steps=20, epsilon=1e-12):
+def bacon(df, max_steps=20, tolerance=1e-12):
+    """Discover equations with the BACON algorithm.
+
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        Input data.
+    max_steps : int, optional
+        Stop iteration after this number of steps.
+        (defaults to 20)
+    tolerance : float, optional
+        Stop iteration if the standard deviation of a column reaches below this
+        number. Used as a measure for a column's "constantness".
+        (defaults to 1e-12)
+
+    Returns
+    -------
+    str
+        Discovered equation, number of steps taken, and margin of error.
+
+    Notes
+    -----
+    The BACON algorithm is used to discover equations which contain only
+    products and/or divisions of variables. Individual columns are multiplied
+    or divided until either a specified maximal number of steps is reached
+    (in this case `max_steps`) or a column is generated which contains, with a
+    certain margin of error (in this case `tolerance`), only a single unique
+    value.
+    """
 
     step = 0
     stds = np.std(df)
     columns = df.columns
 
-    while step < max_steps and min(stds) > epsilon:
+    while step < max_steps and min(stds) > tolerance:
 
         correlations = np.corrcoef(df.rank().T)
         n = correlations.shape[0]

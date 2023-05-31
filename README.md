@@ -176,8 +176,8 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
     3. Handle noise with ridge regression
     4. Handle noise with lasso regression
 - Exercise B: ***Equation Discovery with the BACON algorithm***
-      1. Implement the BACON algorithm
-      2. Test the BACON algorithm on given data
+    1. Implement the BACON algorithm
+    2. Test the BACON algorithm on given data
 
   [(Back to top)](#table-of-contents)
 

@@ -14,6 +14,41 @@ DATA_GENERATOR = data_generators.generate_conservation_of_energy
 
 # 1 Implement linear regression
 def linear_regression(X, y, epsilon=1e-2, ridge_param=None, lasso_param=None):
+    """Discover equations with linear regression.
+
+    Parameters
+    ----------
+    X : pandas.DataFrame
+        Features data.
+    y : pandas.Series
+        Target variable.
+    epsilon : float, optional
+        Factors below this value are set to 0.
+        (defaults to 1e-2)
+    ridge_param : float, optional
+        Regularisation parameter for ridge regression. If a value is given,
+        `lasso_param` has to be None.
+        (defaults to None)
+    lasso_param : float, optional
+        Regularisation parameter for lasso regression. If a value is given,
+        `ridge_param` has to be None.
+        (defaults to None)
+
+    Returns
+    -------
+    str
+        Discovered equation.
+
+    Raises
+    ------
+    ValueError
+        If both `ridge_param` and `lasso_param` differ from None.
+
+    Notes
+    -----
+    Arguments for this function are intended to be generated with
+    `preprocess_for_equation_discovery`.
+    """
 
     variables = X.columns
 
@@ -35,6 +70,29 @@ def linear_regression(X, y, epsilon=1e-2, ridge_param=None, lasso_param=None):
 
 
 def preprocess_for_equation_discovery(data, target_name, degree=2):
+    """Prepare data for equation discovery with linear regression.
+
+    Parameters
+    ----------
+    data : pandas.DataFrame
+        Input data, contains the target variable.
+    target_name : str
+        Name of the target variable.
+    degree : int, optional
+        Degree of polynomial variables to be created.
+        (defaults to 2)
+
+    Returns
+    -------
+    X : pd.DataFrame
+        Features data.
+    y : pd.Series
+        Target variable.
+
+    Notes
+    -----
+    This function produces proper input for the `linear_regression` function.
+    """
 
     X, y = data.drop(columns=target_name), data[target_name]
 
