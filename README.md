@@ -46,6 +46,7 @@ and homework assignments.
   - [Class 4: Hyperparameter Optimisation with `hyperopt`](#class-4-hyperparameter-optimisation-with-hyperopt)
   - [Class 7: Machine Learning on Complex Data Structures, Part 1](#class-7-machine-learning-on-complex-data-structures-part-1)
   - [Class 10: Equation Discovery](#class-10-equation-discovery)
+  - [Class 11: Equation Discovery with `ProGED`](#class-10-equation-discovery-with-proged)
 
 - [Homework Assignments](#homework-assignments)
   - [Assignment 1: Method Selection, Hyperparameter Optimisation, Meta-learning](#assignment-1-method-selection-hyperparameter-optimisation-meta-learning)
@@ -178,6 +179,19 @@ Corresponding code can be found in appropriate subdirectories of `ex/`.
 - Exercise B: ***Equation Discovery with the BACON algorithm***
   1. Implement the BACON algorithm
   2. Test the BACON algorithm on given data
+
+[(Back to top)](#table-of-contents)
+
+### Class 10: Equation Discovery with [ProGED](https://github.com/brencej/ProGED)
+
+- Exercise A: ***Probabilistic Grammatics and `ProGED`***
+  1. Discover Newton's Second Law
+     - `ProGED.EqDisco.generate_models`
+     - `ProGED.EqDisco.fit_models`
+     - `ProGED.EqDisco.get_results`
+  2. Discover a linear function
+     - `ProGED.generators.GeneratorGrammar`
+  3. Discover the energy conservation law
 
 [(Back to top)](#table-of-contents)
 
